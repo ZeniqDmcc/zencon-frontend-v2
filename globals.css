@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+video{
+  height: 100% !important;
+  width: 100% !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#play-button{
+  position: absolute;
+  height: 80px;
+  cursor: pointer;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@layer components {
+  .active {
+    @apply border-[1px] border-red-500;
+  }
+  .route-active {
+    @apply transition-all border-b-[4px] border-[#F4A12FFF] text-[#F4A12FFF];
+  }
+  .route-active-button {
+    @apply transition-all bg-[#f4a12f];
+  }
+  .normal_input {
+    @apply px-3 py-3 rounded-md border-[1px] border-black text-black outline-none placeholder-black text-sm;
+  }
+  p {
+    @apply font-normal text-[#E7EEFA];
+  }
+  .op1 {
+    @apply bg-[#00B3A9];
+  }
+  .op2 {
+    @apply bg-[#BD5E80];
+  }
+  .op3 {
+    @apply bg-[#E7A536];
+  }
+}
+
+.doc-card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+#dropdown_select .Dropdown-control {
+  background: transparent !important;
+  color: #ffffff !important;
+  padding: 0.7rem 1rem !important;
+}
+
+#dropdown_select .Dropdown-arrow {
+  top: 1.1rem !important;
+}
+
+#dropdown_select .Dropdown-placeholder {
+  color: rgba(128, 128, 128, 0.705) !important;
+}
+
+html, body, #__next {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#__next {
+  /*overflow-x: hidden;*/
+  background-color: #0a1717;
+  isolation: isolate;
+}
+

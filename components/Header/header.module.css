@@ -1,0 +1,19 @@
+.header {
+    padding: 10px 0;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .primary__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .primary__nav svg {
+    width: 100%;
+    max-width: 30px;
+  }
+  

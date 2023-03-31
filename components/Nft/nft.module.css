@@ -1,0 +1,49 @@
+.nft {
+    background-image: url("../../assets/Group\ 8134.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: calc(45% + 136px);
+    padding: 127px 0;
+}
+
+.nft__inner {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+}
+
+.nft__inner .box {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.nft__inner .box__2 {
+    display: flex;
+    gap: 50px;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: normal;
+  color: #88FF4E;
+  line-height: 67px;
+}
+
+.paragrapgh {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .nft__inner h2 {
+        font-size: 22px;
+    }
+    .nft__inner .box__2 {
+        gap: 25px;
+    }
+    .nft__inner .box__2 p {
+        font-size: 14px;
+    }
+}

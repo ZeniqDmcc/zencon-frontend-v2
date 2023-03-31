@@ -1,0 +1,50 @@
+.development {
+    padding-bottom: 80px;
+}
+.development__inner {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.development__inner .box {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+.development__inner .box__1 {
+    display: flex;
+    gap: 50px;
+}
+
+.development__inner {
+    background-image: url(/_next/static/media/graph8.2cf3e65a.png);
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: normal;
+    color: #88FF4E;
+    line-height: 67px;
+}
+
+.paragrapgh {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .development {
+        padding: 0px 0 50px 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .development__inner {
+        margin-top: 0px !important;
+    }
+}

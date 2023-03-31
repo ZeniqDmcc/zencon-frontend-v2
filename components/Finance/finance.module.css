@@ -1,0 +1,46 @@
+.finance {
+    background-image: url("/_next/static/media/Group 2173.a198e778.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(45% + 136px);
+    padding: 127px 0;
+}
+
+.finance__inner {
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finance__inner .box {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+.finance__inner .box__1 {
+    display: flex;
+    gap: 43px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: normal;
+    color: #88FF4E;
+    line-height: 67px;
+}
+
+.paragraph {
+    width: 90%;
+    line-height: 1.5;
+    font-size: 24px;
+    line-height: 36px;
+}
+/* 
+@media only screen and (min-width: 1440px) {
+    .finance {
+        padding: 140px 0;
+    }
+} */
+

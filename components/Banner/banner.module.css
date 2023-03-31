@@ -1,0 +1,51 @@
+.banner__inner {
+	display: flex;
+	align-items: flex-end;
+	height: 99vh;
+	justify-content: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.heading {
+	font-size: 66px;
+	max-width: 930px;
+	text-align: center;
+	letter-spacing: -1px;
+	font-weight: normal;
+  color:white;
+}
+.button__outer {
+  display: flex;
+  gap: 15px;
+}
+.paragraph{
+	font-size: 24px;
+	text-align: center;
+	line-height: 34px;
+	max-width: 1384px;
+	margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner__inner {
+    height: 44vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner__inner .button__outer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .banner__inner .button__outer {
+      align-items: center;
+  }
+}
