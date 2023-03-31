@@ -6,15 +6,17 @@ import graph1 from "../../assets/graph1.svg"
 function Finance(props) {
   return (
     <div className={styles.finance}>
-        <div className={styles.finance__inner}>
-            <div className={styles.box} key={nanoid()}>
-                <h2 className={styles.heading}>{props.title}</h2>
-                <p className={styles.paragraph}>{props.traditionalBanking}</p>
-                <p className={styles.paragraph}>{props.challenges}</p>
-            </div>
+        <div className="container mx-auto">
+            <div className={styles.finance__inner}>
+                <div className={styles.box} key={nanoid()}>
+                    <h2 className={styles.heading}>{props.title}</h2>
+                    <p className={styles.paragraph}>{props.traditionalBanking}</p>
+                    <p className={styles.paragraph}>{props.challenges}</p>
+                </div>
 
-            <div className="box box__2" key={nanoid()}>
-                <Image src={props.src} alt="icon"  />
+                <div className="box box__2" key={nanoid()}>
+                    <Image src={props.src} alt="icon"  />
+                </div>
             </div>
         </div>
     </div>

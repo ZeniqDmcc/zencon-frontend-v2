@@ -6,18 +6,20 @@ import graph4cr from "../../assets/graph4cr.png"
 
 function Development(props) {
   return (
-    <div className="p-20">
-        <div className={styles.development__inner}>
-            <div className={styles.box} key={nanoid()}>
-                <Image src={props.image} alt="Nft" />
-            </div>
+    <div className={styles.development}>
+        <div className="container mx-auto">
+            <div className={styles.development__inner}>
+                <div className={styles.box} key={nanoid()}>
+                    <Image src={props.image} alt="Nft" />
+                </div>
 
-            <div className={styles.box} key={nanoid()}>
-                <h2 className={styles.heading}>{props.title}</h2>
-                <p className={styles.paragrapgh}>{props.shortDescription}</p>
-                <p className={styles.paragrapgh}>{props.detailDescription}</p>
-                <div className="button__outer">
-                    <Button label="More information" href="#" />
+                <div className={styles.box} key={nanoid()}>
+                    <h2 className={styles.heading}>{props.title}</h2>
+                    <p className={styles.paragrapgh}>{props.shortDescription}</p>
+                    <p className={styles.paragrapgh}>{props.detailDescription}</p>
+                    <div className="button__outer">
+                        <Button label="More information" href="#" />
+                    </div>
                 </div>
             </div>
         </div>

@@ -8,18 +8,20 @@ import icon3 from '../../assets/icon3.svg'
 const Card = ({ icon, title, description }) => {
   return (
     <div className={styles.card__boxes__outer}>
-        <div className={styles.container}>
-            <div className={styles.card__boxes__inner}>
-            {
-                cardData.map((item) => {
-                    return <div className={styles.card__box} key={nanoid()}>
-                        <Image src={item.icon} alt="icon" height={80} />
-                        <h3 className={styles.heading}>{item.title}</h3>
-                        <p className={styles.pargraph}>{item.description}</p>
-                    </div>
-                })
-            }
-            </div> 
+        <div className="container mx-auto">
+          <div className={styles.container}>
+              <div className={styles.card__boxes__inner}>
+              {
+                  cardData.map((item) => {
+                      return <div className={styles.card__box} key={nanoid()}>
+                          <Image src={item.icon} alt="icon" height={80} />
+                          <h3 className={styles.heading}>{item.title}</h3>
+                          <p className={styles.pargraph}>{item.description}</p>
+                      </div>
+                  })
+              }
+              </div> 
+          </div>
         </div>
     </div>
   );

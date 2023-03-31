@@ -6,16 +6,18 @@ import graph2 from "../../assets/graph2.svg"
 function Nft(props) {
   return (
     <div className={styles.nft}>
-        <div className={styles.nft__inner}>
-            <div className={styles.box} key={nanoid()}>
-            <Image src={props.image} alt="Nft" />
-            </div>
+        <div className="container mx-auto">
+          <div className={styles.nft__inner}>
+              <div className={styles.box} key={nanoid()}>
+              <Image src={props.image} alt="Nft" />
+              </div>
 
-            <div className={styles.box} key={nanoid()}>
-                <h2 className={styles.heading}>{props.title}</h2>
-                <p className={styles.paragrapgh}>{props.shortDescription}</p>
-                <p className={styles.paragrapgh}>{props.detailDescription}</p>
-            </div>
+              <div className={styles.box} key={nanoid()}>
+                  <h2 className={styles.heading}>{props.title}</h2>
+                  <p className={styles.paragrapgh}>{props.shortDescription}</p>
+                  <p className={styles.paragrapgh}>{props.detailDescription}</p>
+              </div>
+          </div>
         </div>
     </div>
   )

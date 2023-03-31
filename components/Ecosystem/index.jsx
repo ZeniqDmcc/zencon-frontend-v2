@@ -7,21 +7,23 @@ import graph3 from "../../assets/graph3.png"
 function Ecosystem(props) {
   return (
     <div className={styles.ecosystem}>
-        <div className={styles.container}>
-            <div className={styles.ecosystem__inner}>
-                <div className={styles.box} key={nanoid()}>
-                    <h2 className={styles.heading}>{props.title}</h2>
-                    <p className={styles.paragrapgh}>{props.shortDescription}</p>
-                    <p className={styles.paragrapgh}>{props.detailDescription}</p>
-                    <div className={styles.button__outer}>
-                      <Button label='More Informations' href="#"/>
-                    </div> 
-                </div>
+        <div className="container mx-auto">
+          <div className={styles.container}>
+              <div className={styles.ecosystem__inner}>
+                  <div className={styles.box} key={nanoid()}>
+                      <h2 className={styles.heading}>{props.title}</h2>
+                      <p className={styles.paragrapgh}>{props.shortDescription}</p>
+                      <p className={styles.paragrapgh}>{props.detailDescription}</p>
+                      <div className={styles.button__outer}>
+                        <Button label='More Informations' href="#"/>
+                      </div> 
+                  </div>
 
-                <div className={styles.box} key={nanoid()}>
-                    <Image src={props.icon} alt="Nft" />
-                </div>
-            </div>
+                  <div className={styles.box} key={nanoid()}>
+                      <Image src={props.icon} alt="Nft" />
+                  </div>
+              </div>
+          </div>
         </div>
     </div>
   )

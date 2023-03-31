@@ -349,17 +349,21 @@ function SlideShow({dataType, dataSource}) {
     };
 
     return (
-        <div className='video-slideshow-container'>
-            <div ref={prevButtonRef} onClick={prevSlide} className={"button-prev " + (dataType === 'image' ? 'image-button' : '')}>
-                <LeftOutlined className="left-arrow" style={(dataType === 'image' ?{color:  '#9b9b9b'} : {})}/>
-            </div>
-            <div ref={slideShowRef} id={dataType === "youtube" ? "youtube-slideshow" : "image-slideshow"}
-                 className="video-slideshow">
-                {slideshowImages}
-                {slideshowVideos}
-            </div>
-            <div ref={nextButtonRef} onClick={nextSlide} className={"button-next " + (dataType === 'image' ? 'image-button' : '')}>
-                <RightOutlined className="right-arrow" style={(dataType === 'image' ?{color:  '#9b9b9b'} : {})}/>
+        <div className="slideshow">
+            <div className="container mx-auto">
+                <div className='video-slideshow-container'>
+                    <div ref={prevButtonRef} onClick={prevSlide} className={"button-prev " + (dataType === 'image' ? 'image-button' : '')}>
+                        <LeftOutlined className="left-arrow" style={(dataType === 'image' ?{color:  '#9b9b9b'} : {})}/>
+                    </div>
+                    <div ref={slideShowRef} id={dataType === "youtube" ? "youtube-slideshow" : "image-slideshow"}
+                        className="video-slideshow">
+                        {slideshowImages}
+                        {slideshowVideos}
+                    </div>
+                    <div ref={nextButtonRef} onClick={nextSlide} className={"button-next " + (dataType === 'image' ? 'image-button' : '')}>
+                        <RightOutlined className="right-arrow" style={(dataType === 'image' ?{color:  '#9b9b9b'} : {})}/>
+                    </div>
+                </div>
             </div>
         </div>
     );
