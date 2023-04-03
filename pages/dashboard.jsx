@@ -6,6 +6,8 @@ import {useUserDataContext} from "../context/UserDataContextProvider";
 import {useRouter} from "next/router";
 import {LoadingStyled} from "../components/LoadingStyled/LoadingStyled";
 import CallToAction from "../components/Buttons/CallToAction";
+import Navbar from "../components/Navbar/Navbar";
+import Button from "../components/Buttons/Button";
 
 export default function Dashboard() {
 
@@ -24,26 +26,22 @@ export default function Dashboard() {
                 title="ZENCON Launchpad | Incoming next"
                 description="List of the complete documentation for ZENIQ and ZENCON launchpad to developers, Investors and community."
             />
+            <Navbar/>
             <PageWrapper>
-                <section id='dashboard' className="grow py-14 bg-gray-900 bg-no-repeat bg-cover text-white h-[800px]">
+                <section id='dashboard' className="grow py-14 bg-gray-900 bg-no-repeat bg-cover text-white">
                     <Container>
                         <h1 className="mt-20 pt-20 mb-8 text-center text-7xl font-extrabold font-primary">
                             Welcome to Dashboard
                         </h1>
-                        {/*<p className="sm:text-[20px] text-[18px]font-secondary text-center text-gray-400 mb-8 md:text-[20px] mt-6">*/}
-                        {/*    {"Wallet address: " + userWallet}*/}
-                        {/*</p>*/}
-                        {/*<p className="sm:text-[20px] text-[18px]font-secondary text-center text-gray-400 mb-8 md:text-[20px] mt-6">*/}
-                        {/*    {"ETH address: " + ethAddr}*/}
-                        {/*</p>*/}
-                        {/*<p className="sm:text-[20px] text-[18px]font-secondary text-center text-gray-400 mb-8 md:text-[20px] mt-6">*/}
-                        {/*    {"BTC address: " + btcAddr}*/}
-                        {/*</p>*/}
-
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center p-8">
                             <CallToAction
-                                text="My Projects"
-                                classes="w-full"
+                                text="RIO 2023"
+                                classes="w-full mr-8"
+                                link="/register"
+                            />
+                            <CallToAction
+                                text="Launchpad"
+                                classes="w-full ml-8"
                                 link="/my-projects"
                             />
                         </div>

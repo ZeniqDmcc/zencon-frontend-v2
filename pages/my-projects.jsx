@@ -7,6 +7,7 @@ import {api_backend} from "../utils/Constants/BackendURLs";
 import {ProjectCard} from "../components/ProjectCard/ProjectCard";
 import CallToAction from "../components/Buttons/CallToAction";
 import {LoadingStyled} from "../components/LoadingStyled/LoadingStyled";
+import Navbar from "../components/Navbar/Navbar";
 
 
 export default function MyProjects() {
@@ -63,6 +64,7 @@ export default function MyProjects() {
                 title="ZENCON Launchpad | Incoming next"
                 description="List of the complete documentation for ZENIQ and ZENCON launchpad to developers, Investors and community."
             />
+            <Navbar/>
             <main className="page-wrapper overflow-hidden relative">
                 <div className="bg-gray-900">
                     <Container>

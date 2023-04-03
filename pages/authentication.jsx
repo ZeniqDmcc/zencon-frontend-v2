@@ -21,18 +21,19 @@ const AuthenticationForm = () => {
         setEthAddr,
         setBtcAddr
     } = useUserDataContext();
-
-
+  
     const router = useRouter();
-
+    if(isAuthed){
+        router.push("/dashboard")
+    }
+    
     const [iAmDeveloper, setIAmDeveloper] = useState(false);
     const [iAmInvestor, setIAmInvestor] = useState(false);
 
     const [qrLink, setqrLink] = useState(null);
-
-
+    
     useEffect(() => {
-
+       
         if (socket) {
             if (iAmInvestor) {
                 // console.log("login_inv_qr_link");
@@ -51,12 +52,7 @@ const AuthenticationForm = () => {
 
 
             socket?.on("qr_login", data => {
-                console.log(data)
-                const {message, user_type, is_authed, auth_adr, eth_adr, btc_adr,comrade_rec_id} = data;
-
-                if (message) {
-                    // console.log(message);
-                }
+                const { user_type, is_authed, auth_adr, eth_adr, btc_adr,comrade_rec_id} = data;
                 if (is_authed) {
                     setIsAuthed(true);
                     localStorage.setItem("is_authed", is_authed.toString());
@@ -140,16 +136,7 @@ const AuthenticationForm = () => {
                             uri={qrLink}
                         />}
 
-                        {/*<AppQrCode title="Login/Register" description="Scan this code with the Zeniq app!"*/}
                     </div>}
-                    {/*{isAuthed &&*/}
-                    {/*    <div style={{textAlign: "center"}}>*/}
-                    {/*        <h1>You are authenticated!</h1>*/}
-                    {/*        <p>user app address: {userWallet}</p>*/}
-                    {/*        <p>BTC wallet address: {btcAddr}</p>*/}
-                    {/*        <p>ETH wallet address: {ethAddr}</p>*/}
-                    {/*    </div>*/}
-                    {/*}*/}
                 </Container>
             </section>
         </PageWrapper>

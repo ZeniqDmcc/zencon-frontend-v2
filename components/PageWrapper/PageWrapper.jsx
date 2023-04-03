@@ -12,7 +12,7 @@ export default function PageWrapper({ children }) {
       {location.pathname.startsWith("/ambassadors-programme") ? (
         <></>
       ) : (
-        null// <JoinClub />
+         null//<JoinClub />
       )}
     </main>
   );
