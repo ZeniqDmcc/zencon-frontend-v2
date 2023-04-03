@@ -1,16 +1,15 @@
-import Button from "../Button"
-import styles from './banner.module.css'
 import { nanoid } from 'nanoid'
+import Button from "../Button"
 
 function Banner(props) {
     return (
       <div className="flex items-end justify-center" key={nanoid()}>
           <div className="container">
-            <div className={styles.banner__inner}>
-                <div className={styles.box}>
-                    <h1 className={styles.heading}>{props.title}</h1>
-                    <p className={styles.paragraph}>{props.description}</p>
-                    <div className={styles.button__outer}>
+            <div className="flex items-end justify-center h-screen">
+                <div className="flex flex-col items-center gap-10">
+                    <h1 className="w-3/5 text-6xl text-center tracking-tighter text-white-400">{props.title}</h1>
+                    <p className="text-2xl text-center leading-8 max-w-7xl mx-auto block">{props.description}</p>
+                    <div className="flex gap-4">
                         <Button label='Participate Rio 2023' href="/authentication"/>
                         <Button label='More Informations' href="#"/>
                     </div>

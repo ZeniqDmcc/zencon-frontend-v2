@@ -1,22 +1,21 @@
 import { nanoid } from 'nanoid';
 import Image from 'next/image';
-import styles from "./card.module.css";
-import icon1 from '../../assets/icon1.svg'
-import icon2 from '../../assets/icon2.svg'
-import icon3 from '../../assets/icon3.svg'
+import icon1 from '../../assets/icon1.svg';
+import icon2 from '../../assets/icon2.svg';
+import icon3 from '../../assets/icon3.svg';
 
 const Card = ({ icon, title, description }) => {
   return (
-    <div className={styles.card__boxes__outer}>
+    <div className="p-36">
         <div className="container mx-auto">
-          <div className={styles.container}>
-              <div className={styles.card__boxes__inner}>
+          <div className="container mx-auto">
+              <div className="flex gap-8">
               {
                   cardData.map((item) => {
-                      return <div className={styles.card__box} key={nanoid()}>
-                          <Image src={item.icon} alt="icon" height={80} />
-                          <h3 className={styles.heading}>{item.title}</h3>
-                          <p className={styles.pargraph}>{item.description}</p>
+                      return <div className="backdrop-filter backdrop-blur-sm flex flex-col bg-white bg-opacity-25 rounded-lg border-2 border-solid border-green-400 gap-8 p-16" key={nanoid()}>
+                          <Image src={item.icon} alt="icon" className='max-w-max' height={80} width={80} />
+                          <h3 className="text-2xl font-normal leading-10">{item.title}</h3>
+                          <p className="text-base leading-7">{item.description}</p>
                       </div>
                   })
               }

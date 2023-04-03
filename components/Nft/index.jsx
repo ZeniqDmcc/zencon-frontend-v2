@@ -7,11 +7,10 @@ function Nft(props) {
   return (
     <div className={styles.nft}>
         <div className="container mx-auto">
-          <div className={styles.nft__inner}>
+          <div className="flex justify-between items-center">
               <div className={styles.box} key={nanoid()}>
-              <Image src={props.image} alt="Nft" />
+                  <Image src={props.image} alt="Nft" />
               </div>
-
               <div className={styles.box} key={nanoid()}>
                   <h2 className={styles.heading}>{props.title}</h2>
                   <p className={styles.paragrapgh}>{props.shortDescription}</p>
@@ -24,6 +23,7 @@ function Nft(props) {
 }
 
 export default Nft
+
 
 Nft.defaultProps = {
       title: "Discover the Power of Decentralized Finance",
