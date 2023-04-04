@@ -349,7 +349,7 @@ function SlideShow({dataType, dataSource}) {
     };
 
     return (
-        <div className="slideshow">
+        <div className="slideshow" id="slideshow">
             <div className="container mx-auto">
                 <div className='video-slideshow-container'>
                     <div ref={prevButtonRef} onClick={prevSlide} className={"button-prev " + (dataType === 'image' ? 'image-button' : '')}>

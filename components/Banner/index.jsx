@@ -1,14 +1,10 @@
 import { nanoid } from 'nanoid'
-<<<<<<< HEAD
 import { useUserDataContext } from "../../context/UserDataContextProvider"
-=======
 import Button from "../Button"
->>>>>>> 01eb08c9e87acc798b29cf92ceeb86f65b2e829a
 
 function Banner(props) {
     const {isAuthed} = useUserDataContext();
-    const redirectUrl = isAuthed?"/dashboard":"/authentication";
-    console.log(redirectUrl,isAuthed)
+    const redirectUrl = isAuthed?"/register":"/authentication";
     return (
       <div className="flex items-end justify-center" key={nanoid()}>
           <div className="container">
@@ -17,8 +13,8 @@ function Banner(props) {
                     <h1 className="w-3/5 text-6xl text-center tracking-tighter text-white-400">{props.title}</h1>
                     <p className="text-2xl text-center leading-8 max-w-7xl mx-auto block">{props.description}</p>
                     <div className="flex gap-4">
-                        <Button label='Participate Rio 2023' href="/authentication"/>
-                        <Button label='More Informations' href="#"/>
+                        <Button label='Participate Rio 2023' href={redirectUrl}/>
+                        <Button label='More Informations' href="#slideshow"/>
                     </div>
                 </div>
             </div>
