@@ -1,13 +1,11 @@
 import {NextSeo} from "next-seo";
 import Container from "../components/Container/Container";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
-import {useEffect} from "react";
 import {useUserDataContext} from "../context/UserDataContextProvider";
 import {useRouter} from "next/router";
 import {LoadingStyled} from "../components/LoadingStyled/LoadingStyled";
 import CallToAction from "../components/Buttons/CallToAction";
 import Navbar from "../components/Navbar/Navbar";
-import Button from "../components/Buttons/Button";
 
 export default function Dashboard() {
 
@@ -35,7 +33,7 @@ export default function Dashboard() {
                         </h1>
                         <div className="flex items-center justify-center p-8">
                             <CallToAction
-                                text="RIO 2023"
+                                text="Participate Rio 2023"
                                 classes="w-full mr-8"
                                 link="/register"
                             />

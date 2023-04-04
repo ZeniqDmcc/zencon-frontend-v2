@@ -1,3 +1,11 @@
+.ecosystem {
+    background-image: url("../../assets/Svgs/graph7.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 65%;
+    padding: 123px 0 55px 0;
+}
+
 .ecosystem__inner {
     display: flex;
     gap: 2%;
@@ -20,6 +28,7 @@
     display: flex;
     flex-direction: column;
     width: 48%;
+    gap: 50px;
 }
 
 .heading {

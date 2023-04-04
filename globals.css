@@ -71,15 +71,18 @@ body {
   color: rgba(128, 128, 128, 0.705) !important;
 }
 
-html, body, #__next {
+.home__outer {
   margin: 0;
   height: 100%;
   width: 100%;
+  background-image: url("./assets/rio2023bg.jpg");
+  background-color: #010020;
+  isolation: isolate;
+  background-position: center -6% !important;
+  color: #fff;
+  background-repeat: no-repeat;
 }
 
-#__next {
-  /*overflow-x: hidden;*/
-  background-color: #0a1717;
-  isolation: isolate;
-}
+
+
 

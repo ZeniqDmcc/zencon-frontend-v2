@@ -1,5 +1,3 @@
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
 import JoinClub from "../JoinClub/JoinClub";
 import { useRouter } from "next/router";
 
@@ -12,7 +10,7 @@ export default function PageWrapper({ children }) {
       {location.pathname.startsWith("/ambassadors-programme") ? (
         <></>
       ) : (
-         null//<JoinClub />
+         <JoinClub />
       )}
     </main>
   );

@@ -8,26 +8,26 @@ import Ecosystem from "../components/Ecosystem";
 import SlideShow from "../components/SlideShow";
 import Development from "../components/Development";
 import ytVideos from '../assets/videos.json'
-import PageWrapper from "../components/PageWrapper/PageWrapper";
 
 
 export default function Launchpad() {
+
     return (
-        <>
+        <div className="home__outer">
             <NextSeo
                 title="ZENCON Launchpad | A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."
                 description="A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."
             />
            <div className='main'>
-                <Header />
-                <Banner />
-                <Card />
-                <Finance />
-                <Nft />
-                <Ecosystem />
-                <SlideShow dataType="youtube" dataSource={ytVideos}/>
-                <Development />  
+            <Header />
+            <Banner />
+            <Card />
+            <Finance />
+            <Nft />
+            <Ecosystem />
+            <SlideShow dataType="youtube" dataSource={ytVideos}/>
+            <Development />
             </div>
-        </>
+        </div>
     );
 }

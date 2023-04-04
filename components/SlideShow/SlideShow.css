@@ -551,3 +551,9 @@
 }
 
 /*# sourceMappingURL=SlideShow.css.map */
+
+.slideshow {
+  background: url("../../assets/Svgs/graph5.svg") no-repeat center;
+  background-size: 50%;
+  padding: 220px 0;
+}

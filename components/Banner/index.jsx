@@ -1,19 +1,25 @@
 import Button from "../Button"
 import styles from './banner.module.css'
-import { nanoid } from 'nanoid';
+import { nanoid } from 'nanoid'
+import { useUserDataContext } from "../../context/UserDataContextProvider"
 
 function Banner(props) {
+    const {isAuthed} = useUserDataContext();
+    const redirectUrl = isAuthed?"/dashboard":"/authentication";
+    console.log(redirectUrl,isAuthed)
     return (
       <div className="flex items-end justify-center" key={nanoid()}>
-          <div className={styles.banner__inner}>
-              <div className={styles.box}>
-              <h1 className={styles.heading}>{props.title}</h1>
-              <p className={styles.paragraph}>{props.description}</p>
-              <div className={styles.button__outer}>
-                  <Button label='Participate Rio 2023' href="/authentication"/>
-                  <Button label='More Informations' href="#"/>
-              </div>  
-              </div>
+          <div className="container">
+            <div className={styles.banner__inner}>
+                <div className={styles.box}>
+                    <h1 className={styles.heading}>{props.title}</h1>
+                    <p className={styles.paragraph}>{props.description}</p>
+                    <div className={styles.button__outer}>
+                        <Button label='Participate Rio 2023' href={redirectUrl}/>
+                        <Button label='More Informations' href="#"/>
+                    </div>
+                </div>
+            </div>
           </div>
       </div>
     )

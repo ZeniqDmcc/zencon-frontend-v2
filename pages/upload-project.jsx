@@ -6,6 +6,7 @@ import MultiInput from "../components/MultiInput/MultiInput";
 import ProjectInfoFields from "../components/ProjectInfoFields/ProjectInfoFields";
 import FileUploadFileds from "../components/FileUploadFields/FileUploadFileds";
 import fileToBinaryUpload from "../utils/Helpers/fileToBinaryUpload";
+import Navbar from "../components/Navbar/Navbar";
 
 export default function UploadProjects() {
 
@@ -112,6 +113,7 @@ export default function UploadProjects() {
 
     return (
         <>
+        <Navbar/>
             <main className="page-wrapper min-h-screen overflow-hidden relative">
                 <div className="bg-gray-900">
                     <Container>

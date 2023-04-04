@@ -1,8 +1,8 @@
 .nft {
-    background-image: url("../../assets/Group\ 8134.png");
+    background-image: url("/_next/static/media/Group 8134.c60d79b7.png");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: calc(45% + 136px);
+    background-size: calc(32% + 130px);
     padding: 127px 0;
 }
 
@@ -10,12 +10,14 @@
     display: flex;
     gap: 2%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nft__inner .box {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 46%;
+    gap: 50px;
 }
 
 .nft__inner .box__2 {

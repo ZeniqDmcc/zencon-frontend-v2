@@ -1,0 +1,91 @@
+.formInner {
+    box-shadow: 2px 28px 11px 13px #F4F4F4;
+    padding: 50px;
+}
+
+.formInner form {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.half {
+    width: 48%;
+    padding-top: 20px;
+}
+
+.half input {
+    width: 100%;
+    height: 45px;
+    background-color: #F9FAFB;
+    border: 0;
+    border-bottom: 1px solid #1B1934FF;
+    color: #9CA3AF;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.inputtextarea textarea {
+    height: 230px;
+    padding: 10px;
+    width: 100%;
+    background-color: #F9FAFB;
+    border: 0;
+    border-bottom: 1px solid #E5E7EB;
+    color: #9CA3AF;
+}
+
+.formInner form label {
+    padding-bottom: 7px;
+    color: #374151;
+}
+
+.formInner form label {
+    padding-bottom: 13px;
+    color: #374151;
+}
+
+.inputselect  {
+    width: 48%;
+    padding-top: 20px;
+}
+
+.select {
+    height: 45px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputtextarea {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #374151;
+    gap: 8px;
+    padding-top: 50px;
+}
+
+.block {
+    display: block;
+}
+
+.inputradio {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.formInner form select {
+    height: 45px;
+    border-color: #E5E7EB;
+    width: 100%;
+    padding: 5px 10px;
+    color: #9CA3C0;
+}
+
+.inputButton {
+    background-color: #581C87;
+    padding: 6px 20px;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+}
