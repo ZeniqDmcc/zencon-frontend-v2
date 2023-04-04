@@ -9,7 +9,7 @@ import Navbar from "../components/Navbar/Navbar";
 
 export default function Dashboard() {
 
-    const {isAuthed, userWallet, ethAddr, btcAddr} = useUserDataContext();
+    const {isAuthed, userWallet} = useUserDataContext();
     const router = useRouter();
 
     if(!isAuthed || !userWallet){

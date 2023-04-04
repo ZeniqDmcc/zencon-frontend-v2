@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import styles from "./register.module.css"
-import Navbar from "../Navbar/Navbar"
 import codes from '../../utils/Constants/countriesCodes';
-import {useUserDataContext} from "./../../context/UserDataContextProvider";
+import { useRouter } from 'next/router';
 
-function RegistrationForm() {
-    const {
-        ethAddr,
-    } = useUserDataContext();
+function RegistrationForm({ethAddr}) {
+    const router = useRouter()
+    
     const [formData, setFormData] = useState({
         first_name: '',
         last_name: '',
@@ -30,7 +28,7 @@ function RegistrationForm() {
         teamMembers: '',
         travel_availability: '',
         has_a_team: '',
-        teamMembersRegistered: '',
+        team_registration: '',
         twin_room_option: '',
         event_attendancy: '',
     });
@@ -55,7 +53,7 @@ function RegistrationForm() {
             },
             body:JSON.stringify(formData),
         }).then((response) => response.json()).then((data)=>{
-            //here will redirect to a success page which displaying the information of application
+            router.push("/submission")
         }).catch((err)=>{
             //here we need to display the error
         })
@@ -63,7 +61,6 @@ function RegistrationForm() {
 
     return (
         <> 
-        <Navbar />
         <div className="pt-20 bg-white sm:w-10/12 mx-auto">
                 <h3 className='font-extrabold font-primary text-gray-900 text-center text-3xl mt-10 mb-8'>Enter your information here to register in (RIO-2023)</h3>
                 <div className="container mx-auto">
@@ -162,8 +159,8 @@ function RegistrationForm() {
                             
 
                             <div className={styles.inputtextarea}>
-                                <label htmlFor="projectInfo">Do you have a project? If yes, please supply all relevant information:</label>
-                                <textarea name="projectInfo" onChange={handleInputChange} value={formData.projectInfo} />
+                                <label htmlFor="project_info">Do you have a project? If yes, please supply all relevant information:</label>
+                                <textarea name="project_info" onChange={handleInputChange} value={formData.projectInfo} />
                             </div>
                             <div className={styles.half}>
                                 <label htmlFor="video_presentation">Video presentation: optional  (bigger chances to be selected)</label>
@@ -211,11 +208,11 @@ function RegistrationForm() {
                             </div>
 
                             <div className={styles.inputradio}>
-                                <label className="block text-base pb-2" htmlFor="teamMembersRegistered">If yes, are your team members registered to attend ZENCON Rio?</label>
-                                <label htmlFor="teamMembersRegisteredYes">Yes</label>
-                                <input type="radio" name="teamMembersRegistered" id="teamMembersRegisteredYes" value="yes" onChange={handleInputChange} checked={formData.teamMembersRegistered === "yes"} />
-                                <label htmlFor="teamMembersRegisteredNo">No</label>
-                                <input type="radio" name="teamMembersRegistered" id="teamMembersRegisteredNo" value="no" onChange={handleInputChange} checked={formData.teamMembersRegistered === "no"} />
+                                <label className="block text-base pb-2" htmlFor="team_registration">If yes, are your team members registered to attend ZENCON Rio?</label>
+                                <label htmlFor="team_registrationYes">Yes</label>
+                                <input type="radio" name="team_registration" id="team_registrationYes" value="yes" onChange={handleInputChange} checked={formData.team_registration === "yes"} />
+                                <label htmlFor="team_registrationNo">No</label>
+                                <input type="radio" name="team_registration" id="team_registrationNo" value="no" onChange={handleInputChange} checked={formData.team_registration === "no"} />
                                 <div className={styles.inputradio}>
                                     <label className="block text-base pb-2" htmlFor="twin_room_option">If yes, is it an option to share a room (twin)?</label>
                                     <label htmlFor="twin_room_optionYes">
@@ -240,7 +237,7 @@ function RegistrationForm() {
                         </form>
                     </div>
                 </div>
-            </div>
+        </div>
         </>
     )
 
