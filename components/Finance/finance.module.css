@@ -3,26 +3,11 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: calc(45% + 136px);
-    padding: 127px 0;
 }
 
-
- .box {
-    display: flex;
-    flex-direction: column;
-    width: 46%;
-    gap: 50px;
-}
-.paragraph {
-    width: 90%;
-    line-height: 1.5;
-    font-size: 24px;
-    line-height: 36px;
-}
-/* 
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1024px) {
     .finance {
-        padding: 140px 0;
+        background-position: top;
+        background-size: calc(50% + 136px);
     }
-} */
-
+}

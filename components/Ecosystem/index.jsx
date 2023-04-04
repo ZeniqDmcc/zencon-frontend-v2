@@ -9,17 +9,17 @@ function Ecosystem(props) {
     <div className={styles.ecosystem}>
         <div className="container mx-auto">
           <div className={styles.container}>
-              <div className={styles.ecosystem__inner}>
-                  <div className={styles.box} key={nanoid()}>
-                      <h2 className={styles.heading}>{props.title}</h2>
-                      <p className={styles.paragrapgh}>{props.shortDescription}</p>
-                      <p className={styles.paragrapgh}>{props.detailDescription}</p>
-                      <div className={styles.button__outer}>
-                        <Button label='More Informations' href="#"/>
-                      </div> 
+              <div className="flex gap-2 lg:flex-row flex-col px-12 py-12 bg-white bg-opacity-25 shadow-lg rounded-lg border border-opacity-25 border-white backdrop-blur-md w-full items-center">
+                  <div className="flex order-2 flex-col lg:gap-12 gap-6 flex-1" key={nanoid()}>
+                    <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-normal text-green-400 leading-16">{props.title}</h2>
+                    <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal">{props.shortDescription}</p>
+                    <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal">{props.detailDescription}</p>
+                    <div className={styles.button__outer}>
+                      <Button label='More Informations' href="#"/>
+                    </div> 
                   </div>
 
-                  <div className={styles.box} key={nanoid()}>
+                  <div className="flex-1 order-1" key={nanoid()}>
                       <Image src={props.icon} alt="Nft" />
                   </div>
               </div>

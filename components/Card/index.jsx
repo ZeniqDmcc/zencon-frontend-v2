@@ -6,21 +6,19 @@ import icon3 from '../../assets/icon3.svg';
 
 const Card = ({ icon, title, description }) => {
   return (
-    <div className="p-36">
-        <div className="container mx-auto">
-          <div className="container mx-auto">
-              <div className="flex gap-8">
+    <div className="lg:py-36 md:py-28 sm:py-24 py-16 px-8">
+        <div className="container flex mx-auto py-5">
+            <div className="flex lg:flex-1 lg:flex-row flex-col gap-8">
               {
                   cardData.map((item) => {
-                      return <div className="backdrop-filter backdrop-blur-sm flex flex-col bg-white bg-opacity-25 rounded-lg border-2 border-solid border-green-400 gap-8 p-16" key={nanoid()}>
+                      return <div className="backdrop-filter backdrop-blur-sm flex flex-col bg-white bg-opacity-25 rounded-lg border-2 border-solid border-green-400 xl:gap-8 gap-4 2xl:p-16 xl:p-12 lg:p-8 p-8" key={nanoid()}>
                           <Image src={item.icon} alt="icon" className='max-w-max' height={80} width={80} />
-                          <h3 className="text-2xl font-normal leading-10">{item.title}</h3>
-                          <p className="text-base leading-7">{item.description}</p>
+                          <h3 className="md:text-3xl text-2xl font-normal sm:leading-10 leading-7">{item.title}</h3>
+                          <p className="w-90 leading-1.5 xl:text-xl md:text-md font-normal">{item.description}</p>
                       </div>
                   })
               }
-              </div> 
-          </div>
+            </div> 
         </div>
     </div>
   );
@@ -47,4 +45,4 @@ const cardData = [
   },
 ];
 
-export default Card;
+export default Card

@@ -38,6 +38,11 @@
 @media only screen and (max-width: 1024px) {
     .development {
         padding: 0px 0 50px 0;
+        background-position: top;
+        background-size: calc(70% + 130px);
+    }
+    .development__inner .box img { 
+        width: 80% !important;
     }
 }
 
