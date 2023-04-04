@@ -7,11 +7,11 @@ function Finance(props) {
   return (
     <div className={styles.finance}>
         <div className="container mx-auto">
-            <div className={styles.finance__inner}>
+            <div className="flex justify-between">
                 <div className={styles.box} key={nanoid()}>
-                    <h2 className={styles.heading}>{props.title}</h2>
-                    <p className={styles.paragraph}>{props.traditionalBanking}</p>
-                    <p className={styles.paragraph}>{props.challenges}</p>
+                    <h2 className="text-4xl font-normal text-green-400 leading-9">{props.title}</h2>
+                    <p className="w-90 leading-1.5 text-base lg:text-lg">{props.traditionalBanking}</p>
+                    <p className="w-90 leading-1.5 text-base lg:text-lg">{props.challenges}</p>
                 </div>
 
                 <div className="box box__2" key={nanoid()}>

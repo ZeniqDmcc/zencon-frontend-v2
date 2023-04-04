@@ -6,32 +6,13 @@
     padding: 127px 0;
 }
 
-.finance__inner {
-    display: flex;
-    gap: 2%;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.finance__inner .box {
+ .box {
     display: flex;
     flex-direction: column;
     width: 46%;
     gap: 50px;
 }
-
-.finance__inner .box__1 {
-    display: flex;
-    gap: 43px;
-}
-
-.heading {
-    font-size: 50px;
-    font-weight: normal;
-    color: #88FF4E;
-    line-height: 67px;
-}
-
 .paragraph {
     width: 90%;
     line-height: 1.5;

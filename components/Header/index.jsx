@@ -1,17 +1,12 @@
 import Logo from "../logo/Logo"
 import Nav from "../nav/Nav"
-import styles from "./header.module.css"
 
 function Header() {
-    return <header className={styles.header}>
+    return <header className="py-0">
         <div className="container mx-auto">
-            <div className={styles.header__inner}>
-                <div className={styles.box}>
-                    <Logo />
-                </div>
-                <div className={styles.box}>
-                    <Nav />
-                </div>
+            <div className="flex columns-2 justify-between items-center">
+                <Logo />
+                <Nav />
             </div>
         </div>
     </header>
