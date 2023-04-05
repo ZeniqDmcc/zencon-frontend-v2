@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 
 function RegistrationForm({ethAddr}) {
     const router = useRouter()
+    console.log("Eth_Address",ethAddr);
     
     const [formData, setFormData] = useState({
         first_name: '',
@@ -53,9 +54,10 @@ function RegistrationForm({ethAddr}) {
             },
             body:JSON.stringify(formData),
         }).then((response) => response.json()).then((data)=>{
-            router.push("/submission")
+            router.push("/register")
         }).catch((err)=>{
-            //here we need to display the error
+            console.log(err);
+            router.push("/")
         })
     };
 
