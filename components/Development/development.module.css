@@ -1,39 +1,9 @@
 .development {
     background: url("../../assets/Svgs/graph8.svg") no-repeat left;
     background-size: 50%;
-    padding: 120px 0;
-}
-.development__inner {
-    display: flex;
-    gap: 2%;
-    width: 100%;
-    justify-content: space-between;
+    padding: 97px 0 165px 0;
 }
 
-.development__inner .box {
-    display: flex;
-    flex-direction: column;
-    width: 46%;
-    gap: 50px;
-}
-
-.development__inner {
-    background-image: url(/_next/static/media/graph8.2cf3e65a.png);
-    display: flex;
-    align-items: center;
-}
-
-.heading {
-    font-size: 50px;
-    font-weight: normal;
-    color: #88FF4E;
-    line-height: 67px;
-}
-
-.paragrapgh {
-    font-size: 24px;
-    line-height: 36px;
-}
 
 @media only screen and (max-width: 1024px) {
     .development {

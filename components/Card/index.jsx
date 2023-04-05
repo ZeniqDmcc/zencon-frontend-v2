@@ -7,7 +7,7 @@ import icon3 from '../../assets/icon3.svg';
 const Card = ({ icon, title, description }) => {
   return (
     <div className="lg:py-36 md:py-28 sm:py-24 py-16 px-8">
-        <div className="container flex mx-auto py-5">
+        <div className="container flex mx-auto pt-5 pb-2">
             <div className="flex lg:flex-1 lg:flex-row flex-col gap-8">
               {
                   cardData.map((item) => {

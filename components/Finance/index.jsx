@@ -5,7 +5,7 @@ import graph1 from "../../assets/graph1.svg"
 
 function Finance(props) {
   return (
-    <div className={`${styles.finance} xl:py-36 px-8`}>
+    <div className={`${styles.finance} xl:py-48 px-8`}>
         <div className="container mx-auto">
             <div className="flex justify-between lg:gap-0 gap-16 flex-col lg:flex-row">
                 <div className="lg:flex-1 lg:order-1 order-2 flex flex-col gap-12" key={nanoid()}>
