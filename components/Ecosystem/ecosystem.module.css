@@ -6,46 +6,70 @@
     padding: 123px 0 55px 0;
 }
 
-.ecosystem__inner {
-    display: flex;
-    gap: 2%;
-    padding: 32px 100px;
-    box-shadow: rgba(31, 38, 135, 0.09) 0px 8px 32px 0px;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    display: flex;
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 15px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.18);
-    border-image: initial;
-    width: 100%;
-    align-items: center;
+@media only screen and (max-width: 1780px) {
+    .ecosystem {
+        padding: 100px 0 100px 0;
+    }
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-    gap: 50px;
+@media only screen and (max-width: 1680px) {
+    .ecosystem {
+        padding: 60px 0 80px 0;
+    }
 }
 
-.heading {
-    font-size: 50px;
-    font-weight: normal;
-    color: #88FF4E;
-    line-height: 67px;
+@media only screen and (max-width: 1580px) {
+    .ecosystem {
+        padding: 120px 0;
+        background-size: 70%;
+    }
 }
 
-.paragrapgh {
-    font-size: 24px;
-    line-height: 36px;
+@media only screen and (max-width: 1480px) {
+    .ecosystem div div {
+        gap: 27px;
+    }
+    .ecosystem {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}  
+
+@media only screen and (max-width: 1380px) {
+    .ecosystem {
+        padding: 200px 0 160px 0;
+        background-size: 75%;
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .ecosystem {
+        background-position: top center;
+        background-size: calc(50% + 130px);
+        padding: 80px 30px 0 30px;
+        margin-top: 28px;
+        margin-bottom: 14px;
+    }
+    .ecosystem div div {
+        gap: 12px;
+    }
+    .ecosystem img {
+        width: 85% !important;
+        padding: 0 30px !important;
+    }
 }
 
-.box__1 {
-    display: flex;
-    gap: 50px;
+@media only screen and (max-width: 840px) {
+    .ecosystem {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .ecosystem img {
+        width: 100% !important;
+        padding: 0!important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -53,3 +77,4 @@
         padding: 25px 25px;
     }
 }
+

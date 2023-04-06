@@ -23,11 +23,21 @@
     }
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1124px) {
+    .button {
+        padding: 9px 16px;
+        height: 50px;
+        width: 200px;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+}
+
+/* @media only screen and (max-width: 840px) {
     .button {
         padding: 9px 16px;
         height: 40px;
         width: 190px;
         font-size: 16px;
     }
-}
+} */

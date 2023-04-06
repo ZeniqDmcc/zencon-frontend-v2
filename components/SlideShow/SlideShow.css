@@ -559,10 +559,85 @@
   margin-top: 52px;
 }
 
+@media only screen and (max-width: 1780px) {
+  .slideshow {
+      padding: 100px 0 100px 0;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .slideshow {
+      padding: 60px 0 100px 0;
+      margin-top: 112px;
+      margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1580px) {
+  .slideshow {
+      padding: 160px 0 100px 0;
+      margin-top: 0;
+      background-size: 56%;
+  }
+}
+
+@media only screen and (max-width: 1480px) {
+  .slideshow {
+      padding: 80px 0;
+      background-size: 56%;
+  }
+}  
+
+@media only screen and (max-width: 1280px) {
+  .slideshow {
+      background-size: 66%;
+  }
+}  
+
+@media only screen and (max-width: 1180px) {
+  .slideshow {
+      background-size: 76%;
+  }
+}  
+
 @media only screen and (max-width: 1024px) {
-    .slideshow {
-      background-size: calc(70% + 130px);
-      padding: 50px 0 0 0;
-      background-position: center;
-    }
+  .slideshow {
+    background-size: calc(60% + 130px);
+    padding: 80px 0;
+    background-position: center;
+    margin: 0px 0;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  .slideshow {
+    background-size: calc(60% + 130px);
+    padding: 120px 0;
+    background-position: center;
+    margin: 0px 0;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .slideshow {
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .slideshow {
+      padding: 100px 0;
+  }
+  .slideshow .video-slideshow-container {
+      margin: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slideshow {
+    background-size: calc(70% + 130px);
+    padding: 0;
+    margin: 50px 0 60px 0;
+  }
 }

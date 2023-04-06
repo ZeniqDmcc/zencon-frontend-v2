@@ -5,9 +5,74 @@
     background-size: calc(45% + 136px);
 }
 
+@media only screen and (max-width: 1480px) {
+    .finance div div {
+        gap: 27px;
+    }
+    .finance {
+        padding: 110px 0 160px 0;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .finance {
+        padding: 160px 0;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     .finance {
         background-position: top;
         background-size: calc(50% + 136px);
+        padding: 40px 0;
+        margin: 50px 0 0;
+    }
+    .finance img {
+        width: 80% !important;
+        padding-top: 50px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .finance {
+        background-position: top;
+        background-size: calc(50% + 136px);
+        padding: 40px 0;
+        margin: 40px 0 0;
+    }
+    .finance div div {
+        gap: 12px;
+        padding-top: 5px;
+    }
+    .finance img {
+        width: 80% !important;
+        padding-top: 17px !important;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .finance {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .finance div {
+        gap: 60px;
+    }
+    .finance img {
+        width: 100% !important;
+        padding-top: 17px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .finance {
+        background-size: calc(55% + 136px);
+    }
+    .finance img {
+        padding-top: 0px !important;
     }
 }

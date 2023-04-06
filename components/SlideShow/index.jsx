@@ -350,7 +350,7 @@ function SlideShow({dataType, dataSource}) {
 
     return (
         <div className="slideshow" id="slideshow">
-            <div className="container mx-auto">
+            <div className="container mx-auto flex justify-center">
                 <div className='video-slideshow-container'>
                     <div ref={prevButtonRef} onClick={prevSlide} className={"button-prev " + (dataType === 'image' ? 'image-button' : '')}>
                         <LeftOutlined className="left-arrow" style={(dataType === 'image' ?{color:  '#9b9b9b'} : {})}/>
