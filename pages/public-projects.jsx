@@ -11,7 +11,6 @@ import truecommit from "/public/assets/projects/Truecommit/logo.png"
 import avinoc from "../public/assets/projects/Avinoc/avinoc.jpg"
 import tupan from "../public/assets/projects/Tupan/tupan.png"
 import HeroBg from "../public/assets/projects_hero_bg.png"
-import {ProjectCard} from "../components/ProjectCard/ProjectCard";
 
 const items = [
     {

@@ -7,7 +7,7 @@ import {GradientScroll} from "../GradientScroll/GradientScroll";
 
 export default function Footer() {
     return (
-        <footer className="py-0 bg-footerBg text-white bg-[#010020]">
+        <footer className="py-0 text-white bg-[#010020]">
             <GradientScroll/>
             <div className="w-9/12 mx-auto mt-20">
                 <div className="mx-auto my-4 text-center">

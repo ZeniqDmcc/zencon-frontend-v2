@@ -79,7 +79,7 @@ const AuthenticationForm = () => {
                 Cookies.set("isAuthed", is_authed);
                 Cookies.set("userType", user_type);
 
-                router.push("/");
+                router.push("/dashboard");
             });
 
         }

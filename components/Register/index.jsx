@@ -1,12 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from "./register.module.css"
 import codes from '../../utils/Constants/countriesCodes';
 import { useRouter } from 'next/router';
+import {useUserDataContext} from "./../../context/UserDataContextProvider";
 
-function RegistrationForm({ethAddr}) {
-    const router = useRouter()
-    console.log("Eth_Address",ethAddr);
-    
+function RegistrationForm() {
+    const router = useRouter();
+    const {ethAddr} = useUserDataContext();
+    useEffect(()=>{},[])
     const [formData, setFormData] = useState({
         first_name: '',
         last_name: '',
@@ -33,7 +34,6 @@ function RegistrationForm({ethAddr}) {
         twin_room_option: '',
         event_attendancy: '',
     });
-
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevData) => ({
@@ -53,14 +53,22 @@ function RegistrationForm({ethAddr}) {
                 "token":ethAddr
             },
             body:JSON.stringify(formData),
-        }).then((response) => response.json()).then((data)=>{
-            router.push("/register")
+        }).then((response) => {
+            if(response.status===401){
+                router.push("/authentication")
+            }
+            response.json()
+        }).then((data)=>{
+            alert("Your application received successfully")
+            setTimeout(()=>{
+                router.push("/dashboard");
+            },1000)
         }).catch((err)=>{
             console.log(err);
             router.push("/")
         })
     };
-
+    
     return (
         <> 
         <div className="pt-20 bg-white sm:w-10/12 mx-auto">
