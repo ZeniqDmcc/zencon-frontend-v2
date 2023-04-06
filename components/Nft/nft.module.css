@@ -3,50 +3,64 @@
     background-repeat: no-repeat;
     background-position: left;
     background-size: calc(37% + 130px);
-    padding: 127px 0;
+    padding: 90px 0 142px 0;
 }
+
+@media only screen and (max-width: 1780px) {
+    .nft {
+        padding: 100px 0 90px 0;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .nft {
+        padding: 32px 0 110px 0;
+    }
+}
+
+@media only screen and (max-width: 1580px) {
+    .nft {
+        padding: 20px 0 30px 0;
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .nft {
+        padding: 0px 0 0px 0;
+    }
+    .nft div div {
+        gap: 27px;
+    }
+}  
+
 @media only screen and (max-width: 1024px) {
     .nft {
         background-position: top center;
         background-size: calc(50% + 130px);
-        padding: 80px 0 0 0;
+        padding: 30px 30px 0 30px;
+        margin-top: -100px;
+    }
+    .nft img {
+        width: 70% !important;
+        padding-top: 100px !important;
+    }
+    .nft div div {
+        gap: 12px;
     }
 }
 
-/* 
-.nft__inner .box {
-    display: flex;
-    flex-direction: column;
-    width: 46%;
-    gap: 50px;
-}
-
-.nft__inner .box__2 {
-    display: flex;
-    gap: 50px;
-}
-
-.heading {
-  font-size: 50px;
-  font-weight: normal;
-  color: #88FF4E;
-  line-height: 67px;
-}
-
-.paragrapgh {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-
-@media only screen and (max-width: 1024px) {
-    .nft__inner h2 {
-        font-size: 22px;
+@media only screen and (max-width: 480px) {
+    .nft {
+        background-position: top center;
+        background-size: calc(50% + 130px);
+        padding: 30px 30px 0 30px;
+        margin-top: -70px;
     }
-    .nft__inner .box__2 {
-        gap: 25px;
+    .nft img {
+        width: 60% !important;
+        padding-top: 35px !important;
     }
-    .nft__inner .box__2 p {
-        font-size: 14px;
+    .nft div div {
+        gap: 12px;
     }
-} */
+}

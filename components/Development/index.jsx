@@ -8,15 +8,15 @@ function Development(props) {
   return (
     <div className={styles.development}>
         <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row justify-between lg:gap-12 gap-32">
-                <div className="flex-1 justify-center flex items-center" key={nanoid()}>
+            <div className="flex flex-col lg:flex-row justify-between gap-12">
+                <div className="flex-1 justify-center flex items-center lg:py-10" key={nanoid()}>
                     <Image src={props.image} alt="Nft" />
                 </div>
 
-                <div className="flex-1 flex flex-col lg:gap-12 gap-8" key={nanoid()}>
-                    <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-normal text-green-400 leading-16">{props.title}</h2>
-                    <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal">{props.shortDescription}</p>
-                    <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal">{props.detailDescription}</p>
+                <div className="flex-1 flex flex-col lg:gap-12 gap-6" key={nanoid()}>
+                    <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-normal text-green-400 leading-16 lg:text-left text-center">{props.title}</h2>
+                    <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.shortDescription}</p>
+                    <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.detailDescription}</p>
                     <div className="button__outer">
                         <Button label="More information" href="#" />
                     </div>

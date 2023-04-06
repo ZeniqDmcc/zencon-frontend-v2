@@ -1,20 +1,20 @@
 import Image from "next/image"
 import { nanoid } from "nanoid"
 import styles from "./nft.module.css"
-import graph2 from "../../assets/graph2.svg"
+import graph2 from "../../assets/graph2.svg" 
 
 function Nft(props) {
   return (
     <div className={styles.nft}>
         <div className="container mx-auto">
-          <div className="flex lg:flex-row flex-col lg:gap-0 gap-12 justify-between items-center">
+          <div className="flex lg:flex-row flex-col lg:gap-0 gap-12 justify-between items-center pt-1">
               <div className="flex-1" key={nanoid()}>
                   <Image src={props.image} alt="Nft" />
               </div>
-              <div className="flex-1 flex flex-col gap-12" key={nanoid()}>
-                  <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-normal text-green-400 leading-16">{props.title}</h2>
-                  <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal">{props.shortDescription}</p>
-                  <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal">{props.detailDescription}</p>
+              <div className="flex-1 flex flex-col gap-12 lg:mt-0 sm:mt-2" key={nanoid()}>
+                  <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-normal text-green-400 leading-16 lg:text-left text-center">{props.title}</h2>
+                  <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.shortDescription}</p>
+                  <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.detailDescription}</p>
               </div>
           </div>
         </div>

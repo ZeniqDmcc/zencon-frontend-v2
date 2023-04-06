@@ -3,18 +3,19 @@ import Image from 'next/image';
 import icon1 from '../../assets/icon1.svg';
 import icon2 from '../../assets/icon2.svg';
 import icon3 from '../../assets/icon3.svg';
+import styles from './card.module.css';
 
 const Card = ({ icon, title, description }) => {
   return (
-    <div className="lg:py-36 md:py-28 sm:py-24 py-16 px-8">
-        <div className="container flex mx-auto py-5">
+    <div className={styles.card}>
+        <div className="container flex mx-auto pt-5 pb-2">
             <div className="flex lg:flex-1 lg:flex-row flex-col gap-8">
               {
                   cardData.map((item) => {
                       return <div className="backdrop-filter backdrop-blur-sm flex flex-col bg-white bg-opacity-25 rounded-lg border-2 border-solid border-green-400 xl:gap-8 gap-4 2xl:p-16 xl:p-12 lg:p-8 p-8" key={nanoid()}>
                           <Image src={item.icon} alt="icon" className='max-w-max' height={80} width={80} />
-                          <h3 className="md:text-3xl text-2xl font-normal sm:leading-10 leading-7">{item.title}</h3>
-                          <p className="w-90 leading-1.5 xl:text-xl md:text-md font-normal">{item.description}</p>
+                          <h3 className="md:text-3xl text-2xl text-center lg:text-left font-normal sm:leading-10 leading-7">{item.title}</h3>
+                          <p className="w-90 leading-1.5 text-center lg:text-left xl:text-xl md:text-md font-normal">{item.description}</p>
                       </div>
                   })
               }
