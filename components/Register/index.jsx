@@ -219,8 +219,7 @@ function RegistrationForm({ethAddr}) {
                                     <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="twin_room_option">If yes, is it an option to share a room (twin)?</label>
                                     <label htmlFor="twin_room_optionYes">Yes</label>
                                     <input type="radio" id="twin_room_optionYes" name="twin_room_option" value="yes" onChange={handleInputChange} checked={formData.twin_room_option === "yes"} />
-                                    <label htmlFor="twin_room_optionNo">No</label>
-                                    
+                                    <label htmlFor="twin_room_optionNo" className={styles.mrleft}>No</label>
                                     <input type="radio" id="twin_room_optionNo" name="twin_room_option" value="no" onChange={handleInputChange} checked={formData.twin_room_option === "no"} />
                                 </div>
                             </div>
@@ -232,6 +231,9 @@ function RegistrationForm({ethAddr}) {
                                 <label className={styles.mrleft} htmlFor="event_attendancyNo">No</label>
                                 <input type="radio" id="no" className={styles.event_attendancy} name="event_attendancy" value="no" onChange={handleInputChange} checked={formData.event_attendancy === 'no'} />
                             </div>
+
+                            <div className="error"></div>
+
                             <button className={styles.inputButton} type='submit'>Submit</button>
                         </form>
                     </div>
