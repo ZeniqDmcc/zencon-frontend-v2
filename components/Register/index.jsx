@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from "./register.module.css"
 import codes from '../../utils/Constants/countriesCodes';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 function RegistrationForm({ethAddr}) {
     const router = useRouter()
@@ -232,9 +233,16 @@ function RegistrationForm({ethAddr}) {
                                 <input type="radio" id="no" className={styles.event_attendancy} name="event_attendancy" value="no" onChange={handleInputChange} checked={formData.event_attendancy === 'no'} />
                             </div>
 
+                            <div class="inline-block mr-2 mt-5">
+                                <input type="checkbox" className='mr-3' id="myCheckbox" name="myCheckbox" class="form-checkbox" />
+                                <label for="myCheckbox" class="inline-block">I agree with <Link href="/terms">Terms and Conditions.</Link></label>
+                            </div>
+
                             <div className="error"></div>
 
-                            <button className={styles.inputButton} type='submit'>Submit</button>
+                            <div className="w-100">
+                                <button className={styles.inputButton} type='submit'>Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
