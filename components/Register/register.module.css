@@ -19,7 +19,7 @@
     height: 45px;
     background-color: #F9FAFB;
     border: 0;
-    border-bottom: 1px solid #1B1934FF;
+    border-bottom: 1px solid #E9E9ED;
     color: #9CA3AF;
     padding: 5px 10px;
     margin-top: 10px;
@@ -54,13 +54,14 @@
     height: 45px;
     width: 100%;
     margin-top: 10px;
+    padding: 10px;
 }
 
 .inputtextarea {
     width: 100% !important;
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid #374151;
+    border-bottom: 2px solid #E9E9ED;
     gap: 8px;
     padding-top: 50px;
 }
@@ -74,7 +75,7 @@
     padding-top: 20px;
 }
 
-.formInner form select {
+.formInner select {
     height: 45px;
     border-color: #E5E7EB;
     width: 100%;
@@ -88,4 +89,40 @@
     border-radius: 4px;
     color: #fff;
     margin-top: 20px;
+}
+/* 
+input:focus {
+    border-color: navajowhite;
+} */
+
+.rlabel {
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.phnum {
+    width: 49%;
+    padding: 0 10px;
+    max-height: 45px;
+    margin-top: 10px;
+}
+
+.mrleft {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 840px) {
+    .half {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .rlabel {
+        font-size: 16px;
+    }
+
+    .inputButton {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
