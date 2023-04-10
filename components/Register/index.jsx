@@ -2,11 +2,11 @@ import { useState } from 'react';
 import styles from "./register.module.css"
 import codes from '../../utils/Constants/countriesCodes';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 import fireworks from "../../assets/fireworks.gif"
 import eighteenYearsOld from "./../../utils/Helpers/eighteenYearsOld.js";
 const {day,year,month} = eighteenYearsOld()
 const lessThanDate = `${year}-${month}-${day}`;
+import Link from 'next/link';
 
 function RegistrationForm({ethAddr}) {
     
@@ -38,7 +38,7 @@ function RegistrationForm({ethAddr}) {
         team_registration: '',
         twin_room_option: '',
         event_attendancy: '',
-        terms_and_conditions:'yes'
+        terms_and_conditions: ''
     });
 
     const handleInputChange = (event) => {
@@ -66,6 +66,8 @@ function RegistrationForm({ethAddr}) {
                 setTimeout(()=>{
                     location.href="/register"
                 },3000)
+            }else{
+                setError(data.errors[0])
             }
             
             console.log(data)
@@ -78,7 +80,7 @@ function RegistrationForm({ethAddr}) {
 
     return (
         <> 
-        <div className="pt-20 pb-20 bg-white sm:w-10/12 mx-auto register__form__outer">
+        <div className="pt-20 pb-20 sm:w-10/12 mx-auto register__form__outer">
                 <h3 className='font-normal font-primary text-center lg:text-4xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16'>Enter your information here to register in (RIO-2023)</h3>
                 {success?<div className='lg:text-3xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16 text-green-700 text-center' style={{ backgroundImage: `url(${fireworks})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>   
                     Thanks! {formData.first_name} {formData.last_name} 	&#128079; you have registered successfully!</div>:null}
@@ -249,9 +251,18 @@ function RegistrationForm({ethAddr}) {
                                 <input type="radio" id="no" className={styles.event_attendancy} name="event_attendancy" value="no" onChange={handleInputChange} checked={formData.event_attendancy === 'no'} />
                             </div>
 
-                            <div className="error"></div>
+                            <div class="block w-full mt-5">
+                                <input type="checkbox" className='mr-3' id="terms_and_conditions" name="terms_and_conditions" class="form-checkbox" />
+                                <label for="terms_and_conditions" className="ml-2">I agree with <Link href="/terms"><span className='cursor-pointer underline text-blue-800'>Terms and Conditions.</span></Link></label>
+                            </div>
 
-                            <button className={styles.inputButton} type='submit'>Submit</button>
+                            {error?<div className="block mt-4 w-5/12 w- border-2 border-red-500 px-3 rounded">
+                                    <p className='text-red-600 p-2'>⚠️ {error}</p>
+                            </div>:null}
+
+                            <div className="block w-full">
+                                <button className={styles.inputButton} type='submit'>Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
