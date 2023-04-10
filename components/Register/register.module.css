@@ -23,6 +23,7 @@
     color: #9CA3AF;
     padding: 5px 10px;
     margin-top: 10px;
+    border-radius: 4px;
 }
 
 .inputtextarea textarea {
@@ -55,6 +56,7 @@
     width: 100%;
     margin-top: 10px;
     padding: 10px;
+    border-radius: 4px;
 }
 
 .inputtextarea {
@@ -64,6 +66,7 @@
     border-bottom: 2px solid #E9E9ED;
     gap: 8px;
     padding-top: 50px;
+    border-radius: 4px;
 }
 
 .block {
@@ -109,6 +112,11 @@ input:focus {
 
 .mrleft {
     margin-left: 30px;
+}
+
+.phnumber {
+    width: 20%;
+    border-radius: 0 0 0 0 !important;
 }
 
 @media only screen and (max-width: 840px) {
