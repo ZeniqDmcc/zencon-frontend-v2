@@ -5,9 +5,11 @@ function useFetchWithToken(url, options = {}) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [token,setToken] = useState(null);
 
   useEffect(() => {
     const ethAddr = localStorage.getItem("eth_adr");
+    setToken(ethAddr)
     const headers = {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -35,7 +37,7 @@ function useFetchWithToken(url, options = {}) {
       });
   }, []);
 
-  return { data, error, loading };
+  return { data, error, loading,token };
 }
 
 export default useFetchWithToken;

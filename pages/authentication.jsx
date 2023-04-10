@@ -113,7 +113,7 @@ const AuthenticationForm = () => {
                             setIAmDeveloper(false);
                         }}>
                             <ButtonGlow
-                                text_primary="Investor"
+                                text_primary="Sponsor"
                                 text_secondary="Login"
                                 linkURL={""}
                                 classes="w-full"
@@ -125,14 +125,14 @@ const AuthenticationForm = () => {
                         {qrLink && <AppQrCode
                             disabled={!iAmDeveloper}
                             title="Login as Developer"
-                            description="Scan this code with the Zeniq app!"
+                            description="Scan this code with the Nomo Zeniq app!"
                             uri={qrLink}
                         />}
 
                         {qrLink && <AppQrCode
                             disabled={!iAmInvestor}
                             title="Login as Investor"
-                            description="Scan this code with the Zeniq app!"
+                            description="Scan this code with the Nomo Zeniq app!"
                             uri={qrLink}
                         />}
 

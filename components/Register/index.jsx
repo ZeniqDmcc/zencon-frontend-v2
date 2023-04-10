@@ -2,11 +2,17 @@ import { useState } from 'react';
 import styles from "./register.module.css"
 import codes from '../../utils/Constants/countriesCodes';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
+import fireworks from "../../assets/fireworks.gif"
+import eighteenYearsOld from "./../../utils/Helpers/eighteenYearsOld.js";
+const {day,year,month} = eighteenYearsOld()
+const lessThanDate = `${year}-${month}-${day}`;
 
 function RegistrationForm({ethAddr}) {
-    const router = useRouter()
-    console.log("Eth_Address",ethAddr);
     
+    const router = useRouter()
+    const [success,setSuccess] = useState(null);
+    const [error,setError] = useState(null);
     const [formData, setFormData] = useState({
         first_name: '',
         last_name: '',
@@ -32,6 +38,7 @@ function RegistrationForm({ethAddr}) {
         team_registration: '',
         twin_room_option: '',
         event_attendancy: '',
+        terms_and_conditions:'yes'
     });
 
     const handleInputChange = (event) => {
@@ -43,7 +50,6 @@ function RegistrationForm({ethAddr}) {
     };
 
     const handleSubmit = (event) => {
-        formData.phone = `${formData.country_code}${formData.phone}`
         event.preventDefault();
         fetch(`http://192.168.19.100:9003/api/v1/zencon/register`, {
             method: "POST",
@@ -54,7 +60,16 @@ function RegistrationForm({ethAddr}) {
             },
             body:JSON.stringify(formData),
         }).then((response) => response.json()).then((data)=>{
-            router.push("/register")
+            if(data.status===true){
+                setSuccess(true);
+                window.scrollTo(0, 0);
+                setTimeout(()=>{
+                    location.href="/register"
+                },3000)
+            }
+            
+            console.log(data)
+            
         }).catch((err)=>{
             console.log(err);
             router.push("/")
@@ -65,6 +80,8 @@ function RegistrationForm({ethAddr}) {
         <> 
         <div className="pt-20 pb-20 bg-white sm:w-10/12 mx-auto register__form__outer">
                 <h3 className='font-normal font-primary text-center lg:text-4xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16'>Enter your information here to register in (RIO-2023)</h3>
+                {success?<div className='lg:text-3xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16 text-green-700 text-center' style={{ backgroundImage: `url(${fireworks})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>   
+                    Thanks! {formData.first_name} {formData.last_name} 	&#128079; you have registered successfully!</div>:null}
                 <div className="container mx-auto">
                     <div className="shadow-md py-50 p-10">
                         <form onSubmit={handleSubmit} className="flex flex-wrap justify-between">
@@ -84,7 +101,7 @@ function RegistrationForm({ethAddr}) {
 
                             <div className={styles.half}>
                                 <label htmlFor="date_of_birth">Date of Birth:</label>
-                                <input type="date" name="date_of_birth" onChange={handleInputChange} value={formData.date_of_birth} required />
+                                <input type="date" name="date_of_birth" onChange={handleInputChange} value={formData.date_of_birth} max={lessThanDate} required />
                             </div>
 
                             <div className={styles.half}>

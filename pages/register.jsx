@@ -1,11 +1,9 @@
 import Navbar from "../components/Navbar/Navbar"
 import RegistrationForm from "../components/Register"
-import { useRouter } from "next/router";
 import useFetchWithToken from '../hooks/useFetchWithToken';
 
 export default function Register() {
-    const router = useRouter();
-    const {data, error, loading } = useFetchWithToken("http://192.168.19.100:9003/api/v1/zencon/participant/status");
+    const {data, error, loading,token } = useFetchWithToken("http://192.168.19.100:9003/api/v1/zencon/participant/status");
 
     if (loading) {
         // Show a loading spinner or skeleton screen while data is being fetched
@@ -41,7 +39,7 @@ export default function Register() {
                     </div>
                 </div>
             ) : (
-                <RegistrationForm />
+                <RegistrationForm ethAddr={token}/>
             )}
         </>
     );
