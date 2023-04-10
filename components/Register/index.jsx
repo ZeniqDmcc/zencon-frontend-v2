@@ -33,6 +33,7 @@ function RegistrationForm({ethAddr}) {
         team_registration: '',
         twin_room_option: '',
         event_attendancy: '',
+        termsCheckbox: ''
     });
 
     const handleInputChange = (event) => {
@@ -64,7 +65,7 @@ function RegistrationForm({ethAddr}) {
 
     return (
         <> 
-        <div className="pt-20 pb-20 bg-white sm:w-10/12 mx-auto register__form__outer">
+        <div className="pt-20 pb-20 sm:w-10/12 mx-auto register__form__outer">
                 <h3 className='font-normal font-primary text-center lg:text-4xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16'>Enter your information here to register in (RIO-2023)</h3>
                 <div className="container mx-auto">
                     <div className="shadow-md py-50 p-10">
@@ -233,14 +234,16 @@ function RegistrationForm({ethAddr}) {
                                 <input type="radio" id="no" className={styles.event_attendancy} name="event_attendancy" value="no" onChange={handleInputChange} checked={formData.event_attendancy === 'no'} />
                             </div>
 
-                            <div class="inline-block mr-2 mt-5">
-                                <input type="checkbox" className='mr-3' id="myCheckbox" name="myCheckbox" class="form-checkbox" />
-                                <label for="myCheckbox" class="inline-block">I agree with <Link href="/terms">Terms and Conditions.</Link></label>
+                            <div class="block w-full mt-5">
+                                <input type="checkbox" className='mr-3' id="termsCheckbox" name="termsCheckbox" class="form-checkbox" />
+                                <label for="termsCheckbox" className="ml-2">I agree with <Link href="/terms"><span className='cursor-pointer underline text-blue-800'>Terms and Conditions.</span></Link></label>
                             </div>
 
-                            <div className="error"></div>
+                            <div className="block mt-4 w-5/12 w- border-2 border-red-600 px-3 rounded">
+                                    <p className='text-red-600'>Error</p>
+                            </div>
 
-                            <div className="w-100">
+                            <div className="block w-full">
                                 <button className={styles.inputButton} type='submit'>Submit</button>
                             </div>
                         </form>
