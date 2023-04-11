@@ -252,8 +252,14 @@ function RegistrationForm({ethAddr}) {
                             </div>
 
                             <div class="block w-full mt-5">
-                                <input type="checkbox" className='mr-3' id="terms_and_conditions" name="terms_and_conditions" class="form-checkbox" />
-                                <label for="terms_and_conditions" className="ml-2">I agree with <Link href="/terms"><span className='cursor-pointer underline text-blue-800'>Terms and Conditions.</span></Link></label>
+                                <input type="checkbox" className='mr-3' id="terms_and_conditions" name="terms_and_conditions" onClick={(event)=>{
+                                    if (event.target.checked === true) {
+                                        setFormData({...formData,terms_and_conditions:"yes"})
+                                    }else{
+                                        setFormData({...formData,terms_and_conditions:""})
+                                    }
+                                }} class="form-checkbox" />
+                                <label for="terms_and_conditions" className="ml-2">I agree with <a href="/terms" target="_blank"><span className='cursor-pointer underline text-blue-800'>Terms and Conditions.</span></a></label>
                             </div>
 
                             {error?<div className="block mt-4 w-5/12 w- border-2 border-red-500 px-3 rounded">
