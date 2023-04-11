@@ -14,7 +14,7 @@
     left: 0;
     width: 20px;
     height: 100%;
-    background: linear-gradient(#fff, #fff, #e3e3e3);
+    /* background: linear-gradient(#fff, #fff, #e3e3e3); */
     filter: blur(1px);
     z-index: 1;
   }
@@ -26,7 +26,7 @@
     right: -1px;
     width: 20px;
     height: 100%;
-    background: #9d9d9d;
+    /* background: #9d9d9d; */
     filter: blur(1px);
     z-index: 1;
   }
@@ -35,7 +35,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #eee;
+    /* background: #eee; */
   }
   
   .box .shadow::before {
@@ -45,7 +45,7 @@
     left: calc(100% + 5px);
     width: 100%;
     height: 200%;
-    background: linear-gradient(rgba(0,0,0,0.075), transparent);
+    /* background: linear-gradient(rgba(0,0,0,0.075), transparent); */
     transform: skewX(45deg);
   }
   
@@ -56,7 +56,7 @@
     left: calc(100% + 15px);
     width: 100%;
     height: 200%;
-    background: linear-gradient(rgba(0,0,0,0.075), transparent);
+    /* background: linear-gradient(rgba(0,0,0,0.075), transparent); */
     transform: skewX(45deg);
   }
   
@@ -64,12 +64,12 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#dbdae1, #a3aaba);
+    /* background: linear-gradient(#dbdae1, #a3aaba);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
       15px 15px 15px rgba(0,0,0,0.1),
       20px 20px 20px rgba(0,0,0,0.1),
       50px 50px 50px rgba(0,0,0,0.1),
-      inset 3px 3px 2px #fff;
+      inset 3px 3px 2px #fff; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +86,7 @@
     content: attr(data-text);
     position: absolute;
     inset: 20px;
-    background: #555;
+    /* background: #555; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -109,12 +109,12 @@
     height: 100%;
     fill: transparent;
     stroke-width: 3;
-    stroke: rgba(0,0,0,0.05);
+    stroke: #1B1934;
     transform: translate(5px, 5px);
   }
   
   .box .content .percent svg circle:nth-child(2) {
-    stroke: #555;
+    stroke: #fff;
     stroke-dasharray: 440;
     stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
     opacity: 0;
@@ -155,7 +155,7 @@
     transform: translateX(-50%);
     width: 14px;
     height: 14px;
-    background: #555;
+    background: #fff;
     border-radius: 50%;
   }
   
@@ -169,7 +169,7 @@
   
   .box .content .number h2 {
     font-size: 2.5rem;
-    color: #555;
+    color: #fff;
   }
   
   .box .content .number h2 span {
