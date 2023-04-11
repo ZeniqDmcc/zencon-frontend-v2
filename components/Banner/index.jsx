@@ -14,7 +14,7 @@ function Banner(props) {
                     <p className="text-lg xl:text-2xl md:text-xl sm:text-lg text-center sm:leading-8 leading-6 sm:max-w-7xl mx-auto block">{props.description}</p>
                     <div className="flex flex-col md:flex-row gap-4">
                         <Button label='Participate Rio 2023' href={redirectUrl}/>
-                        <Button label='More Informations' href="#slideshow"/>
+                        <Button label='More Informations' href="/schedule"/>
                     </div>
                 </div>
             </div>

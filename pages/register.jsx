@@ -23,7 +23,7 @@ export default function Register() {
                     <h3 className='font-extrabold font-primary text-gray-900 text-center text-3xl mt-10 mb-16'>Hi  &#128075; {data.first_name} {data.last_name} you have already registered in &#128640; &#128293; RIO-2023 &#128293; &#128640;</h3>
                     <div className="container mx-auto pt-4">
                         <div className="shadow-md py-50 p-10">
-                            <p className='text-green-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde mollitia error ipsum magni veniam nesciunt vero facilis pariatur. Asperiores, quidem aut perferendis accusantium mollitia recusandae illum voluptas ex unde.</p>
+                            <p className='text-green-700'>Lorem ipsum dolor sidghryghrtyt amet consectetur adipisicing elit. Suscipit unde mollitia error ipsum magni veniam nesciunt vero facilis pariatur. Asperiores, quidem aut perferendis accusantium mollitia recusandae illum voluptas ex unde.</p>
                             <ul>
                                 <li>Application status: {
                                     data.shortlisted === true ? <span>Shortlisted &#128640; &#128640;</span> :
