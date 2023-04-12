@@ -1,8 +1,10 @@
 import Navbar from "../components/Navbar/Navbar"
 import RegistrationForm from "../components/Registration"
 import useFetchWithToken from '../hooks/useFetchWithToken';
+import { zencon_event_api_url } from "../utils/Constants/BackendURLs";
+import {PARTICIPANT_STATUS} from "./../utils/Constants/uiPaths";
 export default function Register() {
-    const {data, error, loading,token } = useFetchWithToken("http://192.168.19.100:9003/api/v1/zencon/participant/status");
+    const {data, error, loading,token } = useFetchWithToken(`${zencon_event_api_url}/${PARTICIPANT_STATUS}`);
     return (
         <>
             <Navbar />

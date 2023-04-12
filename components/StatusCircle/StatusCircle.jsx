@@ -2,7 +2,7 @@ import styles from "./status.module.css"
 
 function StatusCircle() {
     return (
-        <div classNameName="">
+        <div className="">
             <div className="container mx-auto">
                 <div className={styles.box}>
                     <div className={styles.shadow}></div>
