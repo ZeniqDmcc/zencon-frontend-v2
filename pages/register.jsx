@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar/Navbar"
-import RegistrationForm from "../components/Register"
+import RegistrationForm from "../components/Registration"
 import useFetchWithToken from '../hooks/useFetchWithToken';
 
 export default function Register() {

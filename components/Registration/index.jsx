@@ -6,7 +6,6 @@ import fireworks from "../../assets/fireworks.gif"
 import eighteenYearsOld from "../../utils/Helpers/eighteenYearsOld.js";
 const { day, year, month } = eighteenYearsOld()
 const lessThanDate = `${year}-${month}-${day}`;
-import Link from 'next/link';
 
 function RegistrationForm({ ethAddr }) {
 
@@ -79,9 +78,9 @@ function RegistrationForm({ ethAddr }) {
     };
 
     return (
-        <div className='bg-gray-950'>
-            <div className="pt-20 pb-20 sm:w-10/12 mx-auto register__form__outer">
-                <h3 className='font-normal font-primary text-center lg:text-4xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16'>Enter your information here to register in (RIO-2023)</h3>
+        <div className='bg-[#010020] text-white'>
+            <div className="pt-20 pb-20 sm:w-10/12 mx-auto">
+                <h3 className='font-normal font-primary text-center lg:text-4xl text-2xl sm:mt-10 lg:px-20 sm:px-10 px-16'>Enter your information here to register in (RIO-2023)</h3>
                 {success ? <div className='lg:text-3xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16 text-green-700 text-center' style={{ backgroundImage: `url(${fireworks})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     Thanks! {formData.first_name} {formData.last_name} 	&#128079; you have registered successfully!</div> : null}
                 <div className="container mx-auto">
@@ -123,7 +122,7 @@ function RegistrationForm({ ethAddr }) {
 
                             <div className={styles.half}>
                                 <label htmlFor="nationality">Nationality:</label>
-                                <select className={styles.select} name="nationality" onChange={handleInputChange} value={formData.nationality} required>
+                                <select className={`${styles.select} text-black`} name="nationality" onChange={handleInputChange} value={formData.nationality} required>
                                     <option value="">-- Please Select --</option>
 
                                     {
@@ -136,7 +135,7 @@ function RegistrationForm({ ethAddr }) {
 
                             <div className={styles.half}>
                                 <label htmlFor="country_of_residancy">Address / Country of Residency:</label>
-                                <select className={styles.select} name="country_of_residancy" onChange={handleInputChange} value={formData.country_of_residancy} required>
+                                <select className={`${styles.select} text-black`} name="country_of_residancy" onChange={handleInputChange} value={formData.country_of_residancy} required>
                                     <option value="">-- Please Select --</option>
                                     {
                                         codes.map(({ name, emoji }) => {
@@ -146,12 +145,10 @@ function RegistrationForm({ ethAddr }) {
                                 </select>
                             </div>
 
-
-
                             <div className={styles.half}>
                                 <label htmlFor="phone">Phone Number:</label>
                                 <div className='flex flex-row'>
-                                    <select name="country_code" className={styles.phnum} onChange={handleInputChange} value={formData.country_code} required>
+                                    <select name="country_code" className={`${styles.select} ${styles.phnumber}  text-black`} onChange={handleInputChange} value={formData.country_code} required>
                                         <option value="">-- Please Select --</option>
                                         {
                                             codes.map(({ dial_code, name, emoji }) => {
@@ -166,7 +163,7 @@ function RegistrationForm({ ethAddr }) {
 
                             <div className={styles.inputselect}>
                                 <label htmlFor="tshirt_size">T-shirt Size:</label>
-                                <select className={styles.select} name="tshirt_size" onChange={handleInputChange} value={formData.tshirt_size} required>
+                                <select className={`${styles.select} text-black`} name="tshirt_size" onChange={handleInputChange} value={formData.tshirt_size} required>
                                     <option value="">-- Please Select --</option>
                                     <option value="XS">XS</option>
                                     <option value="S">S</option>
@@ -215,17 +212,17 @@ function RegistrationForm({ ethAddr }) {
                             <div className={styles.inputradio}>
                                 <label className={`${styles.block} ${styles.rlabel}`} htmlFor="travel_availability">Are you available to travel to Rio de Janeiro during the event dates: ZENCON Rio 16-21 September 2023?</label>
                                 <label htmlFor="travel_availabilityYes">Yes</label>
-                                <input type="radio" name="travel_availability" id="travel_availabilityYes" value="yes" onChange={handleInputChange} checked={formData.travel_availability === "yes"} />
+                                <input className="radio" type="radio" name="travel_availability" id="travel_availabilityYes" value="yes" onChange={handleInputChange} checked={formData.travel_availability === "yes"} />
                                 <label className={styles.mrleft} htmlFor="travel_availabilityNo">No</label>
-                                <input type="radio" name="travel_availability" id="travel_availabilityNo" value="no" onChange={handleInputChange} checked={formData.travel_availability === "no"} />
+                                <input className="radio" type="radio" name="travel_availability" id="travel_availabilityNo" value="no" onChange={handleInputChange} checked={formData.travel_availability === "no"} />
                             </div>
 
                             <div className={styles.inputradio}>
                                 <label className={`${styles.block} ${styles.rlabel}`} htmlFor="has_a_team">Do you have a team?</label>
                                 <label htmlFor="has_a_teamYes">Yes</label>
-                                <input type="radio" name="has_a_team" id="has_a_teamYes" value="yes" onChange={handleInputChange} checked={formData.has_a_team === "yes"} />
+                                <input className="radio" type="radio" name="has_a_team" id="has_a_teamYes" value="yes" onChange={handleInputChange} checked={formData.has_a_team === "yes"} />
                                 <label className={styles.mrleft} htmlFor="has_a_teamNo">No</label>
-                                <input type="radio" name="has_a_team" id="has_a_teamNo" value="no" onChange={handleInputChange} checked={formData.has_a_team === "no"} />
+                                <input className="radio" type="radio" name="has_a_team" id="has_a_teamNo" value="no" onChange={handleInputChange} checked={formData.has_a_team === "no"} />
                             </div>
 
                             <div className={styles.inputradio}>
@@ -233,13 +230,13 @@ function RegistrationForm({ ethAddr }) {
                                 <label htmlFor="team_registrationYes">Yes</label>
                                 <input type="radio" name="team_registration" id="team_registrationYes" value="yes" onChange={handleInputChange} checked={formData.team_registration === "yes"} />
                                 <label className={styles.mrleft} htmlFor="team_registrationNo">No</label>
-                                <input type="radio" name="team_registration" id="team_registrationNo" value="no" onChange={handleInputChange} checked={formData.team_registration === "no"} />
+                                <input className="radio" type="radio" name="team_registration" id="team_registrationNo" value="no" onChange={handleInputChange} checked={formData.team_registration === "no"} />
                                 <div className={styles.inputradio}>
                                     <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="twin_room_option">If yes, is it an option to share a room (twin)?</label>
                                     <label htmlFor="twin_room_optionYes">Yes</label>
-                                    <input type="radio" id="twin_room_optionYes" name="twin_room_option" value="yes" onChange={handleInputChange} checked={formData.twin_room_option === "yes"} />
+                                    <input className="radio" type="radio" id="twin_room_optionYes" name="twin_room_option" value="yes" onChange={handleInputChange} checked={formData.twin_room_option === "yes"} />
                                     <label htmlFor="twin_room_optionNo" className={styles.mrleft}>No</label>
-                                    <input type="radio" id="twin_room_optionNo" name="twin_room_option" value="no" onChange={handleInputChange} checked={formData.twin_room_option === "no"} />
+                                    <input className="radio" type="radio" id="twin_room_optionNo" name="twin_room_option" value="no" onChange={handleInputChange} checked={formData.twin_room_option === "no"} />
                                 </div>
                             </div>
 
@@ -252,8 +249,14 @@ function RegistrationForm({ ethAddr }) {
                             </div>
 
                             <div class="block w-full mt-5">
-                                <input type="checkbox" className='mr-3' id="terms_and_conditions" name="terms_and_conditions" class="form-checkbox" />
-                                <label for="terms_and_conditions" className="ml-2">I agree with <Link href="/terms"><span className='cursor-pointer underline text-blue-800'>Terms and Conditions.</span></Link></label>
+                                <input type="checkbox" className='mr-3' id="terms_and_conditions" name="terms_and_conditions" onClick={(event)=>{
+                                    if (event.target.checked === true) {
+                                        setFormData({...formData,terms_and_conditions:"yes"})
+                                    }else{
+                                        setFormData({...formData,terms_and_conditions:""})
+                                    }
+                                }} class="form-checkbox" />
+                                <label for="terms_and_conditions" className="ml-2">I agree with <a href="/terms" target="_blank"><span className='cursor-pointer underline text-blue-800'>Terms and Conditions.</span></a></label>
                             </div>
 
                             {error ? <div className="block mt-4 w-5/12 w- border-2 border-red-500 px-3 rounded">
