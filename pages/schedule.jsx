@@ -36,7 +36,7 @@ export default function Schedule() {
             </div>
             <div className="bg-[#581C87] p-4 pl-6 rounded flex flex-col gap-3 relative">
               <h4 className="">
-                <span className="bg-[#1B1934] p-1">Presentation</span>
+                <span className="bg-[#1B1934] p-1">Selection</span>
               </h4>
               <p className="sm:text-lg text-md">
               Congratulations! You have been selected for the next stage of Zencon-2023 RIO. As part of this stage, we request that you provide us with a video that effectively conveys the key idea behind your project. This video will serve as a powerful tool to showcase your project's potential, communicate your vision, and capture the attention of stakeholders. We believe that a well-crafted video will help us understand your project better and make informed decisions about its future. So, put your creativity to work and create a video that will leave a lasting impression on us! </p>
@@ -52,7 +52,7 @@ export default function Schedule() {
 </svg>            </div>
             <div className="bg-[#581C87] p-4 pl-6 rounded flex flex-col gap-3 relative">
               <h4 className="">
-                <span className="bg-[#1B1934] p-1">Beginning of ZENCON</span>
+                <span className="bg-[#1B1934] p-1">ZENCON</span>
               </h4>
               <p className="sm:text-lg text-md">
               Participants will meet and form teams of two (2) to six (6) Participants to focus on a single project of developing a prototype (hereafter referred to as “Team/s”). A Participant cannot be a part of more than one Team. Teams will have until September 20th at 11 am to develop their prototype.

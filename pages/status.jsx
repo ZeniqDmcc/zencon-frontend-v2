@@ -7,7 +7,6 @@ function Status() {
         <div className="status bg-[#010020]">
             <Navbar />
             <div className="flex max-w-4xl mx-auto  pt-40 pb-24 justify-between h-4/6">
-                {/* <StatusCircle /> */}
                 <ContactDetails />
             </div>
         </div>
