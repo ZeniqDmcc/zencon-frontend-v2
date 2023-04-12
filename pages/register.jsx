@@ -1,24 +1,12 @@
 import Navbar from "../components/Navbar/Navbar"
 import RegistrationForm from "../components/Registration"
 import useFetchWithToken from '../hooks/useFetchWithToken';
-
 export default function Register() {
     const {data, error, loading,token } = useFetchWithToken("http://192.168.19.100:9003/api/v1/zencon/participant/status");
-
-    if (loading) {
-        // Show a loading spinner or skeleton screen while data is being fetched
-        return null;
-    }
-
-    if (error) {
-        // Handle the error state here, e.g. show an error message or redirect to a different page
-        return <div>Error: {error.message}</div>;
-    }
-
     return (
         <>
             <Navbar />
-            {data ? (
+            {data ?  (
                 <div className="pt-32 bg-white md:h-[700px] sm:w-10/12 mx-auto">
                     <h3 className='font-extrabold font-primary text-gray-900 text-center text-3xl mt-10 mb-16'>Hi  &#128075; {data.first_name} {data.last_name} you have already registered in &#128640; &#128293; RIO-2023 &#128293; &#128640;</h3>
                     <div className="container mx-auto pt-4">

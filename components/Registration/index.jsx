@@ -4,6 +4,8 @@ import codes from '../../utils/Constants/countriesCodes';
 import { useRouter } from 'next/router';
 import fireworks from "../../assets/fireworks.gif"
 import eighteenYearsOld from "../../utils/Helpers/eighteenYearsOld.js";
+import { zencon_event_api_url } from '../../utils/Constants/BackendURLs';
+import {REGISTER} from "./../../utils/Constants/uiPaths";
 const { day, year, month } = eighteenYearsOld()
 const lessThanDate = `${year}-${month}-${day}`;
 
@@ -50,7 +52,7 @@ function RegistrationForm({ ethAddr }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`http://192.168.19.100:9003/api/v1/zencon/register`, {
+        fetch(`${zencon_event_api_url}/${REGISTER}`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
@@ -256,7 +258,7 @@ function RegistrationForm({ ethAddr }) {
                                         setFormData({...formData,terms_and_conditions:""})
                                     }
                                 }} class="form-checkbox" />
-                                <label for="terms_and_conditions" className="ml-2">I agree with <a href="/terms" target="_blank"><span className='cursor-pointer underline text-blue-800'>Terms and Conditions.</span></a></label>
+                                <label for="terms_and_conditions" className="ml-2">I agree with <a href="/terms" target="_blank"><span className='cursor-pointer underline text-blue-800 text-yellow-500'>Terms and Conditions.</span></a></label>
                             </div>
 
                             {error ? <div className="block mt-4 w-5/12 w- border-2 border-red-500 px-3 rounded">

@@ -7,7 +7,7 @@ function StatusCircle() {
                 <div className={styles.box}>
                     <div className={styles.shadow}></div>
                     <div className={styles.content}>
-                        <div className={styles.percent} data-text="HTML" style={{'--num': 85}}>
+                        <div className={styles.percent} data-text="Shortlisted" style={{'--num': 85}}>
                             <div className={styles.dot}></div>
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>

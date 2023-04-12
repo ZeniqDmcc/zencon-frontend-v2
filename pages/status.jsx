@@ -1,6 +1,5 @@
 import ContactDetails from "../components/ContactDetails/ContactDetails";
 import Navbar from "../components/Navbar/Navbar";
-import StatusCircle from "../components/StatusCircle/StatusCircle";
 
 function Status() {
     return (
