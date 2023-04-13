@@ -15,7 +15,7 @@ function Ecosystem(props) {
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.shortDescription}</p>
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.detailDescription}</p>
                     <div className={styles.button__outer}>
-                      <Button className="" label='More Informations' href="#slideshow"/>
+                      <Button className="" label='More Informations' href="https://zeniq.com/ecosystem"/>
                     </div> 
                   </div>
 

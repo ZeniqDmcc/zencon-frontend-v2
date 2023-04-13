@@ -1,26 +1,23 @@
-import styles from "./ContactDetails.module.css"
-import Logo from "../logo/Logo"
 import Link from "next/link"
 import StatusCircle from "../StatusCircle/StatusCircle"
 
-function ContactDetails() {
+function ContactDetails({firstName,lastName,email,status}) {
+    console.log(status)
     return (
         <div className="flex w-full gap  h-[40vh]">
             <div className="bg-[#581C87] px-10 w-2/6 flex justify-center items-center">
-                <StatusCircle />
+                <StatusCircle status={status}/>
             </div>
             <div className="w-4/6 flex flex-col p-8 bg-[#1B1934] gap-5 justify-center">
                 <div className="">
-                    {/* <Logo /> */}
-                </div>
-                <div className="">
-                    <h1 className="text-white text-2xl">Ahmad Abdul Fateh</h1>
-                    <p>Senior Full Stack Developer</p>
+                    <h1 className="text-white text-2xl"> Hi  &#128075; {firstName} {lastName}</h1>
+                    <p>You successfully registered in  zencon-2023 RIO &#128640; &#128640; &#128640;</p>
+                    <p>For more information and details feel free to reach out to us via these contact details.</p>
                 </div>
                 <div className="text-white flex flex-col">
-                    <Link href="mailto:ahmad@zeniq.com">Email - Ahmad@zeniq.com</Link>
-                    <Link href="tel:+971525724917">Tel - +971 525 72 4917</Link>
-                    <Link href="www.zeniq.com">www.zeniq.com</Link>
+                    <Link href="mailto:hello@zencon.io"><> Email:  {email} </></Link>
+                    <Link href="www.zeniq.com">Site: www.zeniq.com</Link>
+                    <Link href="tel:+971525724917">Tel: +971 525 72 4917</Link>
                 </div>
                 <div className="flex gap-3">
                     <div className="border-2 p-2 rounded-full">

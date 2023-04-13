@@ -4,8 +4,8 @@ import codes from '../../utils/Constants/countriesCodes';
 import { useRouter } from 'next/router';
 import fireworks from "../../assets/fireworks.gif"
 import eighteenYearsOld from "../../utils/Helpers/eighteenYearsOld.js";
-import { zencon_event_api_url } from '../../utils/Constants/BackendURLs';
-import {REGISTER} from "./../../utils/Constants/uiPaths";
+import { zencon_event_api_url } from '../../utils/Constants/BackendURLs.js';
+import UI_PATHS from "./../../utils/Constants/uiPaths.js";
 const { day, year, month } = eighteenYearsOld()
 const lessThanDate = `${year}-${month}-${day}`;
 
@@ -52,7 +52,7 @@ function RegistrationForm({ ethAddr }) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`${zencon_event_api_url}/${REGISTER}`, {
+        fetch(`${zencon_event_api_url}/${UI_PATHS.REGISTER}`, {
             method: "POST",
             headers: {
                 Accept: "application/json",
