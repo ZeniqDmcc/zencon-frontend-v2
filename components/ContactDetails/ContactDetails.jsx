@@ -1,5 +1,3 @@
-import styles from "./ContactDetails.module.css"
-import Logo from "../logo/Logo"
 import Link from "next/link"
 import StatusCircle from "../StatusCircle/StatusCircle"
 
