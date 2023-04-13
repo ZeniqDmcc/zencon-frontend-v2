@@ -16,8 +16,7 @@ function ContactDetails({firstName,lastName,email,status}) {
                 </div>
                 <div className="text-white flex flex-col">
                     <Link href="mailto:hello@zencon.io"><> Email:  {email} </></Link>
-                    <Link href="www.zeniq.com">Site: www.zeniq.com</Link>
-                    <Link href="tel:+971525724917">Tel: +971 525 72 4917</Link>
+                    <Link href="https://launchpad.zencon.io/">Site: launchpad.zencon.io</Link>
                 </div>
                 <div className="flex gap-3">
                     <div className="border-2 p-2 rounded-full">
