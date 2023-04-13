@@ -10,6 +10,7 @@ import {
 } from "../public/assets/docs";
 import CallToAction from "../components/Buttons/CallToAction";
 import {GradientBorder} from "../components/GradientBorder/GradientBorder";
+import Navbar from "../components/Navbar/Navbar";
 
 const items = [
   {
@@ -43,6 +44,7 @@ const items = [
 export default function docs() {
   return (
     <>
+    <Navbar/>
       <NextSeo
         title="ZENCON Launchpad | Documents"
         description="List of the complete documentation for ZENIQ and ZENCON launchpad to developers, Investors and community."

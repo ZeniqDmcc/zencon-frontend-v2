@@ -11,6 +11,7 @@ import truecommit from "/public/assets/projects/Truecommit/logo.png"
 import avinoc from "../public/assets/projects/Avinoc/avinoc.jpg"
 import tupan from "../public/assets/projects/Tupan/tupan.png"
 import HeroBg from "../public/assets/projects_hero_bg.png"
+import Navbar from "../components/Navbar/Navbar";
 
 const items = [
     {
@@ -103,10 +104,12 @@ const items = [
 export default function PublicProjects() {
     return (
         <>
+        <Navbar/>
             <NextSeo
                 title="ZENCON Launchpad | Incoming next"
                 shortDescription="List of the complete documentation for ZENIQ and ZENCON launchpad to developers, Investors and community."
             />
+            
             <main className="page-wrapper min-h-screen overflow-hidden relative">
                 <div className="bg-gray-900 relative xl:isolate">
                     <div className="sm:w-10/12 w-full sm:px-0 px-4 mx-auto">

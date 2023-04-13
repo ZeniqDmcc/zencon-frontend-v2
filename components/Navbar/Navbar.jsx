@@ -8,7 +8,7 @@ import {GradientScroll} from "../GradientScroll/GradientScroll";
 import {useUserDataContext} from "../../context/UserDataContextProvider";
 import {developer, investor} from "../../public/assets/home";
 import zeniq from '../../public/assets/zeniq.png'
-import zencon_logo from "../../public/assets/zencon_logo.png";
+import zencon_logo from "../../assets/zenconLogo.svg";
 
 
 function Navbar() {
@@ -21,7 +21,7 @@ function Navbar() {
     return (
         <nav id="navbar" className="bg-[#1B1934FF] text-white font-extrabold font-primary fixed w-full z-10">
             <Container>
-                <div className="flex items-center justify-between h-12">
+                <div className="flex items-center justify-between h-12 my-4">
                     <div className="flex-shrink-0">
                         <div className=" cursor-pointer mt-2">
                             <Link href="/" scroll={false}>
@@ -30,7 +30,7 @@ function Navbar() {
                                         src={zencon_logo}
                                         alt="zencon"
                                         width={150}
-                                        height={26.9592}
+                                        height={100}
                                         priority={true}
                                     />
                                 </a>
