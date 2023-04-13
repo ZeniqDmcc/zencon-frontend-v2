@@ -1,4 +1,4 @@
-export const UI_PATHS= {
+export default {
     REGISTER:"register",
     PARTICIPANT_STATUS:"participant/status"
 }

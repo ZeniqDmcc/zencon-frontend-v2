@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {discord, telegram, twitter,} from "../../public/assets/socialicons";
 import SocialIcon from "../Icons/SocialIcon";
-import zencon_logo from "../../public/assets/zencon_logo.png";
+import zencon_logo from "../../assets/zenconLogo.svg";
 import {GradientScroll} from "../GradientScroll/GradientScroll";
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
             <GradientScroll/>
             <div className="w-9/12 mx-auto mt-20">
                 <div className="mx-auto my-4 text-center">
-                    <Image src={zencon_logo} alt="ledger" width={200} height={35.9456}/>
+                    <Image src={zencon_logo} alt="ledger" width={150} height={100}/>
                 </div>
                 <div className="flex flex-wrap justify-center gap-3">
                     <SocialIcon link="https://discord.gg/EzEMqcUF" image={discord}/>
