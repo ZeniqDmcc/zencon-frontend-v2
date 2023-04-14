@@ -8,6 +8,7 @@ import { zencon_event_api_url } from '../../utils/Constants/BackendURLs.js';
 import UI_PATHS from "./../../utils/Constants/uiPaths.js";
 const { day, year, month } = eighteenYearsOld()
 const lessThanDate = `${year}-${month}-${day}`;
+import { nanoid } from "nanoid"
 
 function RegistrationForm({ ethAddr }) {
 
@@ -129,7 +130,7 @@ function RegistrationForm({ ethAddr }) {
 
                                     {
                                         codes.map(({ name, emoji }) => {
-                                            return <option value={name}> {emoji}&nbsp;{name} </option>
+                                            return <option value={name} key={nanoid()}> {emoji}&nbsp;{name} </option>
                                         })
                                     }
                                 </select>
@@ -141,7 +142,7 @@ function RegistrationForm({ ethAddr }) {
                                     <option value="">-- Please Select --</option>
                                     {
                                         codes.map(({ name, emoji }) => {
-                                            return <option value={name}> {emoji}&nbsp;{name} </option>
+                                            return <option value={name} key={nanoid()}> {emoji}&nbsp;{name} </option>
                                         })
                                     }
                                 </select>
@@ -154,7 +155,7 @@ function RegistrationForm({ ethAddr }) {
                                         <option value="">-- Select --</option>
                                         {
                                             codes.map(({ dial_code, name, emoji }) => {
-                                                return <option value={dial_code}> {emoji}&nbsp;({dial_code}) </option>
+                                                return <option value={dial_code} key={nanoid()}> {emoji}&nbsp;({dial_code}) </option>
                                             })
                                         }
                                     </select>
@@ -250,15 +251,15 @@ function RegistrationForm({ ethAddr }) {
                                 <input type="radio" id="no" className={styles.event_attendancy} name="event_attendancy" value="no" onChange={handleInputChange} checked={formData.event_attendancy === 'no'} />
                             </div>
 
-                            <div class="block w-full mt-5">
-                                <input type="checkbox" className='mr-3' id="terms_and_conditions" name="terms_and_conditions" onClick={(event)=>{
+                            <div className="block w-full mt-5">
+                                <input type="checkbox" className='mr-3 form-checkbox' id="terms_and_conditions" name="terms_and_conditions" onClick={(event)=>{
                                     if (event.target.checked === true) {
                                         setFormData({...formData,terms_and_conditions:"yes"})
                                     }else{
                                         setFormData({...formData,terms_and_conditions:""})
                                     }
-                                }} class="form-checkbox" />
-                                <label htmlFor="terms_and_conditions" className="ml-2">I agree with * <a href="/terms" target="_blank"><span className='cursor-pointer underline text-blue-800 text-yellow-500'>Terms and Conditions</span></a></label>
+                                }} />
+                                <label htmlFor="terms_and_conditions" className="ml-2">I agree with * <a href="/terms" target="_blank"><span className='cursor-pointer underline text-yellow-500'>Terms and Conditions</span></a></label>
                             </div>
 
                             {error ? <div className="block mt-4 w-5/12 w- border-2 border-red-500 px-3 rounded">
