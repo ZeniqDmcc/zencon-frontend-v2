@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 640px) {
     .finance div {
-        gap: 60px;
+        gap: 80px;
     }
     .finance img {
         width: 100% !important;
