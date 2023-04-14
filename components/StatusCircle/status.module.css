@@ -42,9 +42,9 @@
     content: '';
     position: absolute;
     top: 0;
-    left: calc(100% + 5px);
+    /* left: calc(100% + 5px);
     width: 100%;
-    height: 200%;
+    height: 200%; */
     /* background: linear-gradient(rgba(0,0,0,0.075), transparent); */
     transform: skewX(45deg);
   }
@@ -52,10 +52,10 @@
   .box .shadow::after {
     content: '';
     position: absolute;
-    bottom: -200%;
+    /* bottom: -200%;
     left: calc(100% + 15px);
     width: 100%;
-    height: 200%;
+    height: 200%; */
     /* background: linear-gradient(rgba(0,0,0,0.075), transparent); */
     transform: skewX(45deg);
   }
