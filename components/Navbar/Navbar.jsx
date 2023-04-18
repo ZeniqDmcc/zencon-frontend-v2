@@ -17,9 +17,8 @@ function Navbar() {
 
     const {userWallet, userType} = useUserDataContext();
 
-
     return (
-        <nav id="navbar" className="bg-[#1B1934FF] text-white font-extrabold font-primary fixed w-full z-10">
+        <nav id="navbar" className="bg-[#030423] text-white font-extrabold font-primary fixed w-full z-10">
             <Container>
                 <div className="flex items-center justify-between h-12 my-4">
                     <div className="flex-shrink-0">
