@@ -1,6 +1,7 @@
 .form__container {
     max-width: 1050px;
 }
+
 .formInner {
     box-shadow: 2px 28px 11px 13px #F4F4F4;
     padding: 50px;
@@ -33,6 +34,7 @@
     outline: 2px solid #A1E285;
     background-color: #00223C;
 }
+
 .inputtextarea textarea {
     height: 230px;
     padding: 10px;
@@ -53,7 +55,7 @@
     color: #374151;
 }
 
-.inputselect  {
+.inputselect {
     width: 48%;
     padding-top: 20px;
 }
@@ -88,12 +90,29 @@
     padding-top: 20px;
 }
 
+
+.radio {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #A1E285;
+    outline: none;
+    margin-right: 10px;
+}
+
+.radio:checked {
+    background-color: #A1E285;
+    border-color: #A1E285;
+}
+
 .formInner select {
     height: 45px;
-    border-color: #E5E7EB;
+    border-color: #A1E285;
     width: 100%;
     padding: 5px 10px;
-    color: #9CA3C0;
+    color: #A1E285;
 }
 
 .inputButton {
@@ -122,9 +141,25 @@
 }
 
 .phnumber {
-    width: 20%;
+    width: 33%;
     border-radius: 0 0 0 0 !important;
 }
+
+.checkbox {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.checkbox:checked {
+    background-color: #A1E285 !important;
+  }
+  
 
 @media only screen and (max-width: 840px) {
     .half {

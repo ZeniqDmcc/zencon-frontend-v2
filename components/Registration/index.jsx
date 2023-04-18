@@ -212,51 +212,61 @@ function RegistrationForm({ ethAddr }) {
                                 <input type="text" name="teamMembers" placeholder='Enter your team members if you have a team' onChange={handleInputChange} value={formData.teamMembers} />
                             </div>
 
-                            <div className={styles.inputradio}>
+                            <div className={`${styles.inputradio} mt-5`}>
                                 <label className={`${styles.block} ${styles.rlabel}`} htmlFor="travel_availability">Are you available to travel to Rio de Janeiro during the event dates: ZENCON Rio 16-21 September 2023? *</label>
-                                <label htmlFor="travel_availabilityYes">Yes</label>
-                                <input className="radio" type="radio" name="travel_availability" id="travel_availabilityYes" value="yes" onChange={handleInputChange} checked={formData.travel_availability === "yes"} />
-                                <label className={styles.mrleft} htmlFor="travel_availabilityNo">No</label>
-                                <input className="radio" type="radio" name="travel_availability" id="travel_availabilityNo" value="no" onChange={handleInputChange} checked={formData.travel_availability === "no"} />
+                                <div className="flex items-center mt-3">
+                                    <label htmlFor="travel_availabilityYes">Yes</label>
+                                    <input className={styles.radio} type="radio" name="travel_availability" id="travel_availabilityYes" value="yes" onChange={handleInputChange} checked={formData.travel_availability === "yes"} />
+                                    <label className={styles.mrleft} htmlFor="travel_availabilityNo">No</label>
+                                    <input className={styles.radio} type="radio" name="travel_availability" id="travel_availabilityNo" value="no" onChange={handleInputChange} checked={formData.travel_availability === "no"} />
+                                </div>
                             </div>
 
                             <div className={styles.inputradio}>
                                 <label className={`${styles.block} ${styles.rlabel}`} htmlFor="has_a_team">Do you have a team? *</label>
-                                <label htmlFor="has_a_teamYes">Yes</label>
-                                <input className="radio" type="radio" name="has_a_team" id="has_a_teamYes" value="yes" onChange={handleInputChange} checked={formData.has_a_team === "yes"} />
-                                <label className={styles.mrleft} htmlFor="has_a_teamNo">No</label>
-                                <input className="radio" type="radio" name="has_a_team" id="has_a_teamNo" value="no" onChange={handleInputChange} checked={formData.has_a_team === "no"} />
+                                <div className="flex items-center mt-3">
+                                    <label htmlFor="has_a_teamYes">Yes</label>
+                                    <input className={styles.radio} type="radio" name="has_a_team" id="has_a_teamYes" value="yes" onChange={handleInputChange} checked={formData.has_a_team === "yes"} />
+                                    <label className={styles.mrleft} htmlFor="has_a_teamNo">No</label>
+                                    <input className={styles.radio} type="radio" name="has_a_team" id="has_a_teamNo" value="no" onChange={handleInputChange} checked={formData.has_a_team === "no"} />
+                                </div>
                             </div>
 
                             <div className={styles.inputradio}>
                                 <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="team_registration">If yes, are your team members registered to attend ZENCON Rio? *</label>
+                                <div className="flex items-center mt-3">
                                 <label htmlFor="team_registrationYes">Yes</label>
-                                <input type="radio" name="team_registration" id="team_registrationYes" value="yes" onChange={handleInputChange} checked={formData.team_registration === "yes"} />
+                                <input className={styles.radio} type="radio" name="team_registration" id="team_registrationYes" value="yes" onChange={handleInputChange} checked={formData.team_registration === "yes"} />
                                 <label className={styles.mrleft} htmlFor="team_registrationNo">No</label>
-                                <input className="radio" type="radio" name="team_registration" id="team_registrationNo" value="no" onChange={handleInputChange} checked={formData.team_registration === "no"} />
+                                <input className={styles.radio} type="radio" name="team_registration" id="team_registrationNo" value="no" onChange={handleInputChange} checked={formData.team_registration === "no"} />
+                                </div>
                                 <div className={styles.inputradio}>
                                     <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="twin_room_option">If yes, is it an option to share a room (twin)? *</label>
-                                    <label htmlFor="twin_room_optionYes">Yes</label>
-                                    <input className="radio" type="radio" id="twin_room_optionYes" name="twin_room_option" value="yes" onChange={handleInputChange} checked={formData.twin_room_option === "yes"} />
-                                    <label htmlFor="twin_room_optionNo" className={styles.mrleft}>No</label>
-                                    <input className="radio" type="radio" id="twin_room_optionNo" name="twin_room_option" value="no" onChange={handleInputChange} checked={formData.twin_room_option === "no"} />
+                                    <div className="flex items-center mt-3">
+                                        <label htmlFor="twin_room_optionYes">Yes</label>
+                                        <input className={styles.radio} type="radio" id="twin_room_optionYes" name="twin_room_option" value="yes" onChange={handleInputChange} checked={formData.twin_room_option === "yes"} />
+                                        <label htmlFor="twin_room_optionNo" className={styles.mrleft}>No</label>
+                                        <input className={styles.radio} type="radio" id="twin_room_optionNo" name="twin_room_option" value="no" onChange={handleInputChange} checked={formData.twin_room_option === "no"} />
+                                    </div>
                                 </div>
                             </div>
 
                             <div className={styles.inputradio}>
                                 <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="event_attendancy">Are you attending Blockchain Rio 2023? *</label>
-                                <label htmlFor="event_attendancyYes">Yes</label>
-                                <input type="radio" id="yes" className={styles.event_attendancy} name="event_attendancy" value="yes" onChange={handleInputChange} checked={formData.event_attendancy === 'yes'} />
-                                <label className={styles.mrleft} htmlFor="event_attendancyNo">No</label>
-                                <input type="radio" id="no" className={styles.event_attendancy} name="event_attendancy" value="no" onChange={handleInputChange} checked={formData.event_attendancy === 'no'} />
+                                <div className="flex items-center mt-3">
+                                    <label htmlFor="event_attendancyYes">Yes</label>
+                                    <input type="radio" id="yes" className={`${styles.event_attendancy} ${styles.radio}`} name="event_attendancy" value="yes" onChange={handleInputChange} checked={formData.event_attendancy === 'yes'} />
+                                    <label className={styles.mrleft} htmlFor="event_attendancyNo">No</label>
+                                    <input type="radio" id="no" className={`${styles.event_attendancy} ${styles.radio}`} name="event_attendancy" value="no" onChange={handleInputChange} checked={formData.event_attendancy === 'no'} />
+                                </div>
                             </div>
 
                             <div className="block w-full mt-5">
-                                <input type="checkbox" className='mr-3 form-checkbox' id="terms_and_conditions" name="terms_and_conditions" onClick={(event)=>{
+                                <input type="checkbox" className={`mr-3 ${styles.checkbox}`} id="terms_and_conditions" name="terms_and_conditions" onClick={(event) => {
                                     if (event.target.checked === true) {
-                                        setFormData({...formData,terms_and_conditions:"yes"})
-                                    }else{
-                                        setFormData({...formData,terms_and_conditions:""})
+                                        setFormData({ ...formData, terms_and_conditions: "yes" })
+                                    } else {
+                                        setFormData({ ...formData, terms_and_conditions: "" })
                                     }
                                 }} />
                                 <label htmlFor="terms_and_conditions" className="ml-2">I agree with * <a href="/terms" target="_blank"><span className='cursor-pointer underline text-[#A1E285]'>Terms and Conditions</span></a></label>
@@ -266,7 +276,7 @@ function RegistrationForm({ ethAddr }) {
                                 <p className='text-red-600 p-2'>⚠️ {error}</p>
                             </div> : null}
 
-                            <div className="block w-full">
+                            <div className="block w-full mt-3">
                                 <button className={styles.inputButton} type='submit'>Submit</button>
                             </div>
                         </form>
@@ -275,7 +285,6 @@ function RegistrationForm({ ethAddr }) {
             </div>
         </div>
     )
-
 }
 
 export default RegistrationForm
