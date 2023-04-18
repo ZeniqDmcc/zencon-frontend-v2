@@ -31,6 +31,7 @@
 
 .half input:focus {
     outline: 2px solid #A1E285;
+    background-color: #00223C;
 }
 .inputtextarea textarea {
     height: 230px;
