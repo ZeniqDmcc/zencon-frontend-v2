@@ -41,7 +41,7 @@ function Navbar() {
                             <a
                                 className={`${
                                     router.pathname === "/" && "route-active"
-                                } px-3 py-2 text-sm font-medium hover:text-[#F4A12FFF] smol:hidden`}
+                                } px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
                             >
                                 Home
                             </a>
@@ -50,7 +50,7 @@ function Navbar() {
                             <a
                                 className={`${
                                     router.pathname === "/public-projects" && "route-active"
-                                } px-3 py-2 text-sm font-medium hover:text-[#F4A12FFF] smol:hidden`}
+                                } px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
                             >
                                 Projects
                             </a>
@@ -59,7 +59,7 @@ function Navbar() {
                             <a
                                 className={`${
                                     router.pathname === "/documents" && "route-active"
-                                } px-3 py-2 text-sm font-medium hover:text-[#F4A12FFF] smol:hidden`}
+                                } px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
                             >
                                 Documentation
                             </a>

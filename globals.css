@@ -32,7 +32,7 @@ body {
     @apply border-[1px] border-red-500;
   }
   .route-active {
-    @apply transition-all border-b-[4px] border-[#F4A12FFF] text-[#F4A12FFF];
+    @apply transition-all border-b-[4px] border-[#A1E285] text-[#A1E285];
   }
   .route-active-button {
     @apply transition-all bg-[#f4a12f];
