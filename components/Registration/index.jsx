@@ -83,10 +83,10 @@ function RegistrationForm({ ethAddr }) {
     return (
         <div className='bg-[#010020] text-white'>
             <div className="pt-20 pb-20 sm:w-10/12 mx-auto">
-                <h3 className='font-normal font-primary text-center lg:text-4xl text-2xl sm:mt-20 lg:px-20 sm:px-10 px-16'>Enter your information here to register in (RIO-2023)</h3>
+                <h3 className='font-normal font-primary text-center lg:text-2xl text-xl sm:mt-20 lg:px-20 px-16 sm:p-0 pt-14 pb-4'>Enter your information here to register in (RIO-2023)</h3>
                 {success ? <div className='lg:text-3xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16 text-green-700 text-center' style={{ backgroundImage: `url(${fireworks})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     Thanks! {formData.first_name} {formData.last_name} 	&#128079; you have registered successfully!</div> : null}
-                <div className="container mx-auto">
+                <div className={`${styles.form__container} mx-auto`}>
                     <div className="shadow-md pt-0 py-50 p-10">
                         <form onSubmit={handleSubmit} className="flex flex-wrap justify-between">
                             <div className={styles.half}>
@@ -259,7 +259,7 @@ function RegistrationForm({ ethAddr }) {
                                         setFormData({...formData,terms_and_conditions:""})
                                     }
                                 }} />
-                                <label htmlFor="terms_and_conditions" className="ml-2">I agree with * <a href="/terms" target="_blank"><span className='cursor-pointer underline text-yellow-500'>Terms and Conditions</span></a></label>
+                                <label htmlFor="terms_and_conditions" className="ml-2">I agree with * <a href="/terms" target="_blank"><span className='cursor-pointer underline text-[#A1E285]'>Terms and Conditions</span></a></label>
                             </div>
 
                             {error ? <div className="block mt-4 w-5/12 w- border-2 border-red-500 px-3 rounded">
