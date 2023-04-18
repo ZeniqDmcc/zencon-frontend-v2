@@ -87,16 +87,13 @@
 }
 
 .inputButton {
-    background-color: #581C87;
-    padding: 6px 20px;
-    border-radius: 4px;
+    background-color: #00223C;
+    padding: 10px 56px;
+    border-radius: 6px;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 30px;
+    border: 2px solid #A1E285;
 }
-/* 
-input:focus {
-    border-color: navajowhite;
-} */
 
 .rlabel {
     font-size: 18px;
