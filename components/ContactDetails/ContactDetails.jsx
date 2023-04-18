@@ -4,11 +4,11 @@ import StatusCircle from "../StatusCircle/StatusCircle"
 function ContactDetails({firstName,lastName,email,status}) {
     console.log(status)
     return (
-        <div className="flex w-full gap  h-[40vh]">
-            <div className="bg-[#581C87] px-10 w-2/6 flex justify-center items-center">
+        <div className="flex w-full gap  h-[40vh] bg-opacity-25 shadow-boxblur rounded-2xl border-[3px] border-opacity-18 border-[#A1E285]">
+            <div className="px-10 w-2/6 flex justify-center items-center border-r-[3px] border-[#3D404F] ">
                 <StatusCircle status={status}/>
             </div>
-            <div className="w-4/6 flex flex-col p-8 bg-[#1B1934] gap-5 justify-center">
+            <div className="w-4/6 flex flex-col p-8 gap-5 justify-center">
                 <div className="">
                     <h1 className="text-white text-2xl"> Hi  &#128075; {firstName} {lastName}</h1>
                     <p>You successfully registered in  zencon-2023 RIO &#128640; &#128640; &#128640;</p>

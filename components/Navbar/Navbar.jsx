@@ -23,7 +23,7 @@ function Navbar() {
             <Container>
                 <div className="flex items-center justify-between h-12 my-4">
                     <div className="flex-shrink-0">
-                        <div className=" cursor-pointer mt-2">
+                        <div className=" cursor-pointer mt-2">  
                             <Link href="/" scroll={false}>
                                 <a>
                                     <Image
