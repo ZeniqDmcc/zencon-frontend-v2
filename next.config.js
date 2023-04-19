@@ -10,12 +10,12 @@ module.exports = withBundleAnalyzer({
     // your project has ESLint errors.
     ignoreDuringBuilds: false,
   },
-  images: {
-    // domains: ['i3.ytimg.com', 'img.youtube.com'],
-    // formats: ['image/webp'],
-    loader: "akamai",
-    path: '/_next/image',    // unoptimized: true
-  },
+  // images: {
+  //   // domains: ['i3.ytimg.com', 'img.youtube.com'],
+  //   // formats: ['image/webp'],
+  //   loader: "akamai",
+  //   path: '/_next/image',    // unoptimized: true
+  // },
   async rewrites() {
     return [
       {
