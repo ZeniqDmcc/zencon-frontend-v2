@@ -14,7 +14,7 @@ module.exports = withBundleAnalyzer({
     // domains: ['i3.ytimg.com', 'img.youtube.com'],
     // formats: ['image/webp'],
     loader: "akamai",
-    path: "",
+    path: [],
     // unoptimized: true
   },
   async rewrites() {
