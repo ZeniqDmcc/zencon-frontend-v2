@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "build-export": "next build && next export",
-    "start": "PORT=8080 next start",
+    "start": "next start",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build"
   },
