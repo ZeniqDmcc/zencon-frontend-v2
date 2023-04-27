@@ -16,6 +16,9 @@ module.exports = withBundleAnalyzer({
   //   loader: "akamai",
   //   path: '/_next/image',    // unoptimized: true
   // },
+  images: {
+    unoptimized: true,
+  },
   async rewrites() {
     return [
       {

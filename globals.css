@@ -76,7 +76,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-image: url("./assets/rio2023bg.jpg");
+  background-image: url("/assets/rio2023bg.jpg");
   background-color: #010020;
   isolation: isolate;
   background-position: center -6% !important;
