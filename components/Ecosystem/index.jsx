@@ -15,7 +15,7 @@ function Ecosystem(props) {
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.shortDescription}</p>
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.detailDescription}</p>
                     <div className={styles.button__outer}>
-                      <Button className="" label='More Informations' href="https://zeniq.com/ecosystem"/>
+                      <Button className="" label='More Information' href="https://zeniq.com/ecosystem"/>
                     </div> 
                   </div>
 
@@ -32,7 +32,7 @@ function Ecosystem(props) {
 export default Ecosystem
 
 Ecosystem.defaultProps = {
-    title: "Discover the Power of Decentralized Finance",
+    title: "Join the Zeniq Ecosystem and Existing projects",
     shortDescription: "Say goodbye to traditional banking and hello to a new era of decentralized finance. Zencon Rio 2023 is your chance to explore the potential of blockchain and create tools that allow anyone with internet access to lend, borrow, and bank without the need for middlemen.",
     detailDescription: "With challenges ranging from building yield protocols to developing trading bots and DAO makers, the possibilities are endless. Whether you're an experienced developer or just starting out, the hackathon is the perfect opportunity to learn new skills and push the boundaries of what's possible with decentralized finance.",
     icon: graph3 

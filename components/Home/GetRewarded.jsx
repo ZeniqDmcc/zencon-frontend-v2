@@ -15,7 +15,7 @@ export default function GetRewarded() {
 
           <p className="text-gray-300 text-justify sm:text-[20px] text-[18px] font-secondary leading-[30px]">
             The ZENCON{"'"}s Launchpad integrates developers, investors and the
-            ZENIQ{"'"}s community in one single place. If you wanna get insights
+            ZENIQ{"'"}s community in one single place. If you want to get insights
             about everything that is happening on the ZENIQ Smartchain, get
             precious information on the best projects to invest, as well as to
             know the latest news about upcoming solutions, this is the right

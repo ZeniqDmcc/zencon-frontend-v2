@@ -9,11 +9,10 @@ import SlideShow from "../components/SlideShow";
 import Development from "../components/Development";
 import ytVideos from '../assets/videos.json'
 
-
 export default function Launchpad() {
 
     return (
-        <div className="home__outer">
+        <div className="home__outer bg-image">
             <NextSeo
                 title="ZENCON Launchpad | A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."
                 description="A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."

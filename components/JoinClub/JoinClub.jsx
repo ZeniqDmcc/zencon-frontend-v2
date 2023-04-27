@@ -66,13 +66,13 @@ export default function JoinClub() {
                 Join our Community Channels
               </h1>
               <p className="text-[20px] text-justify text-gray-400 mb-8 md:text-[18px] mt-6 font-secondary">
-                If you wanna be fully integrated with ZENIQ{"'"}s community, check
+                If you want be fully integrated with ZENIQ{"'"}s community, check
                 out all our communication channels to be up to date to the
                 latest news and events of ZENIQ.
               </p>
               <div className="cursor-pointer text-white font-semibold text-[20px] mb-8 md:text-[18px]">
                 <span className="cursor-pointer" onClick={handleClick}>
-                  join our channels <i className="fa-solid fa-arrow-right"/>
+                  Join our channels <i className="fa-solid fa-arrow-right"/>
                 </span>
               </div>
             </div>

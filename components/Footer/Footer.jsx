@@ -19,7 +19,7 @@ export default function Footer() {
                     <SocialIcon link="https://t.me/zeniq_hub" image={telegram}/>
                 </div>
                 <div className="sm:flex sm:items-center sm:justify-center sm:gap-14 py-8">
-                    <Link href="https://linktr.ee/ZENIQ">
+                    <Link href="/authentication">
                         <a className="sm:inline block hover:text-gray-500 text-center sm:my-0 my-4">
                             Join us
                         </a>

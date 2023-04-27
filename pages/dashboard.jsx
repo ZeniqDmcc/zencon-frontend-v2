@@ -33,7 +33,7 @@ export default function Dashboard() {
                         </h1>
                         <div className="flex items-center justify-center p-8">
                             <CallToAction
-                                text="Participate Rio 2023"
+                                text="Participate"
                                 classes="w-full mr-8"
                                 link="/register"
                             />

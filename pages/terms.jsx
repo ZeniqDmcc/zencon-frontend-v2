@@ -30,7 +30,7 @@ export default function Terms() {
             </ul>
 
             <h2 className="text-2xl py-5">Log Files</h2>
-            <p>ZENCON follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&#39; analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users&#39; movement on the website, and gathering demographic information.</p>
+            <p>ZENCON follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services&#39; analytics. The information collected by log files include Internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users&#39; movement on the website, and gathering demographic information.</p>
 
             <h2 className="text-2xl py-5">Advertising Partners Privacy Policies</h2>
             <p>You may consult this list to find the Privacy Policy for each of the advertising partners of ZENCON.</p>
@@ -60,7 +60,7 @@ export default function Terms() {
 
             <h2 className="text-2xl py-5">Children&#39;s Information</h2>
 
-            <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+            <p>Another part of our priority is adding protection for children while using the Internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
             <p>ZENCON does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
         </div>
     </div>

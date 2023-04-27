@@ -40,5 +40,13 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.bg-image': {
+          'background-image': "url('/assets/rio2023bg_02.jpg')",
+        }
+      })
+    }
+  ],
 };
