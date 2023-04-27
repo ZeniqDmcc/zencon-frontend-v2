@@ -27,7 +27,9 @@ export default Nft
 
 Nft.defaultProps = {
       title: "Unlock the potential of NFTs and Web 3.0",
-      shortDescription: "Say goodbye to traditional banking and hello to a new era of decentralized finance. ZENCON Rio 2023 is your chance to explore the potential of blockchain and create tools that allow anyone with internet access to lend, borrow, and bank without the need for middlemen.",
-      detailDescription: "With challenges ranging from building yield protocols to developing trading bots and DAO makers, the possibilities are endless. Whether you're an experienced developer or just starting out, the hackathon is the perfect opportunity to learn new skills and push the boundaries of what's possible with decentralized finance.",
+      shortDescription: "Are you ready to take NFTs and web 3.0 to the next level? Zencon Rio 2023 is your chance to showcase your skills and create tools that go beyond owning pictures.",
+      detailDescription: `With challenges that include developing NFT-based games and creating marketplaces for art, the possibilities are endless.
+      Whether you're a seasoned developer or just starting out, the hackathon is the perfect opportunity to explore the potential of NFTs and web 3.0. With a global community of like-minded individuals, you'll have the support you need to take your ideas to the next level.`,
       image: graph2
 }
+ 

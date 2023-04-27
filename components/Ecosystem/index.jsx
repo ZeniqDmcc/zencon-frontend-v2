@@ -33,7 +33,7 @@ export default Ecosystem
 
 Ecosystem.defaultProps = {
     title: "Join the Zeniq Ecosystem and Existing projects",
-    shortDescription: "Say goodbye to traditional banking and hello to a new era of decentralized finance. Zencon Rio 2023 is your chance to explore the potential of blockchain and create tools that allow anyone with internet access to lend, borrow, and bank without the need for middlemen.",
-    detailDescription: "With challenges ranging from building yield protocols to developing trading bots and DAO makers, the possibilities are endless. Whether you're an experienced developer or just starting out, the hackathon is the perfect opportunity to learn new skills and push the boundaries of what's possible with decentralized finance.",
+    shortDescription: "Are you interested in joining the Zeniq ecosystem and contributing to existing projects? Zencon Rio 2023 is the perfect opportunity to collaborate with other developers and make a difference in the world of blockchain.",
+    detailDescription: "With existing projects like Tupan, Regardless, Avinoc, and SIDI, there's no shortage of opportunities to get involved and make a difference. Whether you're interested in contributing to existing projects or developing your own, the hackathon is the perfect opportunity to showcase your skills and make your mark on the world of blockchain.",
     icon: graph3 
 }
