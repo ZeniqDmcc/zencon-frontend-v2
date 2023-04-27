@@ -13,33 +13,6 @@ import ethers from "../../public/assets/framework/ethersjs.png";
 import ganache from "../../public/assets/framework/ganache.png";
 import {GradientBorder} from "../GradientBorder/GradientBorder";
 
-// const items = [
-//     {
-//         id: 1,
-//         title: "I'm a Developer",
-//         description:
-//             "Get started with the Documentation of our Smartchain. Check out our official Github repository for project templates, smart contracts and more!",
-//         imgPath: developer,
-//         link: "https://leonardo-avelar.gitbook.io/zeniq-smart-chain-documentation/",
-//     },
-//     {
-//         id: 2,
-//         title: "I'm an Investor",
-//         description:
-//             "Understand the TIER evaluation system to get insights about the potential and maturity of each individual project. Check out our ZENCON Academy Documentation to learn more!",
-//         imgPath: investor,
-//         link: "/documents",
-//     },
-//     {
-//         id: 3,
-//         title: "I'm a ZENIQ User",
-//         description:
-//             "Be an active ZENIQ community member by interacting with the projects running on our Smartchain, either rating them or contacting the development team for feedback or more information!",
-//         imgPath: user,
-//         link: "https://zeniq.com/whitepaper/",
-//     },
-// ];
-
 export default function Framework() {
     return (
         <section className="bg-gray-900 text-white pt-16 pb-8">

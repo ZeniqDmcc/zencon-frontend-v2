@@ -5,20 +5,6 @@ import { useRouter } from "next/router";
 import zenconlogo from "../../public/assets/zenconlogo.png";
 import {Waves} from "../Waves/Waves";
 
-// const Input = ({ type, placeholder = "", classes, onChange, name }) => {
-//   return (
-//     <div className="flex flex-col gap-2 text-sm">
-//       <input
-//         required={true}
-//         type={type}
-//         placeholder={placeholder}
-//         onChange={onChange}
-//         name={name}
-//         className={`normal_input w-full placeholder-[#B8C4CE] border-[#CED6DE] ${classes}`}
-//       />
-//     </div>
-//   );
-// };
 
 export default function JoinClub() {
   const location = useRouter();

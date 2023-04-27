@@ -25,7 +25,7 @@ function Banner(props) {
 
 Banner.defaultProps = {
     title: "Join the Global Hackathon to Shape the Future of Finanace",
-    description: "Are you ready to take on the challenge and compete against some if the world's most innovative developers? Zencon Rio 2023 is the perfect opportunity to showcase your skills and make a name for yourself in the world of blockchain and finance. With a prize pool of $100,000 USD up for grabs, the competition is fierce and the shakes are high."
+    description: "Are you ready to take on the challenge and compete against some if the world's most innovative developers? ZENCON Rio 2023 is the perfect opportunity to showcase your skills and make a name for yourself in the world of blockchain and finance. With a prize pool of $100,000 USD up for grabs, the competition is fierce and the shakes are high."
 }
 
 export default Banner
