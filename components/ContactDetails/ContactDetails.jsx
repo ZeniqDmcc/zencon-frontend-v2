@@ -11,7 +11,7 @@ function ContactDetails({firstName,lastName,email,status}) {
             <div className="w-4/6 flex flex-col p-8 gap-5 justify-center">
                 <div className="">
                     <h1 className="text-white text-2xl"> Hi  &#128075; {firstName} {lastName}</h1>
-                    <p>You successfully registered in  ZENCON-2023 RIO &#128640; &#128640; &#128640;</p>
+                    <p>You successfully registered in  ZENCON-2023 Rio de Janeiro &#128640; &#128640; &#128640;</p>
                     <p>For more information and details feel free to reach out to us via these contact details.</p>
                 </div>
                 <div className="text-white flex flex-col">

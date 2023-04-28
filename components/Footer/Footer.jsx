@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             <div>
                 <p className="text-center pb-10">
-                    © Zeniq DMCC {new Date().getFullYear()}
+                    © ZENIQ DMCC {new Date().getFullYear()}
                 </p>
             </div>
         </footer>

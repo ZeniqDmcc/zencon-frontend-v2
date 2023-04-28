@@ -38,7 +38,7 @@ export default function Schedule() {
                 <span className="bg-[#1B1934] lg:text-xl p-1">Selection</span>
               </h4>
               <p className="sm:text-lg text-md">
-              Congratulations! You have been selected for the next stage of ZENCON 2023 RIO. As part of this stage, we request that you provide us with a video that effectively conveys the key idea behind your project. This video will serve as a powerful tool to showcase your project&#39;s potential, communicate your vision, and capture the attention of stakeholders. We believe that a well-crafted video will help us understand your project better and make informed decisions about its future. So, put your creativity to work and create a video that will leave a lasting impression on us! </p>
+              Congratulations! You have been selected for the next stage of ZENCON 2023 Rio de Janeiro. As part of this stage, we request that you provide us with a video that effectively conveys the key idea behind your project. This video will serve as a powerful tool to showcase your project&#39;s potential, communicate your vision, and capture the attention of stakeholders. We believe that a well-crafted video will help us understand your project better and make informed decisions about its future. So, put your creativity to work and create a video that will leave a lasting impression on us! </p>
               <p className="text-sm italic">Selection: Latest by July 27!</p>
               <div className="absolute top-5 left-[-10px] before:w-5 before:h-5 before:absolute before:left-0 before:top-0 before:content-[''] before:transform before:rotate-45 before:bg-[#A1E285]"></div>
             </div>

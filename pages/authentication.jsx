@@ -92,8 +92,8 @@ const AuthenticationForm = () => {
             <Navbar/>
             <section className="py-14 pb-20 bg-gray-900 bg-no-repeat bg-cover text-white h-[1050px]">
                 <Container>
-                    <h1 className="mt-14 mb-8 text-center text-7xl font-extrabold font-primary">
-                        Authentication
+                    <h1 className="mt-14 py-8 mb-8 text-center text-5xl font-extrabold font-primary">
+                        Register / Login
                     </h1>
                     {!isAuthed && <div className="flex flex-col flex-wrap justify-center">
                         <div className="m-12" onClick={() => {
@@ -125,14 +125,14 @@ const AuthenticationForm = () => {
                         {qrLink && <AppQrCode
                             disabled={!iAmDeveloper}
                             title="Login as Developer"
-                            description="Scan this code with the Nomo Zeniq app!"
+                            description="Scan this code with the Nomo ZENIQ app!"
                             uri={qrLink}
                         />}
 
                         {qrLink && <AppQrCode
                             disabled={!iAmInvestor}
                             title="Login as Investor"
-                            description="Scan this code with the Nomo Zeniq app!"
+                            description="Scan this code with the Nomo ZENIQ app!"
                             uri={qrLink}
                         />}
 

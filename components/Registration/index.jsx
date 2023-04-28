@@ -83,7 +83,7 @@ function RegistrationForm({ ethAddr }) {
     return (
         <div className='bg-[#010020] text-white'>
             <div className="pt-20 pb-20 sm:w-10/12 mx-auto">
-                <h3 className='font-normal font-primary text-center lg:text-2xl text-xl sm:mt-20 lg:px-20 px-16 sm:p-0 pt-14 pb-4'>Enter your information here to register in (RIO-2023)</h3>
+                <h3 className='font-normal font-primary text-center lg:text-2xl text-xl sm:mt-20 lg:px-20 px-16 sm:p-0 pt-14 pb-4'>Enter your information here to register in (ZENCON Rio de Janeiro-2023)</h3>
                 {success ? <div className='lg:text-3xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16 text-green-700 text-center' style={{ backgroundImage: `url(${fireworks})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     Thanks! {formData.first_name} {formData.last_name} 	&#128079; you have registered successfully!</div> : null}
                 <div className={`${styles.form__container} mx-auto`}>
@@ -213,7 +213,7 @@ function RegistrationForm({ ethAddr }) {
                             </div>
 
                             <div className={`${styles.inputradio} mt-5`}>
-                                <label className={`${styles.block} ${styles.rlabel}`} htmlFor="travel_availability">Are you available to travel to Rio de Janeiro during the event dates: ZENCON Rio 16-21 September 2023? *</label>
+                                <label className={`${styles.block} ${styles.rlabel}`} htmlFor="travel_availability">Are you available to travel to Rio de Janeiro during the event dates: ZENCON Rio de Janeiro 16-21 September 2023? *</label>
                                 <div className="flex items-center mt-3">
                                     <label htmlFor="travel_availabilityYes">Yes</label>
                                     <input className={styles.radio} type="radio" name="travel_availability" id="travel_availabilityYes" value="yes" onChange={handleInputChange} checked={formData.travel_availability === "yes"} />
@@ -233,7 +233,7 @@ function RegistrationForm({ ethAddr }) {
                             </div>
 
                             <div className={styles.inputradio}>
-                                <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="team_registration">If yes, are your team members registered to attend ZENCON Rio? *</label>
+                                <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="team_registration">If yes, are your team members registered to attend ZENCON Rio de Janeiro? *</label>
                                 <div className="flex items-center mt-3">
                                 <label htmlFor="team_registrationYes">Yes</label>
                                 <input className={styles.radio} type="radio" name="team_registration" id="team_registrationYes" value="yes" onChange={handleInputChange} checked={formData.team_registration === "yes"} />
@@ -252,7 +252,7 @@ function RegistrationForm({ ethAddr }) {
                             </div>
 
                             <div className={styles.inputradio}>
-                                <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="event_attendancy">Are you attending Blockchain Rio 2023? *</label>
+                                <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="event_attendancy">Are you attending Blockchain Rio de Janeiro 2023? *</label>
                                 <div className="flex items-center mt-3">
                                     <label htmlFor="event_attendancyYes">Yes</label>
                                     <input type="radio" id="yes" className={`${styles.event_attendancy} ${styles.radio}`} name="event_attendancy" value="yes" onChange={handleInputChange} checked={formData.event_attendancy === 'yes'} />

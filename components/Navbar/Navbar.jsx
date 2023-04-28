@@ -22,7 +22,7 @@ function Navbar() {
             <Container>
                 <div className="flex items-center justify-between h-12 my-4">
                     <div className="flex-shrink-0">
-                        <div className=" cursor-pointer mt-2">  
+                        <div className="flex cursor-pointer mt-2">  
                             <Link href="/" scroll={false}>
                                 <a>
                                     <Image
@@ -34,9 +34,11 @@ function Navbar() {
                                     />
                                 </a>
                             </Link>
+                            <h1 className="mx-auto my-auto px-2 lg:text-2xl md:text-xl sm:text-xl text-center tracking-tighter text-green-400 z-10">September 16</h1>
                         </div>
                     </div>
                     <div className="right">
+                        
                         <Link href="/" scroll={false}>
                             <a
                                 className={`${

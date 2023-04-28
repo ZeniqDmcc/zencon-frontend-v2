@@ -32,8 +32,8 @@ function Ecosystem(props) {
 export default Ecosystem
 
 Ecosystem.defaultProps = {
-    title: "Join the Zeniq Ecosystem and Existing projects",
-    shortDescription: "Are you interested in joining the Zeniq ecosystem and contributing to existing projects? Zencon Rio 2023 is the perfect opportunity to collaborate with other developers and make a difference in the world of blockchain.",
+    title: "Join the ZENIQ Ecosystem and Existing projects",
+    shortDescription: "Are you interested in joining the ZENIQ ecosystem and contributing to existing projects? ZENCON Rio de Janeiro 2023 is the perfect opportunity to collaborate with other developers and make a difference in the world of blockchain.",
     detailDescription: "With existing projects like Tupan, Regardless, Avinoc, and SIDI, there's no shortage of opportunities to get involved and make a difference. Whether you're interested in contributing to existing projects or developing your own, the hackathon is the perfect opportunity to showcase your skills and make your mark on the world of blockchain.",
     icon: graph3 
 }

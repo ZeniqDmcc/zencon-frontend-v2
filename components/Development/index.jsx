@@ -31,7 +31,7 @@ export default Development
 
 Development.defaultProps = {
     title: " Take Your Development Skills to the Next Level",
-    shortDescription: "Are you ready to take your development skills to the next level? Zencon Rio 2023 is the perfect opportunity to learn new skills, collaborate with other developers, and showcase your work on a global stage.",
-    detailDescription: "With challenges that range from building advanced projects to migrating and integrating with the Zeniq smartchain, the hackathon is the perfect opportunity to push the boundaries of what's possible with blockchain. Whether you're an experienced developer or just starting out, there's something for everyone at Zencon Rio 2023.",
+    shortDescription: "Are you ready to take your development skills to the next level? ZENCON Rio de Janeiro 2023 is the perfect opportunity to learn new skills, collaborate with other developers, and showcase your work on a global stage.",
+    detailDescription: "With challenges that range from building advanced projects to migrating and integrating with the ZENIQ smartchain, the hackathon is the perfect opportunity to push the boundaries of what's possible with blockchain. Whether you're an experienced developer or just starting out, there's something for everyone at ZENCON Rio de Janeiro 2023.",
     image: graph4cr
 }
