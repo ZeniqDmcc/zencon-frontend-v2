@@ -71,9 +71,9 @@ export default function JoinClub() {
                 latest news and events of ZENIQ.
               </p>
               <div className="cursor-pointer text-white font-semibold text-[20px] mb-8 md:text-[18px]">
-                <span className="cursor-pointer" onClick={handleClick}>
+                {/* <span className="cursor-pointer" onClick={handleClick}>
                   Join our channels <i className="fa-solid fa-arrow-right"/>
-                </span>
+                </span> */}
               </div>
             </div>
           </div>

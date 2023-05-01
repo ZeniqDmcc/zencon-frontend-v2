@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from "./register.module.css"
 import codes from '../../utils/Constants/countriesCodes';
 import { useRouter } from 'next/router';
@@ -14,6 +14,7 @@ function RegistrationForm({ ethAddr }) {
 
     const router = useRouter()
     const [success, setSuccess] = useState(null);
+    const [hint, setHint] = useState(null);
     const [error, setError] = useState(null);
     const [formData, setFormData] = useState({
         first_name: '',
@@ -42,13 +43,21 @@ function RegistrationForm({ ethAddr }) {
         event_attendancy: '',
         terms_and_conditions: ''
     });
-
+    useEffect(()=>{
+        if(formData.travel_availability==='no'){
+            setHint('*Please note that ZENCON is not a hybrid event and, if you are selected, attendance in person is mandatory.')
+        }
+        if(formData.travel_availability==='yes'){
+            setHint('*Please make   sure you have all required travel documents')
+        }
+    },[formData])
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevData) => ({
             ...prevData,
             [name]: value,
         }));
+        
     };
 
     const handleSubmit = (event) => {
@@ -221,7 +230,9 @@ function RegistrationForm({ ethAddr }) {
                                     <input className={styles.radio} type="radio" name="travel_availability" id="travel_availabilityNo" value="no" onChange={handleInputChange} checked={formData.travel_availability === "no"} />
                                 </div>
                             </div>
-
+                            {hint ? <div className="block mt-4 w12/12">
+                                <p className='text-yellow-500 p-2'>⚠️ {hint}</p>
+                            </div> : null}
                             <div className={styles.inputradio}>
                                 <label className={`${styles.block} ${styles.rlabel}`} htmlFor="has_a_team">Do you have a team? *</label>
                                 <div className="flex items-center mt-3">
