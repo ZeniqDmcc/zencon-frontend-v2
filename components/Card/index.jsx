@@ -28,19 +28,19 @@ const Card = ({ icon, title, description }) => {
 const cardData = [
   {
     icon: icon1,
-    title: "Stable and sustainable projects",
+    title: "Sustainability",
     description:
       "Our focus is on developing blockchain-based projects that are not only stable and scalable, but also environmentally sustainable and socially responsible. We believe that by building projects that are designed to last, we can help to create a more sustainable future for all.",
   },
   {
     icon: icon2,
-    title: "Real decentralization",
+    title: "Decentralization",
     description:
       "We are committed to creating truly decentralized systems that are open, transparent, and accessible to all. By removing intermediaries and creating peer-to-peer networks, we can ensure that power is distributed fairly and that everyone has an equal say in the decisions that affect them.",
   },
   {
     icon: icon3,
-    title: "Highest security for digital assets",
+    title: "Security",
     description:
       "We take security seriously and understand the importance of protecting digital assets. Our projects are designed with the highest levels of security in mind, using cutting-edge technology and robust protocols to ensure that assets are kept safe and secure at all times.",
   },

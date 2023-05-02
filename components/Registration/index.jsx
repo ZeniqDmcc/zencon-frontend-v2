@@ -14,7 +14,7 @@ function RegistrationForm({ ethAddr }) {
 
     const router = useRouter()
     const [success, setSuccess] = useState(null);
-    const [hint, setHint] = useState(null);
+    const [hint, setHint] = useState({travel_availability:null,team_registration:null});
     const [error, setError] = useState(null);
     const [formData, setFormData] = useState({
         first_name: '',
@@ -45,10 +45,24 @@ function RegistrationForm({ ethAddr }) {
     });
     useEffect(()=>{
         if(formData.travel_availability==='no'){
-            setHint('*Please note that ZENCON is not a hybrid event and, if you are selected, attendance in person is mandatory.')
+            setHint((prevState)=>{
+            return {...prevState,travel_availability:'*Please note that ZENCON is not a hybrid event and, if you are selected, attendance in person is mandatory.'}
+        })
         }
         if(formData.travel_availability==='yes'){
-            setHint('*Please make   sure you have all required travel documents')
+            setHint((prevState)=>{
+                return {...prevState,travel_availability:'*Please make   sure you have all required travel documents'}
+            })
+        }
+
+        if(formData.has_a_team==='yes'){
+            setHint((prevState)=>{
+            return {...prevState,team_registration:'*Please make sure that your team registered!'}
+        })
+        }else{
+            setHint((prevState)=>{
+                return {...prevState,team_registration:null}
+            }) 
         }
     },[formData])
     const handleInputChange = (event) => {
@@ -230,8 +244,8 @@ function RegistrationForm({ ethAddr }) {
                                     <input className={styles.radio} type="radio" name="travel_availability" id="travel_availabilityNo" value="no" onChange={handleInputChange} checked={formData.travel_availability === "no"} />
                                 </div>
                             </div>
-                            {hint ? <div className="block mt-4 w12/12">
-                                <p className='text-yellow-500 p-2'>⚠️ {hint}</p>
+                            {hint.travel_availability ? <div className="block mt-4 w12/12">
+                                <p className='text-yellow-500 p-2'>⚠️ {hint.travel_availability}</p>
                             </div> : null}
                             <div className={styles.inputradio}>
                                 <label className={`${styles.block} ${styles.rlabel}`} htmlFor="has_a_team">Do you have a team? *</label>
@@ -242,7 +256,9 @@ function RegistrationForm({ ethAddr }) {
                                     <input className={styles.radio} type="radio" name="has_a_team" id="has_a_teamNo" value="no" onChange={handleInputChange} checked={formData.has_a_team === "no"} />
                                 </div>
                             </div>
-
+                            {hint.team_registration ? <div className="block mt-4 w12/12">
+                                <p className='text-yellow-500 p-2'>⚠️ {hint.team_registration}</p>
+                            </div> : null}
                             <div className={styles.inputradio}>
                                 <label className={`${styles.rlabel} block text-base pb-2`} htmlFor="team_registration">If yes, are your team members registered to attend ZENCON Rio de Janeiro? *</label>
                                 <div className="flex items-center mt-3">
@@ -273,7 +289,7 @@ function RegistrationForm({ ethAddr }) {
                             </div>
 
                             <div className="block w-full mt-5">
-                                <input type="checkbox" className={`mr-3 ${styles.checkbox}`} id="terms_and_conditions" name="terms_and_conditions" onClick={(event) => {
+                                <input type="checkbox" className = {`mr-3 ${styles.checkbox}`} id="terms_and_conditions" name="terms_and_conditions" onClick={(event) => {
                                     if (event.target.checked === true) {
                                         setFormData({ ...formData, terms_and_conditions: "yes" })
                                     } else {

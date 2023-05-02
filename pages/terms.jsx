@@ -12,10 +12,10 @@ export default function Terms() {
             <h2 className="text-center text-2xl font-bold">General Terms and Conditions & Participation Agreement</h2>
             <br />
 
-            <p className="leading-7 text-[17px] tracking-wide">This General Terms and Conditions & Participation Agreement (hereinafter <b>"Agreement"</b>) constitutes a binding agreement between each Participant, as defined below, and Zeniq DMCC (hereinafter <b>“Zeniq”</b>). Please read them carefully.</p>
+            <p className="leading-7 text-[17px] tracking-wide">This General Terms and Conditions & Participation Agreement (hereinafter <b>{"Agreement"}</b>) constitutes a binding agreement between each Participant, as defined below, and Zeniq DMCC (hereinafter <b>“Zeniq”</b>). Please read them carefully.</p>
             <br />
 
-            <p className="leading-7 text-[17px] tracking-wide">By registering and participating in Zeniq's Hackathon, the Participant (hereinafter <b>“Participant”</b>) confirms to have read, understood and accepted this Agreement.</p>
+            <p className="leading-7 text-[17px] tracking-wide">By registering and participating in {`Zeniq's`} Hackathon, the Participant (hereinafter <b>“Participant”</b>) confirms to have read, understood and accepted this Agreement.</p>
             <br />
 
             <p className="leading-7 text-[17px] tracking-wide">For the avoidance of any doubt, the Participant acknowledges and agrees:</p>
@@ -240,11 +240,11 @@ export default function Terms() {
             <br />
             <p className="leading-7 text-[17px] tracking-wide">Failure by Zeniq to enforce the Agreement will not constitute a waiver of that provision or any other provisions of the Agreement.</p>
             <br />
-            <p className="leading-7 text-[17px] tracking-wide">Any claim relating to ZENCON will be barred after the period of Three (3) months from the deadline for the participation submission stipulated in Article 3 - PARTICIPATION PROCESS "Phase 1: Registration process".</p>
+            <p className="leading-7 text-[17px] tracking-wide">Any claim relating to ZENCON will be barred after the period of Three (3) months from the deadline for the participation submission stipulated in Article 3 - PARTICIPATION PROCESS {"Phase 1: Registration process"}.</p>
             <br />
-            <p className="leading-7 text-[17px] tracking-wide">This Agreement shall be governed by and construed under the laws of Dubai International Financial Center ("DIFC"), without giving effect to any principles of conflicts of law. The Parties agree to submit to the exclusive jurisdiction of the courts of the Dubai International Financial Centre (DIFC) for the resolution of any disputes arising out of or relating to this Agreement, whether contractual or non-contractual.</p>
+            <p className="leading-7 text-[17px] tracking-wide">This Agreement shall be governed by and construed under the laws of Dubai International Financial Center {`("DIFC")`}, without giving effect to any principles of conflicts of law. The Parties agree to submit to the exclusive jurisdiction of the courts of the Dubai International Financial Centre (DIFC) for the resolution of any disputes arising out of or relating to this Agreement, whether contractual or non-contractual.</p>
             <br />
-            <p className="leading-7 text-[17px] tracking-wide">EACH PARTICIPANT AND ZENIQ AGREES TO BRING CLAIMS AGAINST THE OTHER ONLY IN ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE ACTION OR CLASS-WIDE ARBITRATION OR PRIVATE ATTORNEY-GENERAL ACTIONS OR ANY OTHER PROCEEDING WHERE SOMEONE ACTS IN A REPRESENTATIVE CAPACITY. Unless expressively agreed by the Parties in writing with a notarized agreement, no arbitrator or judge may consolidate more than one person's claims or otherwise preside over any form of a representative or class proceeding.</p>
+            <p className="leading-7 text-[17px] tracking-wide">EACH PARTICIPANT AND ZENIQ AGREES TO BRING CLAIMS AGAINST THE OTHER ONLY IN ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE ACTION OR CLASS-WIDE ARBITRATION OR PRIVATE ATTORNEY-GENERAL ACTIONS OR ANY OTHER PROCEEDING WHERE SOMEONE ACTS IN A REPRESENTATIVE CAPACITY. Unless expressively agreed by the Parties in writing with a notarized agreement, no arbitrator or judge may consolidate more than one {`person's`} claims or otherwise preside over any form of a representative or class proceeding.</p>
         </div>
     </div>
 }
