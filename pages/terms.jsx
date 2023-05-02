@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Terms() {
     return <div className="terms bg-[#010020]">
         <Navbar />
-        <div className="max-w-6xl mx-auto text-white pt-32 pb-16 ">
+        <div className="max-w-6xl mx-auto text-white pt-32 pb-16 sm:px-10 px-7">
             <br />      
             <h1 className="text-center text-4xl font-bold">ZENCON 2023</h1>
             <br />
