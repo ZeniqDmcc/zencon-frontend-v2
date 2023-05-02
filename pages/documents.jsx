@@ -24,9 +24,9 @@ const items = [
   },
   {
     id: 2,
-    title: "Smartchain Documentation",
+    title: "Smart Chain Documentation",
     description:
-      "With the ZSC Documentation, developers have access to all the information necessary to unleash our Smartchain's full potential.",
+      "With the ZSC Documentation, developers have access to all the information necessary to unleash our Smart Chain's full potential.",
     imgPath: doc_icon_2,
     href: "https://leonardo-avelar.gitbook.io/zeniq-smart-chain-documentation/",
     newTab: true
@@ -35,7 +35,7 @@ const items = [
     id: 3,
     title: "ZENCON Academy",
     description:
-      "ZENCON Academy establishes a series of standards to guide and support growth of the PublicProjects running on the ZENIQ's Smartchain.",
+      "ZENCON Academy establishes a series of standards to guide and support growth of the PublicProjects running on the ZENIQ's Smart Chain.",
     imgPath: doc_icon_3,
     href: "/coming-soon",
   },

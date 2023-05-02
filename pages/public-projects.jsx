@@ -122,15 +122,13 @@ export default function PublicProjects() {
                             <div className="flex flex-row justify-between">
                                 <div>
                                     <h1 className="font-extrabold font-primary text-white text-left text-6xl mt-40">
-                                        What Is <br/>Running On The{" "}
+                                    What is running on the 
                                     </h1>
                                     <h1 className="font-extrabold font-primary text-[#E9963CFF] text-left text-6xl mt-1">
-                                        Smartchain?
+                                    Smart Chain?
                                     </h1>
                                     <p className="sm:text-[20px] text-[18px] sm:w-9/12 w-full mt-6 text-gray-400 font-secondary text-left mb-10">
-                                        Get a sneak peek on some of the most innovative projects <br/>deployed to our
-                                        Smart
-                                        Chain during the last ZENCON.
+                                        Get a sneak peek on some of the most innovative projects deployed to our Smart Chain during ZENCON22
                                     </p>
                                 </div>
                                 <div>

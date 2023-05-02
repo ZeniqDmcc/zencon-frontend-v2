@@ -34,7 +34,7 @@ function Navbar() {
                                     />
                                 </a>
                             </Link>
-                            <h1 className="mx-auto my-auto px-2 lg:text-2xl md:text-xl sm:text-xl text-center tracking-tighter text-green-400 z-10">September 16</h1>
+                            <h1 className="mx-auto my-auto px-2 lg:text-2xl md:text-xl sm:text-xl text-center tracking-tighter text-green-400 z-10">September 16 - 21, 2023</h1>
                         </div>
                     </div>
                     <div className="right">

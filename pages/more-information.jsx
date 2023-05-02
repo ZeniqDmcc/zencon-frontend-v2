@@ -17,12 +17,9 @@ export default function Schedule() {
                 <span className="bg-[#1B1934] lg:text-xl p-1">Registration</span>
               </h4>
               <p className="sm:text-lg text-md">
-                Welcome to ZENCON 2023, the ultimate destination for technology enthusiasts!
-                To embark on your exciting journey, all you need to do is register for the event. 
-                The registration process is quick and simple - just create your application by providing us with some basic information about yourself, your project, and your team (if applicable). By registering, you well gain access to a plethora of cutting-edge technology sessions, workshops, and demonstrations, as well as a chance to network with like-minded individuals from around the world.
-                So do not delay - register now and get ready to immerse yourself in the world of technology at ZENCON 2023!
+              Welcome to ZENCON 2023 Rio de Janeiro, the ultimate destination for technology enthusiasts! To embark on your exciting journey, all you need to do is register for the event. The registration process is quick and simple - just create your application by providing us with some basic information about yourself, your project, and your team (if applicable). By registering, you will gain access to a plethora of cutting-edge technology sessions, workshops, and demonstrations, as well as a chance to network with like-minded individuals from around the world. So do not delay - register now and get ready to immerse yourself in the world of technology at ZENCON 2023!
               </p>
-              <p className="text-sm italic">Registration: May 4 to July 15. </p>
+              <p className="text-sm italic font-bold">Registration: May 4 to July 15 </p>
               <div className="absolute top-5 left-[-12px] before:w-5 before:h-5 before:absolute before:left-0 before:top-0 before:content-[''] before:transform before:rotate-45 before:bg-[#A1E285]"></div>
             </div>
           </div>
@@ -39,7 +36,7 @@ export default function Schedule() {
               </h4>
               <p className="sm:text-lg text-md">
               Congratulations! You have been selected for the next stage of ZENCON 2023 Rio de Janeiro. As part of this stage, we request that you provide us with a video that effectively conveys the key idea behind your project. This video will serve as a powerful tool to showcase your project&#39;s potential, communicate your vision, and capture the attention of stakeholders. We believe that a well-crafted video will help us understand your project better and make informed decisions about its future. So, put your creativity to work and create a video that will leave a lasting impression on us! </p>
-              <p className="text-sm italic">Selection: Latest by July 27!</p>
+              <p className="text-sm italic font-bold">Selection: Latest by July 27!</p>
               <div className="absolute top-5 left-[-10px] before:w-5 before:h-5 before:absolute before:left-0 before:top-0 before:content-[''] before:transform before:rotate-45 before:bg-[#A1E285]"></div>
             </div>
           </div>
@@ -54,10 +51,9 @@ export default function Schedule() {
                 <span className="bg-[#1B1934] lg:text-xl p-1">ZENCON</span>
               </h4>
               <p className="sm:text-lg text-md">
-              Participants will meet and form teams of two (2) to six (6) participants to focus on a single project of developing a prototype (hereafter referred to as “Team/s”). A Participant cannot be a part of more than one Team. Teams will have until September 20th at 11 am to develop their prototype.
-              Then presenting of the final prototype will take place, as well as a selection of the ZENCON winners according to their results, all during the awards ceremony which will start at 7 pm.
+              Participants will meet and form teams of two (2) to six (6) participants to focus on a single project of developing a prototype (hereafter referred to as “Team/s”). A Participant cannot be a part of more than one team. Teams will have until September 20th at 11 am to develop their prototype. Then presentation of the final prototype will take place, as well as a selection of the ZENCON winners according to their results, all during the awards ceremony which will start at 7 pm.
               </p>
-              <p className="text-sm italic">16th of September until 21 of September</p>
+              <p className="text-sm italic font-bold">16th of September until 21 of September</p>
               <div className="absolute top-5 left-[-10px] before:w-5 before:h-5 before:absolute before:left-0 before:top-0 before:content-[''] before:transform before:rotate-45 before:bg-[#A1E285]"></div>
             </div>
           </div>
