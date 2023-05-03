@@ -34,7 +34,7 @@ function Navbar() {
                                     />
                                 </a>
                             </Link>
-                            <h1 className="mx-auto my-auto px-2 lg:text-2xl md:text-xl sm:text-xl text-center tracking-tighter text-green-400 z-10">September 16 - 21, 2023</h1>
+                            <h1 className="font-poppins mx-auto my-auto px-2 lg:text-2xl md:text-xl sm:text-xl text-center tracking-tighter text-green-400 z-10">September 16 - 21, 2023</h1>
                         </div>
                     </div>
                     <div className="right">
@@ -43,7 +43,7 @@ function Navbar() {
                             <a
                                 className={`${
                                     router.pathname === "/" && "route-active"
-                                } px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
+                                } font-poppins px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
                             >
                                 Home
                             </a>
@@ -52,7 +52,7 @@ function Navbar() {
                             <a
                                 className={`${
                                     router.pathname === "/public-projects" && "route-active"
-                                } px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
+                                } font-poppins px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
                             >
                                 Projects
                             </a>
@@ -61,7 +61,7 @@ function Navbar() {
                             <a
                                 className={`${
                                     router.pathname === "/documents" && "route-active"
-                                } px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
+                                } font-poppins px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden` } 
                             >
                                 Documentation
                             </a>
