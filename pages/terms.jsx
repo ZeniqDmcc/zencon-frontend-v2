@@ -12,7 +12,7 @@ export default function Terms() {
             <h2 className="text-center text-2xl font-bold">General Terms and Conditions & Participation Agreement</h2>
             <br />
 
-            <p className="leading-7 text-[17px] tracking-wide">This General Terms and Conditions & Participation Agreement (hereinafter <b>{"Agreement"}</b>) constitutes a binding agreement between each Participant, as defined below, and Zeniq DMCC (hereinafter <b>“Zeniq”</b>). Please read them carefully.</p>
+            <p className="leading-7 text-[17px] tracking-wide">This General Terms and Conditions & Participation Agreement (hereinafter <b>{"Agreement"}</b>) constitutes a binding agreement between each Participant, as defined below, and Zeniq (hereinafter <b>“Zeniq”</b>). Please read them carefully.</p>
             <br />
 
             <p className="leading-7 text-[17px] tracking-wide">By registering and participating in {`Zeniq's`} Hackathon, the Participant (hereinafter <b>“Participant”</b>) confirms to have read, understood and accepted this Agreement.</p>

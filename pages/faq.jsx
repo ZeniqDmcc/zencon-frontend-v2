@@ -21,15 +21,15 @@ const Faq = () => {
 const faqs = [
     {
         "title": 'What is ZENCON?',
-        "content": "ZENCON is a yearly hackathon event where developers meet & collaborate in a productive, fun, and exciting to jointly solve problems and innovate across multiple categories. ZENCON's goal is to create value for the blockchain community – while having a lot of fun in great locations around the world!"
+        "content": "ZENCON is a yearly hackathon event where developers meet & collaborate in a productive, fun, and exciting to jointly solve problems and innovate across multiple categories. ZENCON's goal is to create value for the blockchain community - while having a lot of fun in great locations around the world!"
     },
     {
         "title": "What is a hackathon?",
-        "content": "A hackathon is a single or multi-day \"hacking\" competition where individuals and/or teams are faced with a number of challenges. The hackathon is an essential part of ZENCON, where you and your team will receive a set amount of time to complete your projects before presenting it to the jury and all other participants. This year's ZENCON hackathon runs from September 16 to 20 in Rio de Janeiro, Brazil. We want to find out: What models can blockchain-based networks create as an alternative to digital monopolies? What innovation networks and services can be developed in the areas of mobility, industry, and finance?"
+        "content": "A hackathon is a single or multi-day \"hacking\" competition where individuals and/or teams are faced with a number of challenges. The hackathon is an essential part of ZENCON, where you and your team will receive a set amount of time to complete your projects before presenting it to the jury and all other participants. This year's ZENCON hackathon runs from September 16 to 20 in Rio de Janeiro, Brazil. We want to find out: What models can blockchain-based networks create as an alternative to digital monopolies? What innovation networks and services can be developed in the areas of mobility, industry, and finance?"
     },      
     {
         "title": "What is the ZENCON hackathon about?",
-        "content": "ZENCON’s main purpose is encourage developers to work on problems we face in technology. Five challenges are provided to generate new product concepts:",
+        "content": "ZENCON\'s main purpose is encourage developers to work on problems we face in technology. Five challenges are provided to generate new product concepts:",
         "list": [
           {
             "item":"Decentralized Finance DeFi & DeFi 2.0"
@@ -38,7 +38,7 @@ const faqs = [
             "item":"NFTs / Metaverse / Web 3.0"
           },
           {
-            "item":"Development of  the ZENIQ ecosystem & existing projects"
+            "item":"Development of the ZENIQ ecosystem & existing projects"
           },
           {
             "item":"New advanced & developed projects (Pro Level)"
@@ -49,37 +49,15 @@ const faqs = [
         ]
     },
     {
-        "title": "Where can I see testimonials from prior ZENCON events?",
-        "content": "You can follow us on the official social media channels:",
-        "social_media": [
-          {
-            "platform": "Facebook",
-            "url": "https://www.facebook.com/zenconhackathon"
-          },
-          {
-            "platform": "Instagram",
-            "url": "https://www.instagram.com/zencon.io/"
-          },
-          {
-            "platform": "LinkedIn",
-            "url": "https://www.linkedin.com/company/zencon-hackathon"
-          },
-          {
-            "platform": "Discord",
-            "url": "https://discord.gg/YfM7ZZG5Wz"
-          }
-        ]
-    },
-    {
         "title": "Who is behind ZENCON",
-        "content": "ZENCON is sponsored by ZENIQ DMCC, Dubai, United Arab Emirates."
+        "content": "ZENCON is sponsored by ZENIQ."
     },
     {
         "title": "Who can participate in ZENCON?",
         "content": "You! If you are a blockchain developer, web technology enthusiast or smart contract expert, we encourage you to apply and join us in Rio de Janeiro! Please note that your skills & knowledge should be of an advanced level. ZENCON is not a coding school."
     },      
     {
-        "title": "Eligibility criteria for participating in ZENCON",
+        "title": "What are the eligibility criteria for participating in ZENCON?",
         "content": "We ask all potential participants to complete our registration form and submit a project page. Also, please add a 1-minute video about your project and proposed solution & roadmap. Your project proposal needs to fall into one of our five challenge categories. Above all, we are looking for enthusiasts who believe in the power of blockchain technology who are willing to push their project across the finish line at ZENCON. Each team should have at least one developer with a proven record of blockchain and/or web technology solutions. A team can be made of between 2 and 6 members."
     },
     {
@@ -98,7 +76,7 @@ const faqs = [
             "item":"In the NOMO app, go to “Scan” and scan the QR code on the Launchpad page"
           },
           {
-            "item":"Once connected, you’ll be able to see the registration form, fill it then click on submit."
+            "item":"Once connected, you'll be able to see the registration form, fill it then click on submit."
           }
         ]
     },
@@ -125,20 +103,20 @@ const faqs = [
           ]
     },
     {
-        "title": "Last date for registration",
+        "title": "What is the last date for registration?",
         "content": "You can register until July 17, 2023 at 11:59 p.m."
     },
     {
-        "title": "Rejection Email for Non-Accepted Projects",
+        "title": "If my project is not accepted, will I receive a rejection email?",
         "content": "Yes, all projects will be informed if they are selected or not."
     },
     {
-        "title": "Resubmission of Project for Reconsideration",
-        "content": "No, once the selection phase is closed, there is no possibility to resubmit your project."
+        "title": "Is it possible to resubmit my project for reconsideration?",
+        "content": "No, once the selection phase is closed, there is no possibility to resubmit your project"
     },
     {
-        "title": "ZENCON Schedule",
-        "content": "ZENCON Rio de Janeiro will take place from September 16 - 20, 2023. The ZENCON hackathon starts on the second day of the event week and runs from September 17 - 20, 2023 over 68 hours."
+        "title": "What is the schedule of ZENCON?",
+        "content": "ZENCON Rio de Janeiro will take place from September 16 - 20, 2023. The ZENCON hackathon starts on the second day of the event week and runs from September 17 - 20, 2023  over 68 hours."
     },
     {
         "title": "What should I bring to ZENCON?",
@@ -185,7 +163,7 @@ const faqs = [
               "item":"Is this idea going to make money or contribute to the solution that will?"
             },
             {
-              "item":"Have the team innovated to build this product?"
+              "item":"Have the team innovated to build this product? "
             },
             {
               "item":"How innovative and realistic is the idea?"
@@ -197,7 +175,7 @@ const faqs = [
               "item":"Solution quality & usability"
             },
             {
-              "item":"Technology usage & maturity – is it realistic?"
+              "item":"Technology usage & maturity - is it realistic?"
             },
             {
               "item":"Does the presentation clearly define and address the project?"
@@ -208,7 +186,7 @@ const faqs = [
         ]
     },
     {
-        "title": "What should I do if I have additional titles or need help during ZENCON?",
+        "title": "What should I do if I have additional questions or need help during ZENCON?",
         "content": "You can always seek help, by searching for one of the on-site ZENCON staff members or mentors, and they will gladly assist you with your inquiry."
     },
     {
@@ -220,7 +198,7 @@ const faqs = [
         "content": "The jury consists of seven members and will be announced closer to the event date."
     },
     {
-        "title": "Food and Beverages at ZENCON",
+        "title": "Will there be any food or beverages provided during ZENCON?",
         "content": "Yes, accommodation and meals (breakfast, lunch, and dinner) are included for all participants of ZENCON Rio 2023."
      },
      {
@@ -239,11 +217,11 @@ const faqs = [
     },
     {
         "title": "Can I have a contact for someone in the event?",
-        "content": "Our on-site helpers, mentors, and ZENCON staff will do their best to guide you and assist you with all your inquiries. General titles can be addressed to hello@zencon.io."
+        "content": "Our on-site helpers, mentors, and ZENCON staff will do their best to guide you and assist you with all your inquiries. General questions can be addressed to hello@zencon.io."
     },
     {
         "title": "Where can I find the ZENCON schedule? ",
-        "content": "You can find the event schedule on the website XX.",
+        "content": "",
         "list": [
             {
               "item":"September 16, 2023: Hotel check in & ZENCON Opening & Welcome."
