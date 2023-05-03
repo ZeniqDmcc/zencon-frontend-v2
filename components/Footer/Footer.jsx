@@ -39,8 +39,18 @@ export default function Footer() {
                 </div>
                 <div className="sm:flex sm:items-center sm:justify-center sm:gap-14 py-8">
                     <Link href="/authentication">
-                        <a className="sm:inline block hover:text-gray-500 text-center sm:my-0 my-4">
+                        <a className="sm:inline block hover:text-green-500 text-center sm:my-0 my-4">
                             Join us
+                        </a>
+                    </Link>
+                    <Link href="/terms">
+                        <a className="sm:inline block hover:text-green-500 text-center sm:my-0 my-4">
+                           Terms & Conditions
+                        </a>
+                    </Link>
+                    <Link href="/faq">
+                        <a className="sm:inline block hover:text-green-500 text-center sm:my-0 my-4">
+                           FAQ
                         </a>
                     </Link>
                 </div>
