@@ -9,7 +9,7 @@ function Ecosystem(props) {
     <div className={styles.ecosystem}>
         <div className="container mx-auto">
           <div className={styles.container}>
-              <div className="flex lg:flex-row flex-col lg:p-12 p-5 bg-white bg-opacity-25 shadow-lg rounded-lg border border-opacity-25 border-white backdrop-blur-md w-full items-center">
+              <div className="flex lg:flex-row flex-col lg:p-12 p-5 bg-white bg-opacity-25 shadow-lg rounded-lg border border-opacity-25 border-white backdrop-blur-md w-full items-center sm:mb-0 mb-16">
                   <div className="flex order-2 flex-col lg:gap-12 gap-2 flex-1" key={nanoid()}>
                     <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-normal text-green-400 leading-16 lg:text-left text-center">{props.title}</h2>
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.shortDescription}</p>

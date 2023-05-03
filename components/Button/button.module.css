@@ -2,9 +2,9 @@
     display: flex;
     padding: 9px 22px;
     background: #0B223B 0% 0% no-repeat padding-box;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    -webkit-backdrop-filter: blur( 4px );
-    backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     border-radius: 6px;
     border: 2px solid #88FF4E;
     height: 73px;
@@ -33,11 +33,20 @@
     }
 }
 
-/* @media only screen and (max-width: 840px) {
+@media only screen and (max-width: 840px) {
     .button {
         padding: 9px 16px;
         height: 40px;
         width: 190px;
         font-size: 16px;
     }
-} */
+}
+
+@media only screen and (max-width: 480px) {
+    .button {
+        padding: 7px 14px;
+        height: 38px;
+        width: 150px;
+        font-size: 15px;
+    }
+}
