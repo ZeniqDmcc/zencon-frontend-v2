@@ -13,12 +13,6 @@ export default function Footer() {
                 <div className="mx-auto my-4 text-center">
                     <Image src={zencon_logo} alt="ledger" width={150} height={100} />
                 </div>
-                {/* <div className="flex flex-wrap justify-center gap-3">
-                    <SocialIcon link="https://discord.gg/EzEMqcUF" image={discord}/>
-                    <SocialIcon link="https://twitter.com/ZENIQ_tech" image={twitter}/>
-                    <SocialIcon link="https://t.me/zeniq_hub" image={telegram}/>
-                </div> */}
-
 
                 <div className="flex gap-3 justify-center">
                     <div className="border-2 p-2 rounded-full cursor-pointer">
@@ -45,12 +39,12 @@ export default function Footer() {
                     </Link>
                     <Link href="/terms">
                         <a className="sm:inline block hover:text-green-500 text-center sm:my-0 my-4">
-                           Terms & Conditions
+                           T&C
                         </a>
                     </Link>
                     <Link href="/faq">
                         <a className="sm:inline block hover:text-green-500 text-center sm:my-0 my-4">
-                           FAQ
+                           FAQs
                         </a>
                     </Link>
                 </div>
@@ -59,7 +53,7 @@ export default function Footer() {
             </div>
             <div>
                 <p className="text-center pb-10">
-                    © ZENIQ DMCC {new Date().getFullYear()}
+                    © ZENIQ {new Date().getFullYear()}
                 </p>
             </div>
         </footer>
