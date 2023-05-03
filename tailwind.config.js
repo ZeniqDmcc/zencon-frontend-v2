@@ -13,7 +13,8 @@ module.exports = {
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Oswald'],
       'body': ["Open Sans"],
-      'secondary': ['SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
+      'secondary': ['SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+      'poppins': ['Poppins', 'sans-serif'],
     },
     screens: {
       "xs": "400px",
