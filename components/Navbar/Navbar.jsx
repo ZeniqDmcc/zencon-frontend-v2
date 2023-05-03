@@ -61,7 +61,7 @@ function Navbar() {
                             <a
                                 className={`${
                                     router.pathname === "/documents" && "route-active"
-                                } font-poppins px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden`}
+                                } font-poppins px-3 py-2 text-sm font-medium hover:text-[#A1E285] smol:hidden` } 
                             >
                                 Documentation
                             </a>
