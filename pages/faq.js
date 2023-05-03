@@ -5,7 +5,7 @@ const Faq = () => {
     return (
         <div className="bg-[#010020]">
             <Navbar />
-            <div className="pt-40 pb-16 max-w-2xl mx-auto">
+            <div className="pt-40 pb-16 max-w-2xl mx-auto sm:px-10 px-4">
                 <h1 className="text-center text-4xl font-bold text-[#fff] pb-4">FAQ</h1>
                 <div className="">
                     {faqs.map((faq, index) => (
