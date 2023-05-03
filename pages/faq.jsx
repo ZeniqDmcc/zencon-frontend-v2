@@ -229,7 +229,13 @@ const faqs = [
      },     
      {
         "title": "What are the channels I can use to get in touch with the mentors?",
-        "content": "Discord: https://discord.gg/YfM7ZZG5Wz."
+        "social_media": [
+          {
+            "platform": "Discord",
+            "url": "https://discord.gg/YfM7ZZG5Wz"
+          }
+        ],
+        "content": "Discord"
     },
     {
         "title": "Can I have a contact for someone in the event?",
