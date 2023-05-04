@@ -15,7 +15,7 @@ const Card = ({ icon, title, description }) => {
                       return <div className="backdrop-filter backdrop-blur-sm flex flex-col bg-white bg-opacity-25 rounded-lg border-2 border-solid border-green-400 xl:gap-8 gap-4 2xl:p-16 xl:p-12 lg:p-8 p-8" key={nanoid()}>
                           <Image src={item.icon} alt="icon" className='max-w-max' height={80} width={80} />
                           <h3 className="md:text-3xl text-2xl text-center font-normal sm:leading-10 leading-7">{item.title}</h3>
-                          <p className="w-90 leading-1.5 text-center xl:text-xl md:text-md font-normal">{item.description}</p>
+                          <p className="w-90 leading-1.5 text-center text-justify: justify xl:text-xl md:text-md font-normal">{item.description}</p>
                       </div>
                   })
               }
