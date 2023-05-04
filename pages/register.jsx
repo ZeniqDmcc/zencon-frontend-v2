@@ -12,7 +12,7 @@ export default function Register() {
         <>
         <Navbar />
             {data ?  (
-                <div className="bg-[#0B1B34] pt-8" style={{ backgroundImage: "url('./../public/Bg_level_1.svg')" }}>
+                <div className="bg-[#0B1B34] pt-8 px-8 lg:px-0" style={{ backgroundImage: "url('./../public/Bg_level_1.svg')" }}>
                     <div className="flex max-w-4xl mx-auto  pt-40 pb-24 justify-between h-4/6">
                         <ContactDetails firstName={data.first_name} lastName={data.last_name} status={data.shortlisted} email="hello@zencon.io"/>
                     </div>

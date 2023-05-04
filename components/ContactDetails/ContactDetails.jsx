@@ -4,21 +4,21 @@ import StatusCircle from "../StatusCircle/StatusCircle"
 function ContactDetails({ firstName, lastName, email, status }) {
     console.log(status)
     return (
-        <div className="flex w-full gap  h-[40vh] bg-opacity-25 shadow-boxblur rounded-2xl border-[3px] border-opacity-18 border-[#A1E285]">
-            <div className="px-10 w-2/6 flex justify-center items-center border-r-[3px] border-[#3D404F] ">
+        <div className="flex flex-col md:flex-row w-full gap bg-opacity-25 shadow-boxblur rounded-2xl border-[3px] border-opacity-18 border-[#A1E285]">
+            <div className="px-10 pt-5 md:pt-0 md:w-2/6 flex justify-center items-center border-b-[3px] md:border-b-[0px] md:border-r-[3px] border-[#3D404F] ">
                 <StatusCircle status={status} />
             </div>
-            <div className="w-4/6 flex flex-col p-8 gap-5 justify-center">
-                <div className="">
+            <div className="sm:w-4/6 flex flex-col py-8 px-5 sm:p-8 gap-5 justify-center mx-auto md:mx-0">
+                <div className="text-center md:text-left flex flex-col gap-2">
                     <h1 className="text-white text-2xl"> Hi  &#128075; {firstName} {lastName}</h1>
                     <p>You successfully registered in  ZENCON-2023 Rio de Janeiro &#128640; &#128640; &#128640;</p>
                     <p>For more information and details feel free to reach out to us via these contact details.</p>
                 </div>
-                <div className="text-white flex flex-col">
+                <div className="text-white text-center md:text-left flex flex-col">
                     <Link href="mailto:hello@zencon.io"><> Email:  {email} </></Link>
                     <Link href="https://launchpad.zencon.io/">Site: launchpad.zencon.io</Link>
                 </div>
-                <div className="flex gap-3">
+                <div className="flex gap-3 justify-center md:justify-start">
                     <div className="border-2 p-2 rounded-full cursor-pointer">
                         <Link href="https://www.facebook.com/zenconhackathon">
                             <svg fill="#fff" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
