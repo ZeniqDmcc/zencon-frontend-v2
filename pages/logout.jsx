@@ -7,27 +7,6 @@ import {connectToBackEnd} from "../hooks/useConnectToBackend";
 import {api_backend} from "../utils/Constants/BackendURLs";
 
 
-// async function postData(url = '', data = {}) {
-//
-//     try {
-//         const response = await fetch(url, {
-//             method: 'POST',
-//             // mode: 'cors',
-//             // cache: 'no-cache',
-//             credentials: 'include',
-//             headers: {
-//                 'Content-Type': 'application/json'
-//             },
-//             body: JSON.stringify(data)
-//         });
-//
-//         return response.json(); // parses JSON response into native JavaScript objects}
-//
-//     } catch (e) {
-//         console.log(e);
-//     }
-// }
-
 
 export default function Logout() {
 
@@ -96,19 +75,6 @@ export default function Logout() {
             });
 
     }, []);
-
-    // useEffect(() => {
-    //     if (loggedout) {
-    //         useConnectToBackend()
-    //             .then(socket => {
-    //
-    //                 setSocket(socket);
-    //                 router.push("/");
-    //
-    //             })
-    //             .catch(e => console.log(e));
-    //     }
-    // }, [loggedout]);
 
     return (
         <div style={{background: "#111827", height: "100%"}}>
