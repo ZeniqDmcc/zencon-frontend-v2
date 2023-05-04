@@ -184,9 +184,7 @@ export default function EditProject() {
                 </div>
                 <div className='w-full bg-white'>
                     <div className="bg-white sm:w-10/12 mx-auto">
-                        {/*<h1 className="font-extrabold font-primary text-gray-900 text-left text-3xl mt-10 mb-8">*/}
-                        {/*    Project Information*/}
-                        {/*</h1>*/}
+                        
                         <div className="mt-8 mb-8 flex justify-between">
                             <div>
                                 <CallToAction
