@@ -108,15 +108,15 @@ const faqs = [
     },
     {
         "title": "If my project is not accepted, will I receive a rejection email?",
-        "content": "Yes, all projects will be informed if they are selected or not."
+        "content": "All projects will be informed if they are selected or not."
     },
     {
         "title": "Is it possible to resubmit my project for reconsideration?",
-        "content": "No, once the selection phase is closed, there is no possibility to resubmit your project"
+        "content": "Once the selection phase is closed, there is no possibility to resubmit your project"
     },
     {
         "title": "What is the schedule of ZENCON?",
-        "content": "ZENCON Rio de Janeiro will take place from September 16 - 20, 2023. The ZENCON hackathon starts on the second day of the event week and runs from September 17 - 20, 2023  over 68 hours."
+        "content": "ZENCON Rio de Janeiro will take place from September 16 - 20, 2023. The ZENCON hackathon starts on the second day of the event week and runs from September 17 - 20, 2023  for over 68 hours."
     },
     {
         "title": "What should I bring to ZENCON?",
@@ -195,11 +195,11 @@ const faqs = [
     },
     {
         "title": "Who is in the ZENCON jury?",
-        "content": "The jury consists of seven members and will be announced closer to the event date."
+        "content": "The jury will be announced closer to the event date."
     },
     {
         "title": "Will there be any food or beverages provided during ZENCON?",
-        "content": "Yes, accommodation and meals (breakfast, lunch, and dinner) are included for all participants of ZENCON Rio 2023."
+        "content": "Meals (breakfast, lunch, and dinner) are included for all participants of ZENCON Rio 2023."
      },
      {
         "title": "When will the jury announce the results?",
@@ -207,16 +207,10 @@ const faqs = [
      },     
      {
         "title": "What are the channels I can use to get in touch with the mentors?",
-        "social_media": [
-          {
-            "platform": "Discord",
-            "url": "https://discord.gg/YfM7ZZG5Wz"
-          }
-        ],
-        "content": ""
+        "content": "Discord"
     },
     {
-        "title": "Can I have a contact for someone in the event?",
+        "title": "Can I have a contact for someone in the events team?",
         "content": "Our on-site helpers, mentors, and ZENCON staff will do their best to guide you and assist you with all your inquiries. General questions can be addressed to hello@zencon.io."
     },
     {
