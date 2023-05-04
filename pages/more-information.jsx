@@ -53,7 +53,7 @@ export default function Schedule() {
               <p className="sm:text-lg text-md">
               Participants will meet and form teams of two (2) to six (6) participants to focus on a single project of developing a prototype (hereafter referred to as “Team/s”). A Participant cannot be a part of more than one team. Teams will have until September 20th at 11 am to develop their prototype. Then presentation of the final prototype will take place, as well as a selection of the ZENCON winners according to their results, all during the awards ceremony which will start at 7 pm.
               </p>
-              <p className="text-sm italic font-bold">16th of September until 21 of September</p>
+              <p className="text-sm italic font-bold">September 16 - 21</p>
               <div className="absolute top-5 left-[-10px] before:w-5 before:h-5 before:absolute before:left-0 before:top-0 before:content-[''] before:transform before:rotate-45 before:bg-[#A1E285]"></div>
             </div>
           </div>

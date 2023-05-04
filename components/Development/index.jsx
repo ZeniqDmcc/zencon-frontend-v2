@@ -18,7 +18,7 @@ function Development(props) {
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.shortDescription}</p>
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.detailDescription}</p>
                     <div className="button__outer">
-                        <Button label="More information" href="https://zeniq.com" />
+                        <Button label="More Information" href="https://launchpad.zencon.io/" />
                     </div>
                 </div>
             </div>

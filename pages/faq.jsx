@@ -49,7 +49,7 @@ const faqs = [
         ]
     },
     {
-        "title": "Who is behind ZENCON",
+        "title": "Who is behind ZENCON?",
         "content": "ZENCON is sponsored by ZENIQ."
     },
     {
@@ -150,8 +150,26 @@ const faqs = [
           ]
     },
     {
+        "title": "Where can I see testimonials from prior ZENCON events?",
+        "content": "You can follow us on the official social media channels:",
+        "social_media": [
+          {
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/zenconhackathon"
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/zencon.io/"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/company/zencon-hackathon"
+          }
+        ]
+    },
+    {
         "title": "What are the judging criteria for ZENCON?",
-        "content": "Projects will be evaluated according to different elements, and also how your idea can be turned into a real-world start-up project.",
+        "content": "Projects will be evaluated according to different elements, and also how your idea can be turned into a real-world startup project.",
         "list": [
             {
               "item":"Does the project have business value?"
@@ -215,26 +233,20 @@ const faqs = [
     },
     {
         "title": "Where can I find the ZENCON schedule? ",
-        "content": "",
+        "content": "A detailed event schedule will be shared soon:",
         "list": [
             {
-              "item":"September 16, 2023: Hotel check in & ZENCON Opening & Welcome."
+              "item":"September 16, 2023: Hotel check in & Welcome event."
             },
             {
-              "item":"September 17, 2023: ZENCON Presentation & Start of ZENCON Hackathon."
+              "item":"September 17-20, 2023: ZENCON 68h challenge."
             },
             {
-              "item":"September 18, 2023: ZENCON Hackathon & Workshops."
-            },
-            {
-              "item":"September 19, 2023: ZENCON Hackathon & Workshops."
-            },
-            {
-              "item":"September 20, 2023: End of ZENCON Hackathon, Pitch Sessions & Awards."
+              "item":"September 20, 2023: Hacking ends, Pitch Sessions & Awards. "
             },
             {
               "item":"September 21, 2023: Hotel check out."
-            },
+            }
         ]
     }
 ];
