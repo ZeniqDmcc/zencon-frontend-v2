@@ -10,7 +10,7 @@ function Development(props) {
         <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row justify-between gap-12">
                 <div className="flex-1 justify-center flex items-center lg:py-10" key={nanoid()}>
-                    <Image src={props.image} alt="Nft" />
+                    {/* <Image src={props.image} alt="Nft" /> */}
                 </div>
 
                 <div className="flex-1 flex flex-col lg:gap-12 gap-6" key={nanoid()}>
