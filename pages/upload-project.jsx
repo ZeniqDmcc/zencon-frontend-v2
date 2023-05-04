@@ -198,7 +198,6 @@ export default function UploadProjects() {
                                         text="Save and Continue"
                                         classes="w-full"
                                         link="/confirmation-page"
-                                        // query={{apiEndpoint: 0, projectInfo: new URLSearchParams(projectInfo).toString()}}
                                         query={{
                                             apiEndpoint: 0,
                                             projectInfo: new URLSearchParams(projectInfo).toString()

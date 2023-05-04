@@ -172,7 +172,6 @@ export default function PublicProjects() {
                         <div
                             className=" grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-14 mb-12">
                             {items.map((project, index) => (
-                                // <ProjectCard project={project} key={index}/>
                                 <div className="w-full height-full" key={index}>
                                     <div
                                         className="h-full hover:shadow-[0_35px_60px_-15px_rgba(112,32,179,0.8)] transition duration-500 shadow-[0_60px_60px_-15px_rgba(0,0,0,0.3)] rounded-t-xl">
