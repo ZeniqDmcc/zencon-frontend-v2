@@ -18,7 +18,7 @@ export default function Launchpad() {
             <NextSeo
                 title="ZENCON Launchpad | A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."
                 description="A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."
-            />
+            /> 
             <div className='main'>
                 <Header />
                 <Banner />

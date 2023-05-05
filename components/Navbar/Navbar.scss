@@ -5,6 +5,9 @@
     align-items: center;
     height: 100%;
     gap: 10px;
+    @media (max-width: 1468px) {
+      gap: 5px;
+    }
     @media (max-width: 780px) {
       gap: 0;
     }

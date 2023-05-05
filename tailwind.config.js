@@ -20,8 +20,9 @@ module.exports = {
       "xs": "400px",
       // 'smol': {'max': '850px'},
       '800px': {'max': '800px'},
-      'smol': {'max': '1100px'},
+      'smol': {'max': '1170px'},
       '1600px': {'max': '1600px'},
+      'laptop': {'max':'1468px'},
       ...defaultTheme.screens,
     },
     extend: {
