@@ -2,6 +2,9 @@
     background: url("../../assets/Svgs/graph8.svg") no-repeat left;
     background-size: 45%;
     padding: 97px 0 165px 0;
+    clear: both;
+    content: "";
+    position: relative;
 }
 
 @media only screen and (max-width: 1780px) {
@@ -35,9 +38,7 @@
         padding: 82px 0 114px 0;
         background-size: 47%;
     }
-    .development img {
-        padding: 50px !important;
-    }
+    
     .development div div {
         gap: 27px;
     }
@@ -51,11 +52,19 @@
         margin-top: -80px;
     }
     .development img {
-        padding: 140px !important;
-        padding-bottom: 80px !important;
+        padding: 120px 0 !important;
+        display: inline-block;
+        max-width: 250px !important;
+        top: 24% !important;
     }
     .development div div {
         gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 882px) {
+    .development img {
+        top: 12% !important;
     }
 }
 
@@ -63,6 +72,14 @@
     .development {
         padding-left: 30px;
         padding-right: 30px;
+        background-size: calc(52% + 130px);
+    }
+    .development img {
+        padding: 120px 0 !important;
+        padding-bottom: 70px !important;
+        display: inline-block;
+        max-width: 250px !important;
+        top: 15% !important;
     }
 }
 
@@ -72,9 +89,35 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 840px) {
     .development img {
-        padding: 50px !important;
-        margin-top: 25px !important;
+        padding-bottom: 60px !important;
+        top: 11% !important;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .development {
+        background-size: calc(57% + 130px);
+    }
+    .development img {
+        padding-bottom: 50px !important;
+        top: 10% !important;
+        width: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .development {
+        padding-left: 30px;
+        padding-right: 30px;
+        background-size: calc(60% + 130px);
+    }
+    .development img {
+        padding: 20px !important;
+        padding-bottom: 100px !important;
+        margin-top: 50px !important;
+        width: 100% !important;
+        height: auto !important;
     }
 }
