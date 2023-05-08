@@ -90,7 +90,7 @@ const AuthenticationForm = () => {
     return (
         <PageWrapper>
             <Navbar/>
-            <section className="py-14 pb-20 bg-gray-900 bg-no-repeat bg-cover text-white h-[1050px]">
+            <section className="py-14 pb-20 bg-[#030423] bg-no-repeat bg-cover text-white h-[1050px]">
                 <Container>
                     <h1 className="mt-14 py-8 mb-8 text-center text-5xl font-extrabold font-primary">
                         Register / Login

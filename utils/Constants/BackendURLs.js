@@ -25,5 +25,3 @@ export const confirmation_page_endpoints = ["upload_project", "edit_project"];
 export const api_backend = URLs.prod.launchpadbackend;
 export const socketio_backend = URLs.prod.socketio_launchpadbackend;
 export const zencon_event_api_url = URLs.prod.zencon_event;
-// export const api_backend = URLs.dev.api_rafi;
-// export const socketio_backend = URLs.dev.socketio_rafi;

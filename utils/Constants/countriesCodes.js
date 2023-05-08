@@ -617,12 +617,6 @@ const codes = [{
     "code": "IM"
 },
 {
-    "name": "Israel",
-    "dial_code": "+972",
-    "emoji": "🇮🇱",
-    "code": "IL"
-},
-{
     "name": "Italy",
     "dial_code": "+39",
     "emoji": "🇮🇹",

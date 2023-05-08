@@ -22,7 +22,7 @@ const FaqAccordion = ({ title, content, social_media, list }) => {
             <ul className='list-disc pl-8 pb-2'>
               {social_media && social_media.map((item, index) => (
                 <li key={index}>
-                  {item.platform}: <a href={item.url}>{item.url}</a>
+                  <a className="underline" target="_blank" href={item.url} rel="noreferrer">{item.platform}</a>
                 </li>
               ))}
             </ul>

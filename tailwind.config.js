@@ -23,6 +23,8 @@ module.exports = {
       'smol': {'max': '1170px'},
       '1600px': {'max': '1600px'},
       'laptop': {'max':'1468px'},
+      '640px': {'max':'640px'},
+      'mobile': {'max':'480px'},
       ...defaultTheme.screens,
     },
     extend: {

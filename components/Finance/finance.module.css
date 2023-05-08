@@ -5,6 +5,19 @@
     background-size: calc(45% + 136px);
 }
 
+@media only screen and (min-width: 2200px) {
+    .finance {
+      background: none;
+    }
+    .image {
+        background-image: url("../../assets/graph5.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 800px;
+        padding: 100px;
+    }
+}
+
 @media only screen and (max-width: 1480px) {
     .finance div div {
         gap: 27px;

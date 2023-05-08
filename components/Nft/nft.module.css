@@ -6,6 +6,18 @@
     padding: 90px 0 142px 0;
 }
 
+@media only screen and (min-width: 2200px) {
+    .nft {
+      background: none;
+    }
+    .image {
+        background-image: url("../../assets/Svgs/graph6.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 700px;
+    }
+}
+
 @media only screen and (max-width: 1780px) {
     .nft {
         padding: 100px 0 90px 0;

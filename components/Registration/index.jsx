@@ -106,7 +106,8 @@ function RegistrationForm({ ethAddr }) {
     return (
         <div className='bg-[#010020] text-white'>
             <div className="pt-20 pb-20 sm:w-10/12 mx-auto">
-                <h3 className='font-normal font-primary text-center lg:text-2xl text-xl sm:mt-20 lg:px-20 px-16 sm:p-0 pt-14 pb-4'>Enter your information here to register in (ZENCON Rio de Janeiro-2023)</h3>
+            <h1 className="font-poppins mx-auto my-auto px-2 text-2xl laptop:text-lg  text-center tracking-tighter text-green-400 z-10 hidden pt-14 mobile:block">September 16 - 21, 2023</h1>
+                <h3 className='font-normal font-primary text-center lg:text-2xl text-xl sm:mt-20 lg:px-20 px-16 sm:p-0 pt-14 mobile:pt-2 pb-4'>Enter your information here to register in (ZENCON Rio de Janeiro-2023)</h3>
                 {success ? <div className='lg:text-3xl text-2xl sm:mt-10 sm:mb-8 lg:px-20 sm:px-10 px-16 text-green-700 text-center' style={{ backgroundImage: `url(${fireworks})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     Thanks! {formData.first_name} {formData.last_name} 	&#128079; you have registered successfully!</div> : null}
                 <div className={`${styles.form__container} mx-auto`}>

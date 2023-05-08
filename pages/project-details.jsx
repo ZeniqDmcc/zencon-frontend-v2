@@ -90,10 +90,7 @@ export default function ProjectDetails() {
                                     </h1>
                                     <p className="sm:text-[20px] text-[18px] text-center w-full mt-6 text-gray-300 font-secondary text-left mb-10">
                                         {project.short_description}
-                                        {/*Lorem Ipsum is simply dummy text of the printing and typesetting industry.*/}
-                                        {/*specimen book. It has survived not only five centuries, but also the leap into*/}
-                                        {/*specimen book. It has survived not only five centuries, but also the leap into*/}
-                                        {/*specimen book. It has survived not only five centuries, but also the leap into*/}
+                                      
                                     </p>
                                 </div>
                             </div>
@@ -151,9 +148,6 @@ export default function ProjectDetails() {
                 </div>
                 <div className='w-full bg-white'>
                     <div className="bg-white sm:w-10/12 mx-auto">
-                        {/*<h1 className="font-extrabold font-primary text-gray-900 text-left text-3xl mt-10 mb-8">*/}
-                        {/*    Project Details*/}
-                        {/*</h1>*/}
                         <div className="mt-8 mb-8 flex justify-between">
                             <div>
                                 <CallToAction
@@ -176,14 +170,6 @@ export default function ProjectDetails() {
                                 <h1 className="font-extrabold font-primary text-gray-900 text-left text-2xl mt-10 mb-8">Description</h1>
                                 <p className="sm:text-[20px] text-[18px] w-full text-gray-600 font-secondary ">
                                     {project.detailed_description}
-                                    {/*Lorem Ipsum is simply dummy text of the printing and typesetting industry.*/}
-                                    {/*Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,*/}
-                                    {/*when an unknown printer took a galley of type and scrambled it to make a type*/}
-                                    {/*specimen book. It has survived not only five centuries, but also the leap into*/}
-                                    {/*electronic typesetting, remaining essentially unchanged. It was popularised in the*/}
-                                    {/*1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more*/}
-                                    {/*recently with desktop publishing software like Aldus PageMaker including versions of*/}
-                                    {/*Lorem Ipsum.*/}
                                 </p>
                             </div>
                         </div>

@@ -34,7 +34,7 @@ function Navbar() {
                                     />
                                 </a>
                             </Link>
-                            <h1 className="font-poppins mx-auto my-auto px-2 text-2xl laptop:text-lg  text-center tracking-tighter text-green-400 z-10">September 16 - 21, 2023</h1>
+                            <h1 className="font-poppins mx-auto my-auto px-2 text-2xl laptop:text-lg  text-center tracking-tighter text-green-400 z-10 mobile:hidden">September 16 - 21, 2023</h1>
                         </div>
                     </div>
                     <div className="right">
@@ -67,7 +67,7 @@ function Navbar() {
                             </a>
                         </Link>
                         {userType === "Developer" && <a
-                            className={`py-2 800px:hidden`}
+                            className={`py-2 smol:hidden`}
                         >
                             <CallToAction
                                 text="Submit Your Project"
@@ -77,7 +77,7 @@ function Navbar() {
                             />
                         </a>}
                         {userWallet &&
-                            <div className='py-2 800px:hidden'>
+                            <div className='py-2 smol:hidden'>
                                 <CallToAction
                                     text="Dashboard"
                                     link={userType === "Mentor" ? "/mentor-dashboard" : "/dashboard"}
@@ -86,7 +86,7 @@ function Navbar() {
                                 />
                             </div>
                         }
-                        <div className="800px:hidden">
+                        <div className="smol:hidden">
 
                             <CallToAction
                                 text={userWallet ? "Logout" : "Login"}
@@ -184,7 +184,7 @@ function Navbar() {
                                 </a>
                             </div>
                         </Link>
-                        <div className="hidden 800px:block">
+                        <div className="hidden smol:block">
                             {userType === "Developer" && <a
                                 className='py-2 block'
                             >
