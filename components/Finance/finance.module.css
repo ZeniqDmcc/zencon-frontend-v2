@@ -1,8 +1,9 @@
 .finance {
     background-image: url("../../assets/graph5.png");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: calc(45% + 136px);
+    background-position-x: right -45px;
+    background-position-y: top 20px;
+    background-size: calc(40% + 136px);
 }
 
 @media only screen and (min-width: 2200px) {

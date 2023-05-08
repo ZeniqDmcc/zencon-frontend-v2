@@ -1,8 +1,9 @@
 .nft {
     background-image: url("../../assets/Svgs/graph6.svg");
     background-repeat: no-repeat;
-    background-position: left;
-    background-size: calc(37% + 130px);
+    background-position-x: -80px;
+    background-position-y: -70px;
+    background-size: calc(35% + 130px);
     padding: 90px 0 142px 0;
 }
 
