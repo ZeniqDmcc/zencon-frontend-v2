@@ -8,7 +8,7 @@ function Nft(props) {
     <div className={styles.nft}>
         <div className="container mx-auto">
           <div className="flex lg:flex-row flex-col lg:gap-0 gap-12 justify-between items-center pt-1">
-              <div className={`${styles.image} flex-1`} key={nanoid()}>
+              <div className={`${styles.image} flex-1 text-center`} key={nanoid()}>
                   <Image src={props.image} alt="Nft" />
               </div>
               <div className="flex-1 flex flex-col gap-12 lg:mt-0 sm:mt-2" key={nanoid()}>
