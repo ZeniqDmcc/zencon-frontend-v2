@@ -8,7 +8,7 @@ import styles from './card.module.css';
 const Card = ({ icon, title, description }) => {
   return (
     <div className={styles.card}>
-        <div className="container flex mx-auto sm:pt-5 pt-0 sm:pb-2 pb-5">
+        <div className="container flex mx-auto">
             <div className="flex lg:flex-1 lg:flex-row flex-col gap-8">
               {
                   cardData.map((item) => {

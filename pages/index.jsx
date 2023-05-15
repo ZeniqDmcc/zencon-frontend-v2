@@ -19,7 +19,7 @@ export default function Launchpad() {
                 title="ZENCON Launchpad | A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."
                 description="A full insight of the most exciting projects running on the ZENIQ SMARTCHAIN. One click away."
             /> 
-            <div className='main'>
+            <div className='main flex flex-col lg:gap-32'>
                 <Header />
                 <Banner />
                 <SlideShow dataType="youtube" dataSource={ytVideos}/>

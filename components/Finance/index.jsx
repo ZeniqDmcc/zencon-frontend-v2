@@ -5,16 +5,16 @@ import graph1 from "../../assets/graph1.svg"
 
 function Finance(props) {
   return (
-    <div className={`${styles.finance} xl:py-48 px-8`}>
+    <div className={styles.finance}>
         <div className="container mx-auto">
-            <div className="flex justify-between aligns-center lg:gap-0 gap-0 flex-col lg:flex-row">
-                <div className="lg:flex-1 gap-12 lg:order-1 order-2 flex flex-col lg:m-10" key={nanoid()}>
-                    <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-medium text-green-400 leading-16 lg:text-left text-center sm:pt-0 pt-8 pb-0">{props.title}</h2>
+            <div className="flex justify-between lg:gap-0 gap-0 flex-col lg:flex-row">
+                <div className={`${styles.box} lg:flex-1 lg:order-1 order-2 flex flex-col lg:m-10 lg:gap-12`} key={nanoid()}>
+                    <h2 className="xl:text-5xl lg:text-4xl md:text-2xl text-xl font-medium text-green-400 leading-16 lg:text-left text-center pt-8 pb-0">{props.title}</h2>
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.traditionalBanking}</p>
                     <p className="w-90 leading-1.5 xl:text-2xl md:text-lg text-md font-normal lg:text-left text-center">{props.challenges}</p>
                 </div>
 
-                <div className={`${styles.image} lg:flex-1 lg:order-2 order-1 text-center lg:p-0 px-12 lg:mb-0 sm:mb-12`} key={nanoid()}>
+                <div className={`${styles.image} lg:flex-1 lg:order-2 order-1 lg:p-10 px-12 lg:mb-0 sm:mb-4 flex`} key={nanoid()}>
                     <Image src={props.src} alt="icon"  />
                 </div>
             </div>

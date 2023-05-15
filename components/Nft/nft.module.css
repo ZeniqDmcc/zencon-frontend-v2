@@ -2,9 +2,8 @@
     background-image: url("../../assets/Svgs/graph6.svg");
     background-repeat: no-repeat;
     background-position-x: -80px;
-    background-position-y: -140px;
+    background-position-y:  -220px;
     background-size: calc(42% + 130px);
-    padding: 90px 0 142px 0;
 }
 
 @media only screen and (min-width: 2200px) {
@@ -21,30 +20,36 @@
 
 @media only screen and (max-width: 1780px) {
     .nft {
-        padding: 100px 0 90px 0;
+        background-position-y:  -190px;
     }
 }
 
 @media only screen and (max-width: 1680px) {
     .nft {
-        padding: 32px 0 110px 0;
+        background-position-y:  -190px;
     }
 }
 
-@media only screen and (max-width: 1580px) {
+@media only screen and (max-width: 1550px) {
     .nft {
-        padding: 20px 0 30px 0;
+        background-position-y:  -150px;
     }
 }
 
-@media only screen and (max-width: 1480px) {
+@media only screen and (max-width: 1440px) {
     .nft {
-        padding: 0px 0 0px 0;
+        background-position-y:  -100px;
     }
-    .nft div div {
-        gap: 27px;
+}
+
+@media only screen and (max-width: 1170px) {
+    .nft {
+        background-position-y:  -80px;
     }
-}  
+    .nft img {
+        padding: 50px !important;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
     .nft {
@@ -55,7 +60,7 @@
     }
     .nft img {
         width: 70% !important;
-        padding-top: 100px !important;
+        padding: 100px 0 0 0 !important;
     }
     .nft div div {
         gap: 12px;
