@@ -15,6 +15,9 @@ module.exports = {
       'body': ["Open Sans"],
       'secondary': ['SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       'poppins': ['Poppins', 'sans-serif'],
+      'Hanson': ['hanson', 'sans-serif'],
+      'HeronSans': ['heronSans', 'sans-serif'],
+      'HeronSansCond': ['herosanscond', 'sans-serif'],
     },
     screens: {
       "xs": "400px",
@@ -48,7 +51,11 @@ module.exports = {
     function ({ addUtilities }) {
       addUtilities({
         '.bg-image': {
-          'background-image': "url('/assets/rio2023bg_02.jpg')",
+          'background-image': "url('./assets/zencon-home-bg.jpg')",
+        },
+        '.rio023': {
+          'background-image': "url('./assets/map.svg')",
+          'background-position-x': "center",
         }
       })
     }

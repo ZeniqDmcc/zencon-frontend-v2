@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
-import styles from "./register.module.css"
-import codes from '../../utils/Constants/countriesCodes';
+import { nanoid } from "nanoid";
 import { useRouter } from 'next/router';
-import fireworks from "../../assets/fireworks.gif"
-import eighteenYearsOld from "../../utils/Helpers/eighteenYearsOld.js";
+import { useEffect, useState } from 'react';
+import fireworks from "../../assets/fireworks.gif";
 import { zencon_event_api_url } from '../../utils/Constants/BackendURLs.js';
+import codes from '../../utils/Constants/countriesCodes';
+import eighteenYearsOld from "../../utils/Helpers/eighteenYearsOld.js";
 import UI_PATHS from "./../../utils/Constants/uiPaths.js";
+import styles from "./register.module.css";
 const { day, year, month } = eighteenYearsOld()
 const lessThanDate = `${year}-${month}-${day}`;
-import { nanoid } from "nanoid"
 
 function RegistrationForm({ ethAddr }) {
 

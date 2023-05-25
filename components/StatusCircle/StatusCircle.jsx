@@ -1,4 +1,4 @@
-import styles from "./status.module.css"
+import styles from "./status.module.css";
 
 function StatusCircle({status}) {
     let percentage = 33;

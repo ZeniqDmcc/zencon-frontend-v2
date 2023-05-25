@@ -4,6 +4,67 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'hanson';
+  src: url('./assets/fonts/Hanson-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'heronSans', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSans Bold.otf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'heronSans', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSans Light.otf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'heronSans', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSans Medium.otf') format('truetype');
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'heronSans', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSans Regular.otf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'heronSans', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSans SemiBold.otf') format('truetype');
+  font-weight: semibold;
+}
+
+/* Herosancond */
+
+@font-face {
+  font-family: 'herosanscond', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSansCond Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'herosanscond', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSansCond Medium.otf') format('opentype');
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'herosanscond', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSansCond Regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'herosanscond', sans-serif;
+  src: url('./assets/fonts/Font Bureau - HeronSansCond SemiBold.otf') format('opentype');
+  font-weight: semibold;
+}
+
 video{
   height: 100% !important;
   width: 100% !important;
@@ -80,7 +141,7 @@ body {
   width: 100%;
   background-color: #010020;
   isolation: isolate;
-  background-position: center -6% !important;
+  background-position: top center !important;
   color: #fff;
   background-repeat: no-repeat;
 }

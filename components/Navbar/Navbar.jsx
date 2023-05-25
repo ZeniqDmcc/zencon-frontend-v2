@@ -1,14 +1,14 @@
-import {useState} from "react";
-import {useRouter} from "next/router";
 import Image from "next/image";
 import Link from "next/link";
-import Container from "../Container/Container";
-import CallToAction from "../Buttons/CallToAction";
-import {GradientScroll} from "../GradientScroll/GradientScroll";
-import {useUserDataContext} from "../../context/UserDataContextProvider";
-import {developer, investor} from "../../public/assets/home";
-import zeniq from '../../public/assets/zeniq.png'
+import { useRouter } from "next/router";
+import { useState } from "react";
 import zencon_logo from "../../assets/zenconLogo.svg";
+import { useUserDataContext } from "../../context/UserDataContextProvider";
+import { developer, investor } from "../../public/assets/home";
+import zeniq from '../../public/assets/zeniq.png';
+import CallToAction from "../Buttons/CallToAction";
+import Container from "../Container/Container";
+import { GradientScroll } from "../GradientScroll/GradientScroll";
 
 
 function Navbar() {

@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar/Navbar"
-import FaqAccordion from '../components/Accordion/FaqAccordion'
+import FaqAccordion from '../components/Accordion/FaqAccordion';
+import Navbar from "../components/Navbar/Navbar";
 
 const Faq = () => {
     return (
@@ -8,7 +8,7 @@ const Faq = () => {
             <div className="pt-40 pb-16 max-w-2xl mx-auto sm:px-10 px-4">
                 <h1 className="text-center text-4xl font-bold text-[#fff] pb-4">FAQ</h1>
                 <div className="">
-                    {faqs.map((faq, index) => (
+                    {faqs && faqs.map((faq, index) => (
                         <FaqAccordion key={index} title={faq.title} content={faq.content} social_media={faq.social_media} list={faq.list} />
                     ))}
                 </div>
