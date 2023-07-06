@@ -1,0 +1,110 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #324463;
+  width: 100%;
+  bottom: 12px;
+  left: -50%;
+  z-index: 2;
+}
+
+.item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #324463;
+  width: 100%;
+  bottom: 12px;
+  left: 50%;
+  z-index: 2;
+}
+
+.counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #324463;
+  margin-bottom: 6px;
+}
+
+.rejectedCounter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FF6060;
+  margin-bottom: 6px;
+}
+
+.rejected::after{
+  border-color: #FF6060;
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #FF6060;
+  width: 100%;
+  bottom: 12px;
+  left: 50%;
+  z-index: 3;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.completed .counter {
+  background-color: #fff;
+}
+
+.active .counter {
+  background-color: #87FF4F;
+}
+
+.completed::after {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #4bb543;
+  width: 100%;
+  bottom: 12px;
+  left: 50%;
+  z-index: 3;
+}
+
+.item:first-child::before {
+  content: none;
+}
+.item:last-child::after {
+  content: none;
+}
+.name {
+  color: #fff;
+  padding-bottom: 15px;
+  padding-left: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    .name {
+      font-size: 12px;
+      margin-left: 0px;
+      padding: 0;
+    }
+} 
