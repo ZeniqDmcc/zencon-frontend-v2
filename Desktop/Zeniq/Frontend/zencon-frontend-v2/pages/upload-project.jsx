@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import CallToAction from "../components/Buttons/CallToAction";
+import Heading from "../components/Atoms/Headings/Heading";
+import Paragraph from "../components/Atoms/Paragraph/Paragraph";
+import ProjectCallButton from "../components/Buttons/ProjectCallButton";
 import Container from "../components/Container/Container";
 import FileUploadFileds from "../components/FileUploadFields/FileUploadFileds";
 import MultiInput from "../components/MultiInput/MultiInput";
@@ -7,14 +9,11 @@ import Navbar from "../components/Navbar/Navbar";
 import ProjectInfoFields from "../components/ProjectInfoFields/ProjectInfoFields";
 import { useUploadProjectContext } from "../context/UploadProjectContextProvider";
 import fileToBinaryUpload from "../utils/Helpers/fileToBinaryUpload";
-import Heading from "../components/Atoms/Headings/Heading";
-import Paragraph from "../components/Atoms/Paragraph/Paragraph";
-import ProjectCallButton from "../components/Buttons/ProjectCallButton";
-
 export default function UploadProjects() {
 
     const { setProjectFiles, setDevsInProject } = useUploadProjectContext();
     const [isAllFilledOut, setIsAllFilledOut] = useState(false);
+    const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
 
     useEffect(() => {
         // clear whatever is in devsInProject context variable
@@ -56,14 +55,17 @@ export default function UploadProjects() {
         setVideo(e.target.value);
     }
     useEffect(() => {
-        if (projectTitle && shortDescription && detailedDescription && category && targetIndustry && landingPage && projectRole && video) {
+        if (projectTitle && shortDescription && detailedDescription && category && targetIndustry && landingPage && projectRole && video && isCheckboxChecked) {
             setIsAllFilledOut(true);
         } else {
             setIsAllFilledOut(false);
         }
-    }, [projectTitle, shortDescription, detailedDescription, category, targetIndustry, landingPage, projectRole, video]);
+    }, [projectTitle, shortDescription, detailedDescription, category, targetIndustry, landingPage, projectRole, video, isCheckboxChecked,]);
     /* FORM THINGS */
 
+    const handleCheckboxChange = (e) => {
+        setIsCheckboxChecked(e.target.checked);
+    };
 
     /* FILE THINGS */
     const handleUserInputChangeLogoImage = (e) => {
@@ -174,11 +176,27 @@ export default function UploadProjects() {
 
                                 <FileUploadFileds {...fileUploadProps} />
 
+                                {/* I Accept */}
+
+                                <div>
+                                    <label className="flex items-start gap-4" htmlFor="checkBox">
+                                        <input type="checkbox" checked={isCheckboxChecked} onChange={handleCheckboxChange} id="checkBox" name="uploadtermsagree" className="h-7 w-7 rounded border-[#87FF4F] focus:ring-0 checked:bg-[#87FF4F] checked:border-transparent" />
+                                        <Paragraph text="I declare that the information I have written on the application form and the documents I have submitted to be true and accurate." />
+                                    </label>
+                                    {!isCheckboxChecked && (
+                                        <div>
+                                            <p className="text-[#87FF4F] mt-6 text-lg font-HeronSans text-center underline">
+                                                Please check the checkbox to proceed.
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
+
                                 {/* Save and Continue Button */}
 
                                 <div className="flex items-center justify-center pt-10 480px:pt-5">
-                                    <ProjectCallButton 
-                                        disabled={!isAllFilledOut}
+                                    <ProjectCallButton
+                                        disabled={!isAllFilledOut || !isCheckboxChecked}
                                         text="Save and Continue"
                                         link="/confirmation-page"
                                         query={{
