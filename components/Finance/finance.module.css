@@ -1,0 +1,204 @@
+.finance {
+    background-image: url("../../assets/graph5.png");
+    background-repeat: no-repeat;
+    background-position-x: right !important;
+    background-position-y: 20px;
+    background-size: calc(40% + 136px);
+    padding: 100px 0;
+}
+
+.finance .image {
+    justify-content: right;
+}
+
+@media only screen and (min-width: 2200px) {
+    .finance {
+      background: none;
+    }
+    .image {
+        background-image: url("../../assets/graph5.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 800px;
+        padding: 100px;
+    }
+}
+
+@media only screen and (max-width: 1880px) {
+    .finance {
+        padding: 90px 0;
+    }
+    .finance .image {
+        justify-content: right;
+    }
+}
+
+@media only screen and (max-width: 1780px) {
+    .finance {
+        padding: 80px 0;
+    }
+    .finance .image {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .finance {
+        padding: 45px 0;
+        background-position-y: 0px;
+        background-position-x: right -60px;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .finance {
+        padding: 0px 0;
+        background-position-y: 0px;
+        background-position-x: right -70px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .finance {
+        background-position-y: 60px;
+        background-position-x: right 0px;
+    }
+    .image {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .finance {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .finance {
+        padding: 10px 0;
+        background-position-y: 55px;
+        background-position-x: right 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .finance {
+        background-position: top center !important;
+        background-size: calc(50% + 136px);
+        padding: 40px 0;
+        margin: 40px 0 0;
+    }
+    .finance div div {
+        gap: 12px;
+        padding-top: 5px;
+    }
+    .finance img {
+        width: 80% !important;
+        padding-top: 17px !important;
+    }
+    .finance div h2 {
+        margin-top: 0px;
+    }
+    .box {
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 940px) {
+    .finance div h2 {
+        margin-top: 20px;
+        padding-top: 0;
+    }
+    .box {
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 882px) {
+    .finance div h2 {
+        margin-top: 0px;
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 840px) {
+    .finance {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .finance div h2 {
+        margin-top: -30px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .finance img {
+        padding: 30px !important;
+        margin-top: -20px !important;
+    }
+    .finance .image {
+        margin: 0 !important;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .finance {
+        padding-top: 20px;
+    }
+    .finance div {
+        gap: 50px;
+    }
+    .finance .box{
+        margin-top: 40px !important;
+    }
+    .finance div div div {
+        margin: 0 !important;
+    }
+    .finance img {
+        width: 90% !important;
+        padding: 10px !important;
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .finance img {
+        padding: 10px !important;
+        margin: 0 !important;
+    }
+    .finance .box {
+        margin-top: 20px !important;
+    }
+    .finance div {
+        gap: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .finance {
+        background-size: calc(55% + 136px);
+    }
+    .finance .box {
+        margin-top: 40px !important;
+    }
+    .finance img {
+        padding: 0px !important;
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .finance .box {
+        padding-top: 20px !important;
+    }
+    .finance img {
+        padding: 0px !important;
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+    .finance .box {
+        margin-top: 70px !important;
+        /* ma */
+    }
+    .finance img {
+        padding: 0px !important;
+    }
+}
